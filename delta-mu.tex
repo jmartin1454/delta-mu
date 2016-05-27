@@ -114,17 +114,17 @@ The passive shields for the nEDM experiments are made of highly permeable materi
 
 \section{Sensitivity of Internally Generated Field to Permeability of the Shield $B_0(\mu)$}
 
-\subsection{Analytical Calculations in Spherical and Cylindrical Geometry}
+\subsection{Analytical Calculations in Spherical (and Cylindrical) Geometry}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 % Taraneh
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
-\begin{itemize}
-\item State basic physics of problem, define reaction factor, note
-  return flux through shield, etc.
-\item State formulae and results for reasonable parameters.
-\item Possibly one graph of $B_0(\mu)$ with both geometries.
-\end{itemize}
+%\begin{itemize}
+%\item State basic physics of problem, define reaction factor, note
+%  return flux through shield, etc.
+%\item State formulae and results for reasonable parameters.
+%\item Possibly one graph of $B_0(\mu)$ with both geometries.
+%\end{itemize}
 
 The presence of a coil inside the innermost passive shield turns the shield into a return yoke and its due to the penetration of the magnetic field flux into the magnetic shield. The ratio of the magnetic field inside the coil in the presence of the magnetic shield to the coil in free space can be called the reaction factor $C$ which is $>$ 1 for spherical and cylindrical geometries \cite{bib:bidinosti}. The coupling of the coil to the innermost layer of the magnetic shield suggests that any changes in the properties of the magnetic shield gives rise to a change in the internal field. One of these properties is $\mu$ which is of significant importance because of the high permeability of the passive shields. As a result, the stability of the magnetic shields contributes to the stability of the internal field.
 
@@ -132,23 +132,8 @@ From Refs. \cite{bib:smythe, bib:ferraro} for a zonal surface current
 \begin{equation}
 \bold{F}=- \sum_{n=1} ^{\infty} \frac{C_n}{l} P^1 _n (u) \hat{\phi}
 \end{equation}
-bound on a sphere with radius $l$ the magnetic field at $r < l$ would be
-
-\begin{equation}
-B_r = - \frac{\mu_0 }{l} \sum _{n=1} ^{\infty} \frac{n(n+1)C_n}{2n+1} \left( \frac{r}{l}\right)^{n-1} P_n(u)
-\end{equation}
-\begin{equation}
-B_{\theta} =\frac{\mu_0 }{l} \sum _{n=1} ^{\infty} \frac{(n+1)C_n}{2n+1}\left( \frac{r}{l}\right)^{n-1} P_n^1 (u)
-\end{equation}
-and for $r>l$
-\begin{equation}
-B_r=-\frac{\mu _0}{l} \sum _{n=1} ^{\infty} \frac{n(n+1)C_n}{2n+1} \left( \frac{l}{r} \right)^{n+2} P_n (u)
-\end{equation}
-
-\begin{equation}
-b_{\theta}=-\frac{\mu _0}{l}\sum _{n=1} ^{\infty}\frac{n C_n}{2n+1} \left( \frac{l}{r} \right)^{n+2} P_n ^1 (u).
-\end{equation}
-The case of an ideal surface current ($n=1$) inside a spherical shell with inner radius $a$ and outer radius $b$ has been analytically calculated considering the following boundary conditions
+bound on a sphere with radius $l$ the magnetic field at $r < l$ and $r>l$ is calculated.
+The case of an ideal spherical surface current ($n=1$) inside a spherical shell with inner radius $a$ and outer radius $b$ has been analytically calculated considering the following boundary conditions
 
 \begin{equation}
 \frac{1}{\mu_0} B_{\theta} (a^-) = \frac{1}{\mu} B_{\theta}(a^+)
@@ -156,17 +141,15 @@ The case of an ideal surface current ($n=1$) inside a spherical shell with inner
 \begin{equation}
 \frac{1}{\mu}B_{\theta}(b^-)=\frac{1}{\mu_0}B_{\theta}(b^+).
 \end{equation}
-
+Fig. \ref{fig:Magnetic_Field} shows the magnetic field as a function of relative $\mu$ for $0.53$ m, $0.57$ m and a thickness of 1.5 mm for the shield which are comparable to the dimensions of the ILL nEDM experiment setup \cite{bib:baker, bib:knecht}.
 \begin{figure}[h!]
 \begin{center}
    \includegraphics[width=0.6\textwidth]{B_vs_mu.png}
-    \caption{caption}
-     \vspace{-2.em}
-    \label{fig:TRIUMF_UCN}
+    \caption{This graph shows magnetic field in $\mu$T as a function of relative magnetic permeability $\mu$ for an ideal spherical surface current of radius $0.53$ m inside a spherical shell of inner radius 0.57 m and a thickness of 1.5 mm.}
+    \label{fig:Magnetic_Field}
     \end{center}
 \end{figure} 
-
-
+For a 10\% change in relative $\mu$ from 20000 to 22000, the magnetic field changes by 0.7 nT.
 
 
 
@@ -339,6 +322,8 @@ Insert Summary Here.
 \bibitem{bib:ferraro} V. C. A. Ferraro, Athalone Press (1967).
 
 \bibitem{bib:gupta} Kiran Gupta, K. K. Raina, S. K. Sinha, J. Alloys Compd, 429(1):357-364 (2007).
+
+\bibitem{bib:knecht} A. Knecht, Dissertation, UZH Zurich (2009).
 \end{thebibliography}
 
 \end{document}
