@@ -144,7 +144,7 @@ The case of an ideal spherical surface current ($n=1$) inside a spherical shell 
 Fig. \ref{fig:Magnetic_Field} shows the magnetic field $B$ as a function of relative $\mu$ for $l=0.53$ m, $a=0.57$ m and a thickness of 1.5 mm for the shield which are comparable to the dimensions of the ILL nEDM experiment setup \cite{bib:baker, bib:knecht}.
 \begin{figure}[h!]
 \begin{center}
-   \includegraphics[width=0.6\textwidth]{B_vs_mu.png}
+   \includegraphics[width=0.6\textwidth]{B_vs_mu.PNG}
     \caption{This graph shows magnetic field in $\mu$T as a function of relative magnetic permeability $\mu$ for an ideal spherical surface current of radius $0.53$ m inside a spherical shell of inner radius 0.57 m and a thickness of 1.5 mm.}
     \label{fig:Magnetic_Field}
     \end{center}
@@ -183,7 +183,7 @@ For a 10\% change in relative $\mu$ from 20000 to 22000, the magnetic field chan
 \end{itemize}
 
 \subsection{Summary of $B_0(\mu)$}
-
+For shield coupled coils the magnetic field in the region interior to the coil is coupled to the properties of the shell which is caused by the penetration of field lines into the shell material. However, for an ideal case such as a spherical coil inside a spherical shell the dependence of the magnetic field $B$ to the $\mu$ is not very strong. This coupling of the magnetic field to the shell can be removed by replacing the shield-coupled coils with the self-shielded coils. This will
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 % Taraneh
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
@@ -207,10 +207,18 @@ Here two different approaches to measure temperature dependence of $\mu$ were pu
 \subsection{Axial Shielding Factor Measurements}
 In the first approach, the witness cylinder was used as a magnetic shield. 
 The general idea is to measure any changes in the shielding factor corresponding to a temperature change of the witness cylinder. 
-A solenoid producing a known homogeneous magnetic field was placed outside the witness cylinder.
+A solenoid producing a known homogeneous magnetic field was placed outside the witness cylinder as shown in Fig. \ref{fig:geometry}.
 A fluxgate magnetometer measured the magnetic field inside the witness cylinder while the temperature of the shield was measured.
 The solenoid current was varied sinusoidally at typically 0.01 to 10 Hz.
 The signal from the fluxgate was demodulated by a lock-in amplifier providing the in-phase and out-of-phase components of the signal.
+
+\begin{figure}[h!]
+\begin{center}
+   \includegraphics[width=0.8\textwidth]{geometry.pdf}
+    \caption{This figure shows the setup of the axial shielding factor measurement. The witness cylinder is placed inside a solenoid. The axis of symmetry is along the z axis. The windings of the solenoid is shown in red. The blue coil with one turn is coupled to the witness cylinder.   }
+    \label{fig:geometry}
+    \end{center}
+\end{figure} 
 
 An example of the typical data acquired is shown in Fig. \ref{fig:B_vs_Temp}. Graph (a) shows the temperature of the witness cylinder over four days. The temperature changes are about 3.5$^\circ$C and are caused by temperature variations of the room. The magnetic field $B$ is the sum, in quadrature, of the in-phase and out-of-phase components. For $f\lesssim 1$ Hz most of the measured fluxgate signal is in the in-phase component. The magnetic field tracks the temperature trend in an opposite way which is shown in graph (b). The slope of the graph (c) has been calculated by using a linear fit to the data. In general, we measured 0.3 \%/K $< \vert \frac{1}{B} \frac{dB}{dT} \vert <$ 2.3 \%/K with the sign being negative. The range embodies the typical nonlinearities in the data (for example, those seen in graph (c) of Fig. \ref{fig:B_vs_Temp}.), and so we adopt this as an uncertainty. Through a comprehensive set of systematic studies, the source of the nonlinearities could not be found. We suspect it is due to a combination of mechanical stability and properties of the material that cannot be embodied by a simple temperature slope. Thus the experiment tends to set a scale and sign for the possible temperature dependence, rather than a value.
   \begin{figure}[h!]
