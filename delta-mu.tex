@@ -86,8 +86,8 @@ The next generation of neutron electric dipole moment (EDM)
 experiments aim to measure the EDM $d_n$ with proposed precision
 $\delta d_n\lesssim
 10^{-27}$~e-cm~\cite{bib:nedm1,bib:nedm2,bib:nedm2.5,bib:nedm3,bib:nedm3.5,bib:nedm4,bib:nedm5,bib:nedm6,bib:nedm6.5}.
-In the previous best experiment \cite{bib:baker}, which discovered
-$d_n<2.9\times 10^{-26}$~e-cm, effects related to magnetic field
+In the previous best experiment \cite{bib:pendlebury}, which discovered
+$d_n<3\times 10^{-26}$~e-cm (90\% C.L), effects related to magnetic field
 homogeneity and instability were found to dominate the systematic
 error.  A detailed understanding of passive and active magnetic
 shielding, magnetic field generation within shielded volumes, and
@@ -141,7 +141,7 @@ The case of an ideal spherical surface current ($n=1$) inside a spherical shell 
 \begin{equation}
 \frac{1}{\mu}B_{\theta}(b^-)=\frac{1}{\mu_0}B_{\theta}(b^+).
 \end{equation}
-Fig. \ref{fig:Magnetic_Field} shows the magnetic field $B$ as a function of relative $\mu$ for $0.53$ m, $0.57$ m and a thickness of 1.5 mm for the shield which are comparable to the dimensions of the ILL nEDM experiment setup \cite{bib:baker, bib:knecht}.
+Fig. \ref{fig:Magnetic_Field} shows the magnetic field $B$ as a function of relative $\mu$ for $l=0.53$ m, $a=0.57$ m and a thickness of 1.5 mm for the shield which are comparable to the dimensions of the ILL nEDM experiment setup \cite{bib:baker, bib:knecht}.
 \begin{figure}[h!]
 \begin{center}
    \includegraphics[width=0.6\textwidth]{B_vs_mu.png}
@@ -194,7 +194,7 @@ Insert summary here.
 \subsection{Previous Measurements and their Relationship to nEDM Experiments}
 Couderchon et al. measured the thermal variation of $\mu$ of two different Ni-Fe alloys in a low field and they found $\frac{1}{\mu}\frac{d \mu}{dT}\simeq$ 1 $\%/K$ at room temperature \cite{bib:couderchon}. Based on the data sheet of a similar material, $\mu$ would depend on temperature as $\frac{1}{\mu} \frac{d \mu}{dT} \simeq $ 0.3-0.7 \%/K \cite{bib:kruppvdm}. These are measurements of the temperature dependence of $\mu$ at frequencies much higher than the nEDM experiment (50 Hz compared to 0.01Hz). In addition, the applied magnetic field $H$ and magnetic flux density $B$ in these experiments are not clear while the static magnetic field for the nEDM experiment is about 1 $\mu$T.
 
-Here two different approaches to measure temperature dependence of $\mu$ were pursued. To elucidate the behavior of our passive Mu-metal shields, experiments were done using the two witness cylinders, which are smaller open-ended cylinders (6" in length) made of the same material and annealed at the same time as our big prototype shields. We therefore expect they have the same magnetic properties as the big passive shields, but they are much smaller and easier to perform measurements with.
+Here two different approaches to measure temperature dependence of $\mu$ were pursued. To elucidate the behavior of our passive Mu-metal shields, experiments were done using two witness cylinders, which are smaller open-ended cylinders (6" in length) made of the same material and annealed at the same time as our big prototype shields. We therefore expect they have the same magnetic properties as the big passive shields, but they are much smaller and easier to perform measurements with.
 %\begin{itemize}
 %\item Coucheron et al.?
 %\item Krupp-VDM data sheet?
@@ -212,17 +212,17 @@ A fluxgate magnetometer measured the magnetic field inside the witness cylinder 
 The solenoid current was varied sinusoidally at typically 0.01 to 10 Hz.
 The signal from the fluxgate was demodulated by a lock-in amplifier providing the in-phase and out-of-phase components of the signal.
 
-An example of the typical data acquired is shown in Fig. \ref{fig:B_vs_Temp}. Graph (a) shows the temperature of the witness cylinder over four days. The temperature changes are about 3.5$^\circ$C and are caused by temperature variations of the room. The magnetic field $B$ is the sum, in quadrature, of the in-phase and out-of-phase components. For $f\lesssim 1$ Hz most of the measured fluxgate signal is in the in-phase component. The magnetic field tracks the temperature trend in an opposite way which is shown in graph (b). The slope of the graph (c) has been calculated by using a linear fit to the data. In general, we measured 0.3 \%/K $< \vert \frac{1}{B} \frac{dB}{dT} \vert <$ 2.3 \%/K with the sign being negative. The range embodies the typical nonlinearities in the data (for example, those seen in graph (c) of Fig. \ref{fig:B_vs_Temp}.), and so we adopt this as an uncertainty. Through a comprehensive set of systematic studies, the source of the nonlinearities could not be found. We suspect is it due to a combination of mechanical stability and properties of the material that cannot be embodied by a simple temperature slope. Thus the experiment tends to set a scale and sign for the possible temperature dependence, rather than a value.
+An example of the typical data acquired is shown in Fig. \ref{fig:B_vs_Temp}. Graph (a) shows the temperature of the witness cylinder over four days. The temperature changes are about 3.5$^\circ$C and are caused by temperature variations of the room. The magnetic field $B$ is the sum, in quadrature, of the in-phase and out-of-phase components. For $f\lesssim 1$ Hz most of the measured fluxgate signal is in the in-phase component. The magnetic field tracks the temperature trend in an opposite way which is shown in graph (b). The slope of the graph (c) has been calculated by using a linear fit to the data. In general, we measured 0.3 \%/K $< \vert \frac{1}{B} \frac{dB}{dT} \vert <$ 2.3 \%/K with the sign being negative. The range embodies the typical nonlinearities in the data (for example, those seen in graph (c) of Fig. \ref{fig:B_vs_Temp}.), and so we adopt this as an uncertainty. Through a comprehensive set of systematic studies, the source of the nonlinearities could not be found. We suspect it is due to a combination of mechanical stability and properties of the material that cannot be embodied by a simple temperature slope. Thus the experiment tends to set a scale and sign for the possible temperature dependence, rather than a value.
   \begin{figure}[h!]
 \begin{center}
-   \includegraphics[width=1\textwidth]{B_vs_T_1.PNG}
+   \includegraphics[width=1\textwidth]{B_vs_T.PNG}
     \caption{These graphs show data of temperature dependence of the magnetic field taken over 80 hours. Graph (a) shows the temperature of the witness cylinder in $^\circ$C as a function of time. Graph (b) shows the magnetic field inside the witness cylinder at the center in $\mu$T versus time and graph (c) shows the magnetic field in $\mu$T versus temperature in $^\circ$C. The red line is the linear fit to data. At 22$^\circ$C, $\vert \frac{1}{B}\vert \vert \frac{dB}{dT}\vert\simeq -1.5 \% /K.$ }
     \label{fig:B_vs_Temp}
      \vspace{-2.em}
     \end{center}
 \end{figure} 
 
-To relate this data to $\mu $(T), finite element simulations in FEMM and OPERA were done. From these simulations the ratio $\frac{\mu}{B} \frac{dB}{d\mu}$ was calculated in a model where $\bold{B} = \mu \bold{H}$ and $\mu $ is a constant i.e. the material is treated as being linear. The term $\frac{\mu}{B}\frac{dB}{d\mu}\neq 0$ because the passive shields are open ended. Combining the measurement and the simulations, the temperature dependence of effective $\mu$ (at $\mu$=20000) can be calculated by
+To relate this data to $\mu $(T), finite element simulations in FEMM and OPERA were done. From these simulations the ratio $\frac{\mu}{B} \frac{dB}{d\mu}$ was calculated in a model where $\bold{B} = \mu \bold{H}$ and $\mu $ is a constant i.e. the material is treated as being linear. The term $\frac{\mu}{B}\frac{dB}{d\mu}\neq 0$ because the witness cylinders are open ended. Combining the measurement and the simulations, the temperature dependence of effective $\mu$ (at $\mu$=20000) can be calculated by
 \begin{equation}
 \frac{1}{\mu}\frac{d\mu}{dT}= -\frac{\frac{1}{B}\frac{dB}{dT}}{\frac{\mu}{B}\frac{dB}{d\mu}}.
 \end{equation}
@@ -367,7 +367,7 @@ Insert Summary Here.
   Phys. Rev. Lett. 113, 013001 (2014).
 \bibitem{bib:couderchon} G. Couderchon, J. F. Tiers, J. Magn. Magn. Mat. 26(1):196-214 (1982).
 
-\bibitem{bib:bidinosti} C. P. Bidinosti, AIP Advances 4, 047135 (2014).
+\bibitem{bib:bidinosti} C. P. Bidinosti {\it et al.}, AIP Advances 4, 047135 (2014).
 
 \bibitem{bib:smythe} W. R. Smythe, McGraw Hill (1950).
 
@@ -380,6 +380,8 @@ Insert Summary Here.
 \bibitem{bib:kruppvdm} KruppVDM Magnifer 7904, MDS no. 9004 (2000).
 
 \bibitem{bib:jiles} D. C. Jiles, J. Appl. Phys. 76(10):5849-5855 (1994).
+
+\bibitem{bib:pendlebury} J. M. Pendlebury {\it et al.}, Phys. Rev. D 92, 092003 (2015).
 \end{thebibliography}
 
 \end{document}
