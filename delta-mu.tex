@@ -212,11 +212,15 @@ setup~\cite{bib:baker,bib:knecht}.
 \begin{figure}[h!]
 \begin{center}
    \includegraphics[width=0.6\textwidth]{femm_and_calcs.pdf}
-    \caption{This graph shows magnetic field in $\mu$T as a function
-      of relative magnetic permeability $\mu$ for an ideal spherical
-      surface current of radius $0.53$ m inside a spherical shell of
-      inner radius 0.57 m and a thickness of 1.5 mm. (fix the
-      caption)}
+    \caption{Magnetic field as a function of relative magnetic
+      permeability $\mu_r$ for geometries similar to the ILL nEDM
+      experiment.  The dashed line is for an ideal spherical surface
+      current of radius $0.53$~m inside a spherical shell of inner
+      radius 0.57~m, thickness 1.5~mm.  XXX and XXX points are
+      FEMM-based simulations of spherical and cylindrical geometries
+      with similar dimensions, described in the text.  The coil
+      currents have been arranged to give a $1~\mu$T field at the
+      $\mu_r=20000$ point.}
     \label{fig:Magnetic_Field}
     \end{center}
 \end{figure} 
@@ -227,46 +231,115 @@ magnetic field changes by 0.7 nT.
 
 \subsection{Magnetostatic Simulation Results}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
-% Jeff; need to decide graphs with Taraneh.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
-\begin{itemize}
-\item I think it would be easy to provide results in axisymmetric
-  geometries from FEMM.
-\item If any result is available from OPERA, it could be included here.
-\item Results should be for a restricted set of possible nEDM coils.
-\item quote reaction factors?
-\item One graph?  % probably the same graph as above
-\end{itemize}
+Finite-element analysis simulations were conducted to analyze the
+effect of discretizing the surface current, and to test the geometry
+dependence of the sensitivity of the experiment to changes in $\mu$.
+Two axially symmetric simulations were conducted using
+FEMM~\cite{bib:femm}.  In the first, the same spherical geometry was
+used as for the analytical calculations.  However, the surface current
+was discretized to 50 individual circular wire, inscribed onto a
+sphere, and equally spaced vertically (i.e.~a discrete sin$\phi$
+coil).  A square coil profile of side length 1~mm was used.  As shown
+in Fig.~\ref{fig:Magnetic_Field}, this simulation gave good agreement
+with the analytical calculation.
+
+As an example of one additional axially symmetric geometry, a solenoid
+within a cylindrical shield was simulated, with equal coil spacings.
+In the limit of infinite $\mu$, the image currents in the end caps of
+the shield are an infinite series of coils, giving an ideal infinite
+solenoid with a uniform field.  Again, fifty discrete coils were
+simulated, where the spacing from an end coil to the inner face of the
+shield end-cap being half the inter-coil spacing, as appropriate to
+generate the correct image currents in the infinite $\mu$ limit.  As
+shown in Fig.~\ref{fig:Magnetic_Field}, the slope of $B(\mu)$ is
+somewhat steeper, and similar in magnitude to the spherical case.  We
+therefore conclude that the scale of the sensitivity of a generic nEDM
+experiment to global changes in the magnetic permeability is
+$\frac{\mu}{B}\frac{dB}{d\mu}\sim 0.01$.
+
+In the spherical case the reaction factor is XXX.  In the cylindrical
+case the reaction factor is XXX.  In general, it is expected that the
+larger the reaction factor, the large the sensitivity of the
+experiment to changes in the permeability of the shield.  This
+conclusion is also borne out by Fig.~\ref{fig:Magnetic_Shield}, in
+that the slope of the cylindrical simulation is steeper than that of
+the spherical simulation.
+
+%\begin{itemize}
+%\item I think it would be easy to provide results in axisymmetric
+%  geometries from FEMM.
+%\item If any result is available from OPERA, it could be included here.
+%\item Results should be for a restricted set of possible nEDM coils.
+%\item quote reaction factors?
+%\item One graph?  % probably the same graph as above
+%\end{itemize}
 
 \subsection{Self-Shielded Coils}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
-% Chris B advises to make this section much more vague and shorter.
-% (Jeff can do)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
-\begin{itemize}
-\item Explain principle (reaction factor = 1, or no field at shield so
-  no return flux)
-\item Simple analytic results - reaction factor is identically unity.
-\item FEMM/OPERA - demonstrate that sensitivity is reduced by factor
-  of XX for simple geometry.
-\item One graph, or include on previous graph?
-\end{itemize}
+A way decouple the internal coil from the magnetic shield is to design
+a self-shielded
+coil~\cite{bib:cpviolwithoutstrangeness,bib:someotherselfshieldedcoilpapers}.
+In self-shielded coils, the return flux is provided by a second larger
+coil, rather than through the permeable material of the magnetic
+shield.  In a perfect self-shielded coil, the field at the position of
+the magnetic shield would be zero, resulting in a reaction factor that
+is identically unity.
+
+Such coils would completely decouple the properties of the magnetic
+shield from the homogeneity and stability of the coil itself.  Changes
+in $\mu$ of the shield material would then have no impact on the nEDM
+experiment.  Coils incorporating self-shielding in their design are
+therefore an attractive option for nEDM
+experiments~\cite{bib:cpviolwithoutstrangeness}.
+
+
+%\begin{itemize}
+%\item Explain principle (reaction factor = 1, or no field at shield so
+%  no return flux)
+%\item Simple analytic results - reaction factor is identically unity.
+%\item FEMM/OPERA - demonstrate that sensitivity is reduced by factor
+%  of XX for simple geometry.
+%\item One graph, or include on previous graph?
+%\end{itemize}
 
 \subsection{Summary of $B_0(\mu)$}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
-% Taraneh
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
-%Insert summary here.
-For the shield-coupled coils the magnetic field in the region interior to the coil is coupled to the properties of the shell which is caused by the penetration of the magnetic field into the shell material. However, for an ideal case such as a spherical coil inside a spherical shell the dependence of the magnetic field $B$ to $\mu$ is not very strong. This coupling can be much reduced by replacing the shield-coupled coils with the self-shielded coils.
+For the shield-coupled coils the magnetic field in the region interior
+to the coil is coupled to the properties of the shell which is caused
+by the penetration of the magnetic field into the shell material. In a
+typical nEDM experiment, the sensitivity of the internal magnetic
+field to changes in $\mu$ is $\frac{\mu}{B}\frac{dB}{d\mu}\sim 0.01$.
+The coupling can be much reduced by replacing the shield-coupled coils
+with the self-shielded coils.
 
 \section{Measurements of $\mu(T)$}
 
 \subsection{Previous Measurements and their Relationship to nEDM Experiments}
-Couderchon et al. measured the thermal variation of $\mu$ of two different Ni-Fe alloys in a low field and they found $\frac{1}{\mu}\frac{d \mu}{dT}\simeq$ 1 $\%/K$ at room temperature \cite{bib:couderchon}. Based on the data sheet of a similar material, $\mu$ would depend on temperature as $\frac{1}{\mu} \frac{d \mu}{dT} \simeq $ 0.3-0.7 \%/K \cite{bib:kruppvdm}. These are measurements of the temperature dependence of $\mu$ at frequencies much higher than the nEDM experiment (50 Hz compared to 0.01Hz). In addition, the applied magnetic field $H$ and magnetic flux density $B$ in these experiments are not clear while the static magnetic field for the nEDM experiment is about 1 $\mu$T.
+Couderchon et al. measured the thermal variation of $\mu$ of two
+different Ni-Fe alloys in a low field and they found
+$\frac{1}{\mu}\frac{d \mu}{dT}\simeq$1\%/K at room
+temperature~\cite{bib:couderchon}. Based on the data sheet of a
+similar material, $\mu$ would depend on temperature as
+$\frac{1}{\mu}\frac{d\mu}{dT}\simeq$0.3-0.7\%/K~\cite{bib:kruppvdm}. These
+are measurements of the temperature dependence of $\mu$ at frequencies
+much higher than the nEDM experiment (50~Hz compared to 0.01~Hz). In
+addition, the applied magnetic field $H$ and magnetic flux density $B$
+in these experiments are not clear while the static magnetic field for
+the nEDM experiment is about 1 $\mu$T.
 
-Here two different approaches to measure temperature dependence of $\mu$ were pursued. To elucidate the behavior of our passive Mu-metal shields, experiments were done using two witness cylinders, which are smaller open-ended cylinders (6" in length) made of the same material and annealed at the same time as our big prototype shields. We therefore expect they have the same magnetic properties as the big passive shields, but they are much smaller and easier to perform measurements with.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Taraneh
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% refer to Pfeifer paper (I put it in the last entry in the
+% bibliography).  See if you can find more papers?
+
+In the present work, two different approaches to measure temperature
+dependence of $\mu$ were pursued. To elucidate the behavior of our
+passive mu-metal shields, experiments were done using two witness
+cylinders, which are smaller open-ended cylinders (6" in length) made
+of the same material and annealed at the same time as our big
+prototype shields. We therefore expect they have the same magnetic
+properties as the big passive shields, but they are much smaller and
+easier to perform measurements with.
 %\begin{itemize}
 %\item Coucheron et al.?
 %\item Krupp-VDM data sheet?
@@ -277,17 +350,25 @@ Here two different approaches to measure temperature dependence of $\mu$ were pu
 %\end{itemize}
 
 \subsection{Axial Shielding Factor Measurements}
-In the first approach, the witness cylinder was used as a magnetic shield. 
-The general idea is to measure any changes in the shielding factor corresponding to a temperature change of the witness cylinder. 
-A solenoid producing a known homogeneous magnetic field was placed outside the witness cylinder as shown in Fig. \ref{fig:geometry}.
-A fluxgate magnetometer measured the magnetic field inside the witness cylinder while the temperature of the shield was measured.
-The solenoid current was varied sinusoidally at typically 0.01 to 10 Hz.
-The signal from the fluxgate was demodulated by a lock-in amplifier providing the in-phase and out-of-phase components of the signal.
+In the first approach, the witness cylinder was used as a magnetic
+shield.  The general idea is to measure any changes in the shielding
+factor corresponding to a temperature change of the witness cylinder.
+A solenoid producing a known homogeneous magnetic field was placed
+outside the witness cylinder as shown in Fig. \ref{fig:geometry}.  A
+fluxgate magnetometer measured the magnetic field inside the witness
+cylinder while the temperature of the shield was measured.  The
+solenoid current was varied sinusoidally at typically 0.01 to 10 Hz.
+The signal from the fluxgate was demodulated by a lock-in amplifier
+providing the in-phase and out-of-phase components of the signal.
 
 \begin{figure}[h!]
 \begin{center}
    \includegraphics[width=0.8\textwidth]{geometry.pdf}
-    \caption{This figure shows the setup of the axial shielding factor measurement. The witness cylinder is placed inside a solenoid. The axis of symmetry is along the z axis. The windings of the solenoid is shown in red. The blue coil with one turn is coupled to the witness cylinder.   }
+    \caption{This figure shows the setup of the axial shielding factor
+      measurement. The witness cylinder is placed inside a
+      solenoid. The axis of symmetry is along the $z$-axis. The windings
+      of the solenoid is shown in red. The blue coil with one turn is
+      coupled to the witness cylinder.  }
     \label{fig:geometry}
     \end{center}
 \end{figure} 
@@ -458,6 +539,9 @@ only a qualitative information on the actual nEDM experiment situation and to re
 \bibitem{bib:jiles} D. C. Jiles, D. L. Atherton,  J. Magn. Magn. Mat. 61(1-2):48-60, (1986).
 
 \bibitem{bib:pendlebury} J. M. Pendlebury {\it et al.}, Phys. Rev. D 92, 092003 (2015).
+
+\bibitem{bib:pfiefer} F. PFEIFER and C. RADELOFF, Journal of Magnetism
+  and Magnetic Materials 19 (1980) 190-207
 
 \end{thebibliography}
 
