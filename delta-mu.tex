@@ -97,9 +97,6 @@ of the R\&D effort for these experiments is focused on careful design
 and testing of various magnetic shield geometries with precision
 magnetometers~\cite{bib:brys,bib:afach,bib:fierlingerroom,bib:sturmthesis,bib:patton}.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
-% Taraneh
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
 %\begin{itemize}
 %\item General requirements on field, stability of field, stability of gradient.
 %\item List all possible factors that can affect field stability -
@@ -107,9 +104,55 @@ magnetometers~\cite{bib:brys,bib:afach,bib:fierlingerroom,bib:sturmthesis,bib:pa
 %\item State the problem addressed in this paper (changes in $\mu$) and
  % the result.
 %\end{itemize}
-The nEDM experiment at TRIUMF aims to determine $\delta d_n \sim 10^{-27}$ e$\cdot$cm. This level of precision requires a 1 $\mu$T magnetic field with the homogeneity of $<$ 1 nT/m and the stability of pT over the UCN free-precession time.\\
-Any slight mechanical and temperature changes of the experiment setup as well as the demagnetization of passive shielding will affect the stability of the magnetic field within the measurement volume.\\
-The passive shields for the nEDM experiments are made of highly permeable materials such as Mu-Metal which is a Ni-Fe alloy that allows measurements at low frequency magnetic fields. Ni-Fe alloys operate at room temperature and are sensitive to small temperature variations which affects the electromagnetic behaviour of the material such as the magnetic permeability, $\mu$ \cite{bib:couderchon}. For these type of alloys $\mu$ depends also on the annealing process \cite{bib:gupta}. The temperature dependence of $\mu$ has been measured from two different approaches and the overall result found to be 0.1\%/K $<\frac{1}{\mu} \frac{d\mu}{dT}<$2.3\%/K.
+The nEDM experiment at TRIUMF aims to determine $\delta d_n \sim
+10^{-27}$ e$\cdot$cm. This level of precision requires a 1 $\mu$T
+magnetic field with the homogeneity of $<$ 1 nT/m and the stability of
+pT over the UCN free-precession time.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Taraneh
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% general layout of magnetic system for an EDM experiment
+%
+
+Mechanical and temperature changes of the experiment setup and the
+demagnetization procedure of the passive magnetic shielding will
+affect the stability of the magnetic field within the measurement
+volume.
+
+%
+% demagnetization:  cite Thiel et al., recent Fierlinger paper
+%
+
+%
+% mech/temp:  cite BMSR paper
+%
+
+%
+% mech - other citations?  What have other people done to characterize
+% their MSR's?
+%
+
+
+The passive shields for the nEDM experiments are made of highly
+permeable materials such as Mu-Metal which is a Ni-Fe alloy that
+allows measurements at low frequency magnetic fields. Ni-Fe alloys
+operate at room temperature and are sensitive to small temperature
+variations which affects the electromagnetic behaviour of the material
+such as the magnetic permeability, $\mu$ \cite{bib:couderchon}. For
+these type of alloys $\mu$ depends also on the annealing process
+\cite{bib:gupta}. The temperature dependence of $\mu$ has been
+measured from two different approaches and the overall result found to
+be 0.1\%/K $<\frac{1}{\mu} \frac{d\mu}{dT}<$2.3\%/K.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Taraneh
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% more literature?
+% What about the Krupp-VDM datasheet?
+%
 
 
 \section{Sensitivity of Internally Generated Field to Permeability of the Shield $B_0(\mu)$}
@@ -126,30 +169,59 @@ The passive shields for the nEDM experiments are made of highly permeable materi
 %\item Possibly one graph of $B_0(\mu)$ with both geometries.
 %\end{itemize}
 
-The presence of a coil inside the innermost passive shield turns the shield into a return yoke and its due to the penetration of the magnetic field flux into the magnetic shield. The ratio of the magnetic field inside the coil in the presence of the magnetic shield to the coil in free space can be called the reaction factor $C$ which is $>$ 1 for spherical and cylindrical geometries \cite{bib:bidinosti}. The coupling of the coil to the innermost layer of the magnetic shield suggests that any changes in the properties of the magnetic shield gives rise to a change in the internal field. One of these properties is $\mu$ which is of significant importance because of the high permeability of the passive shields. As a result, the stability of the magnetic shields contributes to the stability of the internal field.
+The presence of a coil inside the innermost passive shield turns the
+shield into a return yoke and its due to the penetration of the
+magnetic field flux into the magnetic shield. The ratio of the
+magnetic field inside the coil in the presence of the magnetic shield
+to the coil in free space can be called the reaction factor $C$ which
+is $>$ 1 for spherical and cylindrical
+geometries~\cite{bib:bidinosti}. The coupling of the coil to the
+innermost layer of the magnetic shield suggests that any changes in
+the properties of the magnetic shield gives rise to a change in the
+internal field. One of these properties is $\mu$ which is of
+significant importance because of the high permeability of the passive
+shields. As a result, the stability of the magnetic shields
+contributes to the stability of the internal field.
 
-From Refs. \cite{bib:smythe, bib:ferraro} for a zonal surface current
-\begin{equation}
-\bold{F}=- \sum_{n=1} ^{\infty} \frac{C_n}{l} P^1 _n (u) \hat{\phi}
-\end{equation}
-bound on a sphere with radius $l$ the magnetic field at $r < l$ and $r>l$ is calculated.
-The case of an ideal spherical surface current ($n=1$) inside a spherical shell with inner radius $a$ and outer radius $b$ has been analytically calculated considering the following boundary conditions
+%From Refs. \cite{bib:smythe, bib:ferraro} for a zonal surface current
+%\begin{equation}
+%\bold{F}=- \sum_{n=1} ^{\infty} \frac{C_n}{\ell} P^1 _n (u) \hat{\phi}
+%\end{equation}
+%bound on a sphere with radius $\ell$ the magnetic field at $r < \ell$ and $r>\ell$ is calculated.
+%The case of an ideal spherical surface current ($n=1$) inside a spherical shell with inner radius $a$ and outer radius $b$ has been analytically calculated considering the following boundary conditions
 
-\begin{equation}
-\frac{1}{\mu_0} B_{\theta} (a^-) = \frac{1}{\mu} B_{\theta}(a^+)
-\end{equation}
-\begin{equation}
-\frac{1}{\mu}B_{\theta}(b^-)=\frac{1}{\mu_0}B_{\theta}(b^+).
-\end{equation}
-Fig. \ref{fig:Magnetic_Field} shows the magnetic field $B$ as a function of relative $\mu$ for $l=0.53$ m, $a=0.57$ m and a thickness of 1.5 mm for the shield which are comparable to the dimensions of the ILL nEDM experiment setup \cite{bib:baker, bib:knecht}.
+%\begin{equation}
+%\frac{1}{\mu_0} B_{\theta} (a^-) = \frac{1}{\mu} B_{\theta}(a^+)
+%\end{equation}
+%\begin{equation}
+%\frac{1}{\mu}B_{\theta}(b^-)=\frac{1}{\mu_0}B_{\theta}(b^+).
+%\end{equation}
+%Fig. \ref{fig:Magnetic_Field} shows the magnetic field $B$ as a function of relative $\mu$ for $\ell=0.53$ m, $a=0.57$ m and a thickness of 1.5 mm for the shield which are comparable to the dimensions of the ILL nEDM experiment setup \cite{bib:baker, bib:knecht}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+% Taraneh
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+% make it clear this is for a spherical geometry that is close to the
+%  ILL geometry.
+%
+Fig.~\ref{fig:Magnetic_Field} shows the central magnetic field $B$ as
+a function of relative $\mu_r=\mu/\mu_0$ for coil radius 0.53~m and
+$a=0.57$~m and a thickness of 1.5~mm for the shield which are
+comparable to the dimensions of the ILL nEDM experiment
+setup~\cite{bib:baker,bib:knecht}.
 \begin{figure}[h!]
 \begin{center}
    \includegraphics[width=0.6\textwidth]{femm_and_calcs.pdf}
-    \caption{This graph shows magnetic field in $\mu$T as a function of relative magnetic permeability $\mu$ for an ideal spherical surface current of radius $0.53$ m inside a spherical shell of inner radius 0.57 m and a thickness of 1.5 mm. (fix the caption)}
+    \caption{This graph shows magnetic field in $\mu$T as a function
+      of relative magnetic permeability $\mu$ for an ideal spherical
+      surface current of radius $0.53$ m inside a spherical shell of
+      inner radius 0.57 m and a thickness of 1.5 mm. (fix the
+      caption)}
     \label{fig:Magnetic_Field}
     \end{center}
 \end{figure} 
-For a 10\% change in relative $\mu$ from 20000 to 22000, the magnetic field changes by 0.7 nT.
+For a 10\% change in relative $\mu$ (from 20000 to 22000), the
+magnetic field changes by 0.7 nT.
 
 
 
