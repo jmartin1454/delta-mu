@@ -140,12 +140,12 @@ volume\cite{bib:thiel,bib:altarev2014,bib:altarev2015,bib:voigt}.
 
 The passive shields for the nEDM experiments are made of highly
 permeable materials such as Mu-Metal which is an Ni-Fe alloy that
-allows measurements at low frequency magnetic fields. Ni-Fe alloys
+allows measurements at low frequency magnetic fields. These alloys
 operate at room temperature and are sensitive to small temperature
 variations which affects the electromagnetic behaviour of the material
 such as the magnetic permeability, $\mu$ \cite{bib:couderchon,bib:kruppvdm}. For
 these type of alloys $\mu$ depends also on the annealing process
-\cite{bib:gupta}. The temperature dependence of $\mu$ has been
+\cite{bib:gupta,bib:bozorth}. The temperature dependence of $\mu$ has been
 measured from two different approaches and the overall result found to
 be 0.1\%/K $<\frac{1}{\mu} \frac{d\mu}{dT}<$2.3\%/K.
 
@@ -173,12 +173,11 @@ be 0.1\%/K $<\frac{1}{\mu} \frac{d\mu}{dT}<$2.3\%/K.
 %\end{itemize}
 
 The presence of a coil inside the innermost passive shield turns the
-shield into a return yoke and its due to the penetration of the
+shield into a return yoke and it is due to the penetration of the
 magnetic field flux into the magnetic shield. The ratio of the
 magnetic field inside the coil in the presence of the magnetic shield
 to the coil in free space can be called the reaction factor $C$ which
-is $>$ 1 for spherical and cylindrical
-geometries~\cite{bib:bidinosti}. The coupling of the coil to the
+is $>$ 1 for spherical and cylindrical geometries~\cite{bib:bidinosti}. The coupling of the coil to the
 innermost layer of the magnetic shield suggests that any changes in
 the properties of the magnetic shield gives rise to a change in the
 internal field. One of these properties is $\mu$ which is of
@@ -208,10 +207,9 @@ contributes to the stability of the internal field.
 %  ILL geometry.
 %
 Fig.~\ref{fig:Magnetic_Field} shows the central magnetic field $B$ as
-a function of relative $\mu_r=\mu/\mu_0$ for coil radius 0.53~m and
-$a=0.57$~m and a thickness of 1.5~mm for the shield which are
+a function of relative $\mu_r=\mu/\mu_0$ for coil radius 0.53~m inside a magnetic shield with the inner radius of $0.57$~m and a thickness of 1.5~mm which are
 comparable to the dimensions of the ILL nEDM experiment
-setup~\cite{bib:baker,bib:knecht}.
+geometry~\cite{bib:baker,bib:knecht}.
 \begin{figure}[h!]
 \begin{center}
    \includegraphics[width=0.6\textwidth]{femm_and_calcs.pdf}
@@ -219,7 +217,7 @@ setup~\cite{bib:baker,bib:knecht}.
       permeability $\mu_r$ for geometries similar to the ILL nEDM
       experiment.  The dashed line is for an ideal spherical surface
       current of radius $0.53$~m inside a spherical shell of inner
-      radius 0.57~m, thickness 1.5~mm.  XXX and XXX points are
+      radius 0.57~m, thickness 1.5~mm.  Open and close circles are
       FEMM-based simulations of spherical and cylindrical geometries
       with similar dimensions, described in the text.  The coil
       currents have been arranged to give a $1~\mu$T field at the
@@ -238,7 +236,7 @@ Finite-element analysis simulations were conducted to analyze the
 effect of discretizing the surface current, and to test the geometry
 dependence of the sensitivity of the experiment to changes in $\mu$.
 Two axially symmetric simulations were conducted using
-FEMM~\cite{bib:femm}.  In the first, the same spherical geometry was
+FEMM~\cite{bib:femm}.  In the first simulation, the same spherical geometry was
 used as for the analytical calculations.  However, the surface current
 was discretized to 50 individual circular wire, inscribed onto a
 sphere, and equally spaced vertically (i.e.~a discrete sin$\phi$
@@ -253,20 +251,25 @@ the shield are an infinite series of coils, giving an ideal infinite
 solenoid with a uniform field.  Again, fifty discrete coils were
 simulated, where the spacing from an end coil to the inner face of the
 shield end-cap being half the inter-coil spacing, as appropriate to
-generate the correct image currents in the infinite $\mu$ limit.  As
-shown in Fig.~\ref{fig:Magnetic_Field}, the slope of $B(\mu)$ is
-somewhat steeper, and similar in magnitude to the spherical case.  We
-therefore conclude that the scale of the sensitivity of a generic nEDM
-experiment to global changes in the magnetic permeability is
-$\frac{\mu}{B}\frac{dB}{d\mu}\sim 0.01$.
+generate the correct image currents in the infinite $\mu$ limit. 
+%******************************************
+% Taraneh : I commented out these parts because the conclusion is not consistent with the calculation of the reaction factor
 
-In the spherical case the reaction factor is XXX.  In the cylindrical
-case the reaction factor is XXX.  In general, it is expected that the
-larger the reaction factor, the large the sensitivity of the
-experiment to changes in the permeability of the shield.  This
-conclusion is also borne out by Fig.~\ref{fig:Magnetic_Shield}, in
-that the slope of the cylindrical simulation is steeper than that of
-the spherical simulation.
+%******************************************
+ %As shown in Fig.~\ref{fig:Magnetic_Field}, the slope of $B(\mu)$ is
+%somewhat steeper, and similar in magnitude to the spherical case.  We
+%therefore conclude that the scale of the sensitivity of a generic nEDM
+%experiment to global changes in the magnetic permeability is
+%$\frac{\mu}{B}\frac{dB}{d\mu}\sim 0.01$.
+
+In the spherical case the reaction factor is 1.39.  In the cylindrical
+case the reaction factor is 1.35.  
+%In general, it is expected that the
+%larger the reaction factor, the large the sensitivity of the
+%experiment to changes in the permeability of the shield.  This
+%conclusion is also borne out by Fig.~\ref{fig:Magnetic_Shield}, in
+%that the slope of the cylindrical simulation is steeper than that of
+%the spherical simulation.
 
 %\begin{itemize}
 %\item I think it would be easy to provide results in axisymmetric
@@ -279,7 +282,7 @@ the spherical simulation.
 
 \subsection{Self-Shielded Coils}
 
-A way decouple the internal coil from the magnetic shield is to design
+A way to decouple the internal coil from the magnetic shield is to design
 a self-shielded
 coil~\cite{bib:cpviolwithoutstrangeness,bib:someotherselfshieldedcoilpapers}.
 In self-shielded coils, the return flux is provided by a second larger
@@ -307,8 +310,8 @@ experiments~\cite{bib:cpviolwithoutstrangeness}.
 
 \subsection{Summary of $B_0(\mu)$}
 For the shield-coupled coils the magnetic field in the region interior
-to the coil is coupled to the properties of the shell which is caused
-by the penetration of the magnetic field into the shell material. In a
+to the coil is coupled to the properties of the magnetic shell which is caused
+by the penetration of the magnetic field flux into the shell material. In a
 typical nEDM experiment, the sensitivity of the internal magnetic
 field to changes in $\mu$ is $\frac{\mu}{B}\frac{dB}{d\mu}\sim 0.01$.
 The coupling can be much reduced by replacing the shield-coupled coils
@@ -317,8 +320,7 @@ with the self-shielded coils.
 \section{Measurements of $\mu(T)$}
 
 \subsection{Previous Measurements and their Relationship to nEDM Experiments}
-Couderchon et al. measured the thermal variation of $\mu$ of two
-different Ni-Fe alloys in a low field and they found
+The interest in the soft magnetic alloys and their properties have been increased in the last few decades~\cite{bib:pfeifer,bib:bozorth,bib:couderchon}. Couderchon et al. measured the thermal variation of $\mu$ of two different Ni-Fe alloys in a low field and they found
 $\frac{1}{\mu}\frac{d \mu}{dT}\simeq$1\%/K at room
 temperature~\cite{bib:couderchon}. Based on the data sheet of a
 similar material, $\mu$ would depend on temperature as
@@ -390,8 +392,11 @@ To relate this data to $\mu $(T), finite element simulations in FEMM and OPERA w
 \begin{equation}
 \frac{1}{\mu}\frac{d\mu}{dT}= -\frac{\frac{1}{B}\frac{dB}{dT}}{\frac{\mu}{B}\frac{dB}{d\mu}}.
 \end{equation}
-
-The dominant systematic uncertainties in this experiment are due to mechanical stability and field profile.  In this model it was found that 0.6\%/K $\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim 2.3\%$/K.
+\subsubsection{systematic errors}
+There were multiple sources of systematic error contributing to this measurement. All the components interior to the measurement volume should be non-magnetic and it includes the thermocouples. In this case, T type thermocouples were used.
+To eliminate the coupling of field profile and mechanical stabilities another coil was used which was coupled to the witness cylinder as shown in Fig. \ref{fig:geometry}. This also enabled us to study the dependence of the field profile to $\mu(T)$.
+The movement of the fluxgate flying lead due to the thermal expansion was also taken into account. For 1~mm change of angle the magnetic field changed by 0.00003/$^\circ$C which is very small. The thermal expansion of the mu-metal cylinder was calculated and was negligible.
+In this model it was found that 0.6\%/K $\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim 2.3\%$/K. Although for most the measurements the general trend of $B(T)$ graphs was consistent, the shape and positions of the minor loops were changing due to unidentified sources of systematic errors and these are all included in the reported error bar of this measurement. A reasonable hypothesis might be different properties of each witness cylinder related to different annealing processes.
 %\begin{itemize}
 %\item Describe experimental setup and important considerations
 %  (e.g. relationship of data to effective $\mu$)
@@ -424,6 +429,8 @@ Some measurements regarding degaussing have been done to study how removing magn
     \label{fig:data_and_simulation}
     \end{center}
 \end{figure} 
+\subsubsection{systematic errors}
+The dominant source of systematic uncertainty in this experiment arises from the properties of witness cylinders. Despite of the consistent general trend of $B(T)$, different witness cylinders tend to behave differently under similar conditions. Saturation and magnetization of the witness cylinders and in general the nonlinearity of $/mu$ had a considerable impact on the measured signal.
 
 %\begin{itemize}
 %\item Describe experimental setup and important consdierations (e.g. relationship of data to effective $%\mu$)
@@ -543,8 +550,7 @@ only a qualitative information on the actual nEDM experiment situation and to re
 
 \bibitem{bib:pendlebury} J. M. Pendlebury {\it et al.}, Phys. Rev. D 92, 092003 (2015).
 
-\bibitem{bib:pfiefer} F. PFEIFER and C. RADELOFF, Journal of Magnetism
-  and Magnetic Materials 19 (1980) 190-207
+\bibitem{bib:pfeifer} F. Pfeifer, C. Radeloff, J. Magn. Magn. Mat. 19 (1980) 190-207.
 
 \bibitem{bib:thiel} F. Thiel {\it et al.}, Rev. Sci. Instrum. 78, 035106 (2007).
 
@@ -553,6 +559,8 @@ only a qualitative information on the actual nEDM experiment situation and to re
 \bibitem{bib:altarev2015} I. Altarev {\it et al.}, J. Appl. Phys. 117, 233903 (2015).
 
 \bibitem{bib:voigt} J. Voigt {\it et al.}, Metrol. Meas. Syst. 20, 239 (2013).
+
+\bibitem{bib:bozorth} R. M. Bozorth, Ferromagnetism, IEEE Press (1993).
 \end{thebibliography}
 
 \end{document}
