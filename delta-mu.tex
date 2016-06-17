@@ -154,7 +154,6 @@ be 0.1\%/K $<\frac{1}{\mu} \frac{d\mu}{dT}<$2.3\%/K.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 
 % more literature?
-% What about the Krupp-VDM datasheet?
 %
 
 
@@ -320,8 +319,12 @@ with the self-shielded coils.
 \section{Measurements of $\mu(T)$}
 
 \subsection{Previous Measurements and their Relationship to nEDM Experiments}
-The interest in the soft magnetic alloys and their properties have been increased in the last few decades~\cite{bib:pfeifer,bib:bozorth,bib:couderchon}. Couderchon et al. measured the thermal variation of $\mu$ of two different Ni-Fe alloys in a low field and they found
-$\frac{1}{\mu}\frac{d \mu}{dT}\simeq$1\%/K at room
+The interest in the soft magnetic alloys and their properties have
+been increased in the last few
+decades~\cite{bib:pfeifer,bib:bozorth,bib:couderchon}. Couderchon et
+al. measured the thermal variation of $\mu$ of two different Ni-Fe
+alloys in a low field and they found $\frac{1}{\mu}\frac{d
+  \mu}{dT}\simeq$1\%/K at room
 temperature~\cite{bib:couderchon}. Based on the data sheet of a
 similar material, $\mu$ would depend on temperature as
 $\frac{1}{\mu}\frac{d\mu}{dT}\simeq$0.3-0.7\%/K~\cite{bib:kruppvdm}. These
@@ -329,13 +332,7 @@ are measurements of the temperature dependence of $\mu$ at frequencies
 much higher than the nEDM experiment (50~Hz compared to 0.01~Hz). In
 addition, the applied magnetic field $H$ and magnetic flux density $B$
 in these experiments are not clear while the static magnetic field for
-the nEDM experiment is about 1 $\mu$T.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Taraneh
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% refer to Pfeifer paper (I put it in the last entry in the
-% bibliography).  See if you can find more papers?
+the nEDM experiment is about 1~$\mu$T.
 
 In the present work, two different approaches to measure temperature
 dependence of $\mu$ were pursued. To elucidate the behavior of our
@@ -359,12 +356,18 @@ In the first approach, the witness cylinder was used as a magnetic
 shield.  The general idea is to measure any changes in the shielding
 factor corresponding to a temperature change of the witness cylinder.
 A solenoid producing a known homogeneous magnetic field was placed
-outside the witness cylinder as shown in Fig. \ref{fig:geometry}.  A
-fluxgate magnetometer measured the magnetic field inside the witness
-cylinder while the temperature of the shield was measured.  The
-solenoid current was varied sinusoidally at typically 0.01 to 10 Hz.
-The signal from the fluxgate was demodulated by a lock-in amplifier
-providing the in-phase and out-of-phase components of the signal.
+outside the witness cylinder as shown in Fig.~\ref{fig:geometry}.  A
+fluxgate magnetometer measured the magnetic field at the center of the
+witness cylinder while the temperature of the shield was measured.
+The solenoid current was varied sinusoidally at typically 0.01 to
+10~Hz.
+% what was the solenoid field?  how homogeneous was the field?
+% Discuss the coil design?  Typical coil current?
+The signal from the fluxgate was demodulated by a lock-in
+% describe amplifier/filter of fluxgate (SCU), settings.
+amplifier providing the in-phase and out-of-phase components of the
+signal.
+% describe the lock-in settings
 
 \begin{figure}[h!]
 \begin{center}
@@ -376,27 +379,144 @@ providing the in-phase and out-of-phase components of the signal.
       coupled to the witness cylinder.  }
     \label{fig:geometry}
     \end{center}
-\end{figure} 
+\end{figure}
+% Add dimensions to figure.  Remove box and white space around
+% diagram.
 
-An example of the typical data acquired is shown in Fig. \ref{fig:B_vs_Temp}. Graph (a) shows the temperature of the witness cylinder over four days. The temperature changes are about 3.5$^\circ$C and are caused by temperature variations of the room. The magnetic field $B$ is the sum, in quadrature, of the in-phase and out-of-phase components. For $f\lesssim 1$ Hz most of the measured fluxgate signal is in the in-phase component. The magnetic field tracks the temperature trend in an opposite way which is shown in graph (b). The slope of the graph (c) has been calculated by using a linear fit to the data. In general, we measured 0.3 \%/K $< \vert \frac{1}{B} \frac{dB}{dT} \vert <$ 2.3 \%/K with the sign being negative. The range embodies the typical nonlinearities in the data (for example, those seen in graph (c) of Fig. \ref{fig:B_vs_Temp}.), and so we adopt this as an uncertainty. Through a comprehensive set of systematic studies, the source of the nonlinearities could not be found. We suspect it is due to a combination of mechanical stability and properties of the material that cannot be embodied by a simple temperature slope. Thus the experiment tends to set a scale and sign for the possible temperature dependence, rather than a value.
+An example of the typical data acquired is shown in
+Fig. \ref{fig:B_vs_Temp}. Graph (a) shows the temperature of the
+witness cylinder over four days. The temperature changes are about
+3.5$^\circ$C and are caused by temperature variations of the room. The
+magnetic field $B$ is the sum, in quadrature, of the in-phase and
+out-of-phase components. For $f\lesssim 1$ Hz most of the measured
+fluxgate signal is in the in-phase component. The magnetic field
+tracks the temperature trend in an opposite way which is shown in
+graph (b). The slope of the graph (c) has been calculated by using a
+linear fit to the data. In general, we measured 0.3 \%/K $< \vert
+\frac{1}{B} \frac{dB}{dT} \vert <$ 2.3 \%/K with the sign being
+negative. The range also encompasses the typical deviation from a
+linear $B(T)$ in the data (for example, those seen in
+Fig.~\ref{fig:B_vs_Temp}(c).), and so we adopt this as an
+uncertainty. Through a comprehensive set of systematic studies, the
+source of the deviations from linearity could not be found. We suspect
+it is due to a combination of mechanical stability and properties of
+the material that cannot be embodied by a single temperature
+slope. Thus the experiment tends to set a scale and sign for the
+possible temperature dependence, rather than a value.
   \begin{figure}[h!]
 \begin{center}
    \includegraphics[width=0.5\textwidth]{B_vs_T.png}
-    \caption{These graphs show data of temperature dependence of the magnetic field taken over 80 hours. Graph (a) shows the temperature of the witness cylinder in $^\circ$C as a function of time. Graph (b) shows the magnetic field inside the witness cylinder at the center in $\mu$T versus time and graph (c) shows the magnetic field in $\mu$T versus temperature in $^\circ$C. The red line is the linear fit to data. At 22$^\circ$C, $\vert \frac{1}{B}\vert \vert \frac{dB}{dT}\vert\simeq -1.5 \% /K.$ }
+    \caption{These graphs show data of temperature dependence of the
+      magnetic field taken over 80 hours. Graph (a) shows the
+      temperature of the witness cylinder in $^\circ$C as a function
+      of time. Graph (b) shows the magnetic field inside the witness
+      cylinder at the center in $\mu$T versus time and graph (c) shows
+      the magnetic field in $\mu$T versus temperature in
+      $^\circ$C. The red line is the linear fit to data. At
+      22$^\circ$C, $\vert \frac{1}{B}\vert \vert
+      \frac{dB}{dT}\vert\simeq -1.5 \% /K.$ }
     \label{fig:B_vs_Temp}
      \vspace{-2.em}
     \end{center}
 \end{figure} 
 
-To relate this data to $\mu $(T), finite element simulations in FEMM and OPERA were done. From these simulations the ratio $\frac{\mu}{B} \frac{dB}{d\mu}$ was calculated in a model where $\bold{B} = \mu \bold{H}$ and $\mu $ is a constant i.e. the material is treated as being linear. The term $\frac{\mu}{B}\frac{dB}{d\mu}\neq 0$ because the witness cylinders are open ended. Combining the measurement and the simulations, the temperature dependence of effective $\mu$ (at $\mu$=20000) can be calculated by
+To relate the data to $\mu(T)$, finite element simulations in FEMM and
+OPERA were performed.  From these simulations the ratio $\frac{\mu}{B}
+\frac{dB}{d\mu}$ was calculated in a model where $\bold{B}=\mu
+\bold{H}$ and $\mu$ is a constant i.e. the material is treated as
+being linear. The term $\frac{\mu}{B}\frac{dB}{d\mu}\neq 0$ because
+the witness cylinders are open ended. Combining the measurement and
+the simulations, the temperature dependence of effective $\mu$ (at
+$\mu$=20000) can be calculated by
 \begin{equation}
 \frac{1}{\mu}\frac{d\mu}{dT}= -\frac{\frac{1}{B}\frac{dB}{dT}}{\frac{\mu}{B}\frac{dB}{d\mu}}.
 \end{equation}
-\subsubsection{systematic errors}
-There were multiple sources of systematic error contributing to this measurement. All the components interior to the measurement volume should be non-magnetic and it includes the thermocouples. In this case, T type thermocouples were used.
-To eliminate the coupling of the field profile and mechanical stabilities another coil was used which was coupled to the witness cylinder as shown in Fig. \ref{fig:geometry}. This also enabled us to study the dependence of the field profile to $\mu(T)$.
-The movement of the fluxgate flying lead due to the thermal expansion was also taken into account. For 1~mm change of angle the magnetic field changed by 0.00003/$^\circ$C. The thermal expansion of the mu-metal cylinder was calculated and was negligible. For these measurement an SRS830 lock-in amplifier has been used which has 50 ppm/$^\circ$C amplitude stability.
-In this method it was found that 0.6\%/K $\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim 2.3\%$/K. Although for most of the measurements the general trend of $B(T)$ graphs was consistent, the shape and positions of the minor loops were changing due to unidentified sources of systematic errors and these are all included in the reported error bar of this measurement. A reasonable hypothesis might be different properties of each witness cylinder related to different annealing processes.
+
+\subsubsection{Systematic Errors}
+
+% Another list
+% - amplitude measurement on oscilloscope (no lock-in).
+% - speed of temperature change? temperature homogeneity?  (not here yet)
+% - other methods of cooling and why they didn't work. (not here yet)
+% - magnetic contamination by thermocouples
+
+% The above list maybe explains other possible variations on the
+% method that you tried that all seemed to have worse systematic
+% errors.
+
+% Then, a list of systematic errors once you settled on the final
+% measurement technique...
+
+% - field profile/homogeneity
+% - mechanical stability
+% - thermal expansion
+% - temperature dependence of fluxgate and SCU (don't appear here yet)
+% - temperature dependence of lock-in
+% - temperature dependence of coil resistance (not here yet)
+% - null measurement (Cu, and why it doesn't give the whole story, not here yet)
+% - effect of endcaps? (influence of external fields, not here yet)
+% - temperature dependence of reaction factor (negligible, not here yet)
+% - degaussing (not here yet)
+% - measurements on different witness cylinders? (not here yet)
+% - vibrations of the building?
+% - ...
+%
+% Another list is on the oldelog somewhere.  Please find it.
+
+
+
+There were multiple sources of systematic error contributing to this
+measurement. All the components interior to the measurement volume
+should be non-magnetic and it includes the thermocouples. In this
+case, T type thermocouples were used.
+% T-type are less magnetic than K-type.  How much less and what's the
+% systematic error, since they are not nonmagnetic?  I would say it is
+% unknown.  Is there a way to assign a number to this?
+
+To eliminate the coupling of the field profile and mechanical
+stabilities another coil was used which was coupled to the witness
+cylinder as shown in Fig.~\ref{fig:geometry}.  This also enabled us to
+study the dependence of the field profile to $\mu(T)$.
+% What is the value of the systematic error deduced from this study?
+% I would say that the result of this study was that we got similar
+% data to Fig. 3(c).  Therefore the systematic error due to field
+% profile is smaller than the unknown systematic error of Fig. 3(c)
+% and similar figures.  also partly addresses possible changes in
+% reaction factor with temperature.
+
+The movement of the fluxgate flying lead due to the thermal expansion
+was also taken into account. For 1~mm change of angle the magnetic
+field changed by 0.00003/$^\circ$C.
+% explain better what was calculated
+
+The thermal expansion of the mu-metal cylinder was calculated and was
+negligible.
+% how negligible?  There should be a number, then we decide if
+% negligible is reasonable.
+
+For these measurement an SRS830 lock-in amplifier has been used which
+has 50 ppm/$^\circ$C amplitude stability.
+% This was tested.  Explain how.  What was the result?
+
+In this method it was found that 0.6\%/K
+$\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim 2.3\%$/K. Although for
+most of the measurements the general trend of $B(T)$ graphs was
+consistent, the shape and positions of the minor loops were changing
+due to unidentified sources of systematic errors and these are all
+included in the reported error bar of this measurement. A reasonable
+hypothesis might be different properties of each witness cylinder
+related to different annealing processes.
+
+% Two possibilities:
+
+% 1. unknown systematic error(s)
+
+% 2. complicated material properties that don't follow a straight line
+% could depend on material history themselves.
+
+% Therefore we state a range which should be indicative of the scale
+% of possible temperature dependence.
+
 %\begin{itemize}
 %\item Describe experimental setup and important considerations
 %  (e.g. relationship of data to effective $\mu$)
@@ -407,20 +527,59 @@ In this method it was found that 0.6\%/K $\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\l
 %\end{itemize}
 
 \subsection{Transformer Core Measurements}
-In second approach, the witness cylinder was used as the core of a transformer. Two coils (primary and sense coils) were wound on the witness cylinder. The primary coil generated an AC magnetic field using the internal oscillator of an SRS830 lock-in amplifier while the sense coil measured the sense voltage and was picking up the magnetic field flux produced by the primary coil. This experiment was done at 1 Hz and as small as possible $H$, to measure the slope of the minor $B-H$ loops near the origin of the $B-H$ space. In lower frequencies, noise dominated the actual signal.
-The temperature of the core was measured concurrently as the sense voltage using non-magnetic type T thermocouples.
-The measured voltage induced on the sense coil, is proportional to $\mu$.
-The measurements show a range of 0.1\%/K to 2\%/K for $\frac{1}{\mu}\frac{d\mu}{dT}$, again assuming the material to be linear.
+In second approach, the witness cylinder was used as the core of a
+transformer. Two coils (primary and sense coils) were wound on the
+witness cylinder. The primary coil generated an AC magnetic field
+using the internal oscillator of an SRS830 lock-in amplifier while the
+sense coil measured the sense voltage and was picking up the magnetic
+field flux produced by the primary coil. This experiment was done at 1
+Hz and as small as possible $H$,
+% state typical value
+to measure the slope of the minor $B-H$ loops near the origin of the
+$B-H$ space. In lower frequencies, noise dominated the actual signal.
+% why?
+The temperature of the core was measured concurrently as the sense
+voltage using non-magnetic type T thermocouples.  The measured voltage
+induced on the sense coil, is proportional to $\mu$.  The measurements
+show a range of 0.1\%/K to 2\%/K for $\frac{1}{\mu}\frac{d\mu}{dT}$,
+again assuming the material to be linear.
 
-In all transformer measurements, the sense voltage from the sense coil was demodulated by a lock-in amplifier. In Fig. \ref{fig:data_and_simulation} the in-phase component $Y$ and out-of-phase component $X$ of the sense signal as a function of applied $H$ field at 1 Hz are shown. In the ideal case where the material is linear, the $X$ component should be zero. The ratio of the $X/Y$ depends on both the applied frequency and the position on the $B-H$ region. We were interested in regions where $\vert Y \vert > \vert X \vert $ in which the material behaves as being linear and the $\vert H \vert $ values correspond to $\vert X \vert < \vert X_{max} \vert$ while still being able to get a good signal to noise ratio.
+In all transformer measurements, the sense voltage from the sense coil
+was demodulated by a lock-in amplifier. In
+Fig.~\ref{fig:data_and_simulation} the in-phase component $Y$ and
+out-of-phase component $X$ of the sense signal as a function of
+applied $H$ field at 1 Hz are shown. In the ideal case where the
+material is linear, the $X$ component should be zero. The ratio of the
+$X/Y$ depends on both the applied frequency and the position on the
+$B-H$ region. We were interested in regions where $\vert Y \vert >
+\vert X \vert $ in which the material behaves as being linear and the
+$\vert H \vert $ values correspond to $\vert X \vert < \vert X_{max}
+\vert$ while still being able to get a good signal to noise ratio.
 
 
-A concern in both measurements is that, the material is not linear. There are other effects such as hysteresis, saturation, eddy currents and skin depth which all contribute to the measured signal and so it is not possible to embody the results as a single parameter. 
-To check the sensitivity of the sense coil demodulated voltage to these effects, a theoretical model of the hysteresis (Jiles-Atherton model) was used \cite{bib:jiles}, see Fig.  \ref{fig:data_and_simulation}. 
+A concern in both measurements is that, the material is not
+linear. There are other effects such as hysteresis, saturation, eddy
+currents and skin depth which all contribute to the measured signal
+and so it is not possible to embody the results as a single parameter.
+To check the sensitivity of the sense coil demodulated voltage to
+these effects, a theoretical model of the hysteresis (Jiles-Atherton
+model) was used \cite{bib:jiles}, see Fig.
+\ref{fig:data_and_simulation}.
 
-The key parameters of Jiles-Atherton model are saturation magnetization $M_s$, mean field parameter $\alpha$ which represents interdomain coupling, $a$ with the dimensions of magnetic field which characterizes the shape of anhysteretic magnetization, bulk magnetization $M$ and the magnetic field $H$. A shown in Fig. \ref{fig:data_and_simulation}, trends in the measurements and simulations are fairly consistent.
+The key parameters of Jiles-Atherton model are saturation
+magnetization $M_s$, mean field parameter $\alpha$ which represents
+interdomain coupling, $a$ with the dimensions of magnetic field which
+characterizes the shape of anhysteretic magnetization, bulk
+magnetization $M$ and the magnetic field $H$. A shown in
+Fig. \ref{fig:data_and_simulation}, trends in the measurements and
+simulations are fairly consistent.
 
-Some measurements regarding degaussing have been done to study how removing magnetization effects the sense voltage. Degaussing (idealizing) magnetic shields means to saturate the shields by applying a very large magnetic field and then slowly ramping this applied field down to zero. In most cases, degaussing helped to increase the signal and hence $\mu$.
+Some measurements regarding degaussing have been done to study how
+removing magnetization effects the sense voltage. Degaussing
+(idealizing) magnetic shields means to saturate the shields by
+applying a very large magnetic field and then slowly ramping this
+applied field down to zero. In most cases, degaussing helped to
+increase the signal and hence $\mu$.
 
 \begin{figure}[h!]
 \begin{center}
@@ -429,8 +588,30 @@ Some measurements regarding degaussing have been done to study how removing magn
     \label{fig:data_and_simulation}
     \end{center}
 \end{figure} 
-\subsubsection{systematic errors}
-The dominant source of systematic uncertainty in this method arises from the properties of witness cylinders. Saturation and magnetization of the witness cylinders and the nonlinearity of $/mu$ in general had a considerable effect on the measured signal. Despite of the consistent general trend of $B(T)$, different witness cylinders tend to behave differently under similar conditions. The applied voltage on the primary coil was stable and was measured across a 1~$\Omega$ temperature controlled resistor. To reduce the background noise and thermally isolate the witness cylinder, some measurements were done by placing the witness cylinder inside the big passive shields. The results did not show a significant change.
+
+\subsubsection{Systematic Errors}
+
+% Need list
+% Please place here
+%
+% unique ones:
+% - motion of wires
+% - degaussing, how done, and general observations
+% - resistance of wires
+% - ...
+
+
+The dominant source of systematic uncertainty in this method arises
+from the properties of witness cylinders. Saturation and magnetization
+of the witness cylinders and the nonlinearity of $/mu$ in general had
+a considerable effect on the measured signal. Despite of the
+consistent general trend of $B(T)$, different witness cylinders tend
+to behave differently under similar conditions. The applied voltage on
+the primary coil was stable and was measured across a 1~$\Omega$
+temperature controlled resistor. To reduce the background noise and
+thermally isolate the witness cylinder, some measurements were done by
+placing the witness cylinder inside the big passive shields. The
+results did not show a significant change.
 
 %\begin{itemize}
 %\item Describe experimental setup and important consdierations (e.g. relationship of data to effective $%\mu$)
