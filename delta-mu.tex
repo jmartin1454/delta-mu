@@ -119,10 +119,7 @@ pT over the UCN free-precession time.
 The magnetic field system for the future nEDM experiment at TRIUMF comprises the components used to null environment magnetic fields and provide a stable homogeneous static magnetic field. It includes an active compensation system, a magnetically shielded room (MSR), several more layers of passive shielding, and  an internal coil system.
 The active compensation system will be used to reduce the external magnetic field at the measurement site to $\mu$T level and prevent the saturation of the passive magnetic shields.
 The passive shielding system nullifies the residual background fields to the pT level with a two-stage system including a 2-layer MSR and a smaller 3-layer shield that fits inside the room and surrounds the nEDM apparatus.
-Mechanical and temperature changes of this system and the
-demagnetization procedure of the passive magnetic shielding will
-affect the stability of the magnetic field within the measurement
-volume\cite{bib:thiel,bib:altarev2014,bib:altarev2015,bib:voigt}.
+Mechanical and temperature changes of this system and the demagnetization procedure of the passive magnetic shielding will affect the stability of the magnetic field within the measurement volume\cite{bib:thiel,bib:altarev2014,bib:altarev2015,bib:voigt}.
 
 %
 % demagnetization:  cite Thiel et al., recent Fierlinger paper
@@ -171,18 +168,7 @@ be 0.1\%/K $<\frac{1}{\mu} \frac{d\mu}{dT}<$2.3\%/K.
 %\item Possibly one graph of $B_0(\mu)$ with both geometries.
 %\end{itemize}
 
-The presence of a coil inside the innermost passive shield turns the
-shield into a return yoke and it is due to the penetration of the
-magnetic field flux into the magnetic shield. The ratio of the
-magnetic field inside the coil in the presence of the magnetic shield
-to the coil in free space can be called the reaction factor $C$ which
-is $>$ 1 for spherical and cylindrical geometries~\cite{bib:bidinosti}. The coupling of the coil to the
-innermost layer of the magnetic shield suggests that any changes in
-the properties of the magnetic shield gives rise to a change in the
-internal field. One of these properties is $\mu$ which is of
-significant importance because of the high permeability of the passive
-shields. As a result, the stability of the magnetic shields
-contributes to the stability of the internal field.
+The presence of a coil inside the innermost passive shield turns the shield into a return yoke and it is due to the penetration of the magnetic field flux into the magnetic shield. The ratio of the magnetic field inside the coil in the presence of the magnetic shield to the coil in free space can be called the reaction factor $C$ which is $>$ 1 for spherical and cylindrical geometries~\cite{bib:bidinosti}. The coupling of the coil to the innermost layer of the magnetic shield suggests that any changes in the properties of the magnetic shield gives rise to a change in the internal field. One of these properties is $\mu$ which is of significant importance because of the high permeability of the passive shields. As a result, the stability of the magnetic shields contributes to the stability of the internal field.
 
 %From Refs. \cite{bib:smythe, bib:ferraro} for a zonal surface current
 %\begin{equation}
@@ -281,8 +267,7 @@ case the reaction factor is 1.35.
 
 \subsection{Self-Shielded Coils}
 
-A way to decouple the internal coil from the magnetic shield is to design
-a self-shielded
+A way to decouple the internal coil from the magnetic shield is to design a self-shielded
 coil~\cite{bib:cpviolwithoutstrangeness,bib:someotherselfshieldedcoilpapers}.
 In self-shielded coils, the return flux is provided by a second larger
 coil, rather than through the permeable material of the magnetic
@@ -323,8 +308,7 @@ The interest in the soft magnetic alloys and their properties have
 been increased in the last few
 decades~\cite{bib:pfeifer,bib:bozorth,bib:couderchon}. Couderchon et
 al. measured the thermal variation of $\mu$ of two different Ni-Fe
-alloys in a low field and they found $\frac{1}{\mu}\frac{d
-  \mu}{dT}\simeq$1\%/K at room
+alloys in a low field and they found $\frac{1}{\mu}\frac{d\mu}{dT}\simeq$1\%/K at room
 temperature~\cite{bib:couderchon}. Based on the data sheet of a
 similar material, $\mu$ would depend on temperature as
 $\frac{1}{\mu}\frac{d\mu}{dT}\simeq$0.3-0.7\%/K~\cite{bib:kruppvdm}. These
@@ -356,27 +340,31 @@ In the first approach, the witness cylinder was used as a magnetic
 shield.  The general idea is to measure any changes in the shielding
 factor corresponding to a temperature change of the witness cylinder.
 A solenoid producing a known homogeneous magnetic field was placed
-outside the witness cylinder as shown in Fig.~\ref{fig:geometry}.  A
-fluxgate magnetometer measured the magnetic field at the center of the
-witness cylinder while the temperature of the shield was measured.
+outside the witness cylinder as shown in Fig.~\ref{fig:geometry}.
+The solenoid has 14 turns with XXX spacing between the wires. The radius and the half length of the solenoid is 17.44~cm while the radius and the half length of our most inner prototype passive shield is 18.44~cm. In this design, when the end caps of the innermost prototype passive shield are on, the this solenoid can be approximated by an infinite solenoid that produces a homogeneous magnetic field. 
+The applied magnetic field was at the order of $\mu$T.
 The solenoid current was varied sinusoidally at typically 0.01 to
-10~Hz.
+10~Hz. 
+A Bartington fluxgate magnetometer XXX (model number) measured the magnetic field at the center of the
+witness cylinder while the temperature of the shield was measured.
+
 % what was the solenoid field?  how homogeneous was the field?
 % Discuss the coil design?  Typical coil current?
-The signal from the fluxgate was demodulated by a lock-in
+To increase the resolution of the measured signal from the fluxgate, a Signal Conditioning Unit (SCU) with a low pass filter set to 10~Hz (CHECK) and a gain set to typically 50 and higher was used. The conversion factor for these fluxgates is 7~$\mu$T/V.
+The signal from the fluxgate was then demodulated by an SRS830 lock-in
 % describe amplifier/filter of fluxgate (SCU), settings.
 amplifier providing the in-phase and out-of-phase components of the
-signal.
+signal. The time constant on the lock-in was set to 3 seconds with 12~dB filter. The sensitivity settings was set by the amplitude of the measured signal.
 % describe the lock-in settings
 
 \begin{figure}[h!]
 \begin{center}
-   \includegraphics[width=0.8\textwidth]{geometry.pdf}
+   \includegraphics[width=0.8\textwidth]{geometry.png}
     \caption{This figure shows the setup of the axial shielding factor
-      measurement. The witness cylinder is placed inside a
-      solenoid. The axis of symmetry is along the $z$-axis. The windings
+      measurement. The witness cylinder with a radius of XXX and  a length of XXX is placed inside a
+      solenoid with a radius and a half length of 17.44~cm. The axis of symmetry is along the $z$-axis. The windings
       of the solenoid is shown in red. The blue coil with one turn is
-      coupled to the witness cylinder.  }
+      coupled to the witness cylinder and it has a radius of XXX.  }
     \label{fig:geometry}
     \end{center}
 \end{figure}
@@ -433,7 +421,8 @@ $\mu$=20000) can be calculated by
 \end{equation}
 
 \subsubsection{Systematic Errors}
-
+The initial design of the $\mu(T)$ measurement included tygon tubing wrapped around the witness cylinder in an spiral pattern to flow water and change the temperature of the witness cylinder. In those measurements, the amplitude of the signal was measured  from an oscilloscope and no lock-in amplifier was used. The mechanical stability issues dominated the systematic uncertainties. When water was running, the flexibility of the tubing caused the witness cylinder to move. As an alternative, the tubes were replaced by copper tubes. In this case, it was impossible to create enough contact between the tubes and the witness cylinder. In another design, a TEC was replaced with the tubing. The main issue with this design was that it did not provide enough and it was creating only local temperature changes on the witness cylinder. In addition, despite of using heat sinks, the heat created by the TEC itself made it very inefficient.
+The final design included the witness cylinder, which was placed with a holder inside the innermost prototype passive shield. The temperature variations of the witness cylinder was caused by the temperature changes in the room which was due to the on and off cycles of the building air conditioner. The bartington fluxgate was holed inside the witness cylinder at the centre by plastic holder.
 % Another list
 % - amplitude measurement on oscilloscope (no lock-in).
 % - speed of temperature change? temperature homogeneity?  (not here yet)
