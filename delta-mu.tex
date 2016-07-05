@@ -359,7 +359,7 @@ signal. The time constant on the lock-in was set to 3 seconds with 12~dB filter.
 
 \begin{figure}[h!]
 \begin{center}
-   \includegraphics[width=0.8\textwidth]{geometry.png}
+   \includegraphics[width=0.8\textwidth]{geometry.PNG}
     \caption{This figure shows the setup of the axial shielding factor
       measurement. The witness cylinder with a radius of XXX and  a length of XXX is placed inside a
       solenoid with a radius and a half length of 17.44~cm. The axis of symmetry is along the $z$-axis. The windings
@@ -422,6 +422,9 @@ $\mu$=20000) can be calculated by
 
 \subsubsection{Systematic Errors}
 %initial design stages
+
+\paragraph{Initial Design}
+
 The initial design of the $\mu(T)$ measurement included Tygon tubing wrapped around the witness cylinder in a spiral pattern to flow water and change the temperature of the witness cylinder. In those measurements, the amplitude of the signal was measured  from a Tektronix oscilloscope. The mechanical stability issues dominated the systematic uncertainties. When water was running, the flexibility of the tubing caused a movement in the witness cylinder. As an alternative, the tubes were replaced by copper tubing. In this case, the challenge was to create enough contact between the tubes and the witness cylinder which was not successful. In another design, a TEC was replaced with the tubing. The main issue with this design was that it did not provide enough cooling for the witness cylinder and also it was creating only local temperature changes on the witness cylinder. In addition, despite of using heat sinks, the heat created by the TEC itself made it very inefficient. To reduce the background noise in this measurement, all the components interior to the measurement volume should be non-magnetic. As a result, type T thermocouples were used which has copper and constantan conductors.
 
 
@@ -430,10 +433,11 @@ The initial design of the $\mu(T)$ measurement included Tygon tubing wrapped aro
 % unknown.  Is there a way to assign a number to this?
 %Taraneh: I couldn't find any number associated to this. I am not sure if the fluxgates are sensetive enough to measure it too.
 
+\paragraph{Final Design}
 
 %final design
 The final design included the witness cylinder, which was placed with a holder inside the innermost prototype passive shield. The temperature variations of the witness cylinder was due to the temperature changes in the room which was following the on and off cycles of the building air conditioner. A Bartington magnetic field sensor (fluxgate) was hold inside the witness cylinder at the centre by plastic holder. The signal from the sensor was then demodulated by an SRS830 lock-in amplifier. To convert the final measured voltage from the sensor to $\mu$T, the sum in quadratures of the in-phase and out of phase components of the lock-in amplifier was multiplied by the scaling factor on the magnetic field sensor which is 7 $\mu$T/V.  
-The mu-metal alloy has a thermal conductivity of 0.35 W/cm $^{\circ}$. Therefore, four thermocouples placed on different spots on the witness cylinder to correct for small temperature differences on each end of the witness cylinder.
+The mu-metal alloy has a thermal conductivity of 0.35 W/(cm$\cdot$K). Therefore, four thermocouples placed on different spots on the witness cylinder to correct for small temperature differences on each end of the witness cylinder.
 In these measurements, the farther side of the passive shields had the end caps while the other side was left open to give access to the interior region. Based on the magnetic field maps inside the passive shields, for 10 $\mu$T applied magnetic field, the stability of the field was to 0.1 $\mu$T level and the magnetic field was even more stable closer to the closed side of the passive shields. Therefore the witness cylinder was pushed to the side with the end caps on the passive shields. 
 
 % Another list
@@ -464,8 +468,10 @@ In these measurements, the farther side of the passive shields had the end caps 
 % - ...
 %
 % Another list is on the oldelog somewhere.  Please find it.
-
-
+% The above list is longer and inclusive of the old list.
+% See oldelog entry 141 in Magnetic Fields.
+%
+% This list of systematics is addressed now...
 
 To eliminate the coupling of the field profile and mechanical stabilities, another coil was used which was coupled to the witness cylinder as shown in Fig.~\ref{fig:geometry}.  This also enabled us to
 study the dependence of the field profile to $\mu(T)$. The result of this study did not show a significant change and data was similar to Fig. \ref{fig:B_vs_Temp} (c). Therefore, the systematic error due to the field profile is smaller than the unknown systematic errors of Fig. \ref{fig:B_vs_Temp} and similar figures.
@@ -478,21 +484,39 @@ study the dependence of the field profile to $\mu(T)$. The result of this study 
 
 
 %Temperature dependence of fluxgate and SCU
-In these measurements, a Mag-03IEL70 Bartington magnetic field sensor which has individual sensor elements and a Mag-03SCU signal conditioning unit were used.
-The magnetic field sensor is a low noise sensor with a range of $\pm$70 $\mu$T and it has a scaling temperature coefficient of 15 ppm/$^{\circ}$C.
+In these measurements, a Mag-03IEL70 Bartington magnetic field sensor
+which has individual sensor elements and a Mag-03SCU signal
+conditioning unit were used.  The magnetic field sensor is a low noise
+sensor with a range of $\pm$70 $\mu$T and it has a scaling temperature
+coefficient of 15 ppm/K.  This is insignificant compared to the
+temperature slopes typically observed.
 
 
-As another mechanical stability study, the movement of the Bartington fluxgate flying lead due to thermal expansion was estimated. If the fluxgate flying lead move about 1 mm normal to its axis of symmetry which is parallel to the axis of the witness cylinder, the magnetic field will change about 30 ppm/$^{\circ}$ over 20 $^{\circ}$ temperature changes.
-The thermal expansion of the mu-metal cylinder is at the order of 10 ppm/$^{\circ}$ \cite{kruppvdm}.
-An SRS830 lock-in amplifier has 50 ppm/$^\circ$C amplitude stability. It is documented in the operating manual \cite{bib:lockin}.
+As another mechanical stability study, the movement of the Bartington
+fluxgate flying lead due to thermal expansion was estimated. If the
+fluxgate flying lead move about 1 mm normal to its axis of symmetry
+which is parallel to the axis of the witness cylinder, the magnetic
+field will change about 30 ppm/K over 20~K temperature changes.  The
+thermal expansion of the mu-metal cylinder is at the order of 10~ppm/K
+\cite{kruppvdm}.  The SRS 830 lock-in amplifier has 50~ppm/K amplitude
+stability~\cite{bib:lockin}.  In summary, all systematic changes with
+temperature from these effects are significantly smaller than the
+measured temperature slopes.
 
 %We did this for the transformer technique
-The temperature dependence of the coil resistance was also measured by measuring the voltage across a temperature controlled
-1 $\Omega$ resistor.
+The temperature dependence of the coil resistance was also measured by
+measuring the voltage across a temperature controlled 1~$\Omega$
+resistor.
 %The results?
 
 %Taraneh: I calculated from the long summary
-The stability of the system was tested by replacing the mu-metal witness cylinder with a similar copper cylinder. For all those measurements the stability was < 0.1 \%/K. Although these type of measurements help to find an error bar on the stability of the system in general, they do not help to find the sources of the systematic uncertainty.
+The stability of the system was tested by replacing the mu-metal
+witness cylinder with a similar copper cylinder. For all those
+measurements the stability was $<0.1$\%/K. Although these type of
+measurements help to find an error bar on the stability of the system
+in general, they do not help to find the sources of the systematic
+uncertainty.
+% note caveats - the field is quite different depending on the settings.
 
 
 
@@ -573,8 +597,13 @@ Some measurements regarding degaussing have been done to study how
 removing magnetization effects the sense voltage. Degaussing
 (idealizing) magnetic shields means to saturate the shields by
 applying a very large magnetic field and then slowly ramping this
-applied field down to zero. In most cases, degaussing helped to
+applied field down to zero.
+% State how done.
+In most cases, degaussing helped to
 increase the signal and hence $\mu$.
+% But it didn't change its temperature dependence significantly.  Poor
+% degaussing could result in initial slopes that were large for a
+% while?
 
 \begin{figure}[h!]
 \begin{center}
@@ -593,6 +622,8 @@ increase the signal and hence $\mu$.
 % - motion of wires
 % - degaussing, how done, and general observations
 % - resistance of wires
+% - different numbers of turns on primary/secondary
+% - in-phase/out-of-phase components, how small should in-phase be?
 % - ...
 
 
