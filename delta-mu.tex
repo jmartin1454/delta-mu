@@ -432,7 +432,7 @@ The initial design of the $\mu(T)$ measurement included Tygon tubing wrapped aro
 
 
 %final design
-The final design included the witness cylinder, which was placed with a holder inside the innermost prototype passive shield. The temperature variations of the witness cylinder was due to the temperature changes in the room which was following the on and off cycles of the building air conditioner. The Bartington fluxgate was holed inside the witness cylinder at the centre by plastic holder. The fluxgate signal was then demodulated by a lock-in amplifier. To convert the final measured voltage from the fluxgate to $\mu$T, the sum in quadratures of the in-phase and out of phase components of the lock-in amplifier was multiplied by the conversion factor on the fluxgate which is 7 $\mu$T/V.  
+The final design included the witness cylinder, which was placed with a holder inside the innermost prototype passive shield. The temperature variations of the witness cylinder was due to the temperature changes in the room which was following the on and off cycles of the building air conditioner. A Bartington magnetic field sensor (fluxgate) was hold inside the witness cylinder at the centre by plastic holder. The signal from the sensor was then demodulated by an SRS830 lock-in amplifier. To convert the final measured voltage from the sensor to $\mu$T, the sum in quadratures of the in-phase and out of phase components of the lock-in amplifier was multiplied by the scaling factor on the magnetic field sensor which is 7 $\mu$T/V.  
 The mu-metal alloy has a thermal conductivity of 0.35 W/cm $^{\circ}$. Therefore, four thermocouples placed on different spots on the witness cylinder to correct for small temperature differences on each end of the witness cylinder.
 In these measurements, the farther side of the passive shields had the end caps while the other side was left open to give access to the interior region. Based on the magnetic field maps inside the passive shields, for 10 $\mu$T applied magnetic field, the stability of the field was to 0.1 $\mu$T level and the magnetic field was even more stable closer to the closed side of the passive shields. Therefore the witness cylinder was pushed to the side with the end caps on the passive shields. 
 
@@ -452,10 +452,10 @@ In these measurements, the farther side of the passive shields had the end caps 
 % - field profile/homogeneity (done)
 % - mechanical stability (done)
 % - thermal expansion (done)
-% - temperature dependence of fluxgate and SCU (don't appear here yet)
-% - temperature dependence of lock-in
+% - temperature dependence of fluxgate and SCU (done)
+% - temperature dependence of lock-in (done)
 % - temperature dependence of coil resistance (not here yet)
-% - null measurement (Cu, and why it doesn't give the whole story, not here yet)
+% - null measurement (Cu, and why it doesn't give the whole story, not here yet) (done)
 % - effect of endcaps? (influence of external fields, not here yet)
 % - temperature dependence of reaction factor (negligible, not here yet)
 % - degaussing (not here yet)
@@ -467,9 +467,7 @@ In these measurements, the farther side of the passive shields had the end caps 
 
 
 
-To eliminate the coupling of the field profile and mechanical
-stabilities another coil was used which was coupled to the witness
-cylinder as shown in Fig.~\ref{fig:geometry}.  This also enabled us to
+To eliminate the coupling of the field profile and mechanical stabilities, another coil was used which was coupled to the witness cylinder as shown in Fig.~\ref{fig:geometry}.  This also enabled us to
 study the dependence of the field profile to $\mu(T)$. The result of this study did not show a significant change and data was similar to Fig. \ref{fig:B_vs_Temp} (c). Therefore, the systematic error due to the field profile is smaller than the unknown systematic errors of Fig. \ref{fig:B_vs_Temp} and similar figures.
 % What is the value of the systematic error deduced from this study?
 % I would say that the result of this study was that we got similar
@@ -478,13 +476,23 @@ study the dependence of the field profile to $\mu(T)$. The result of this study 
 % and similar figures.  also partly addresses possible changes in
 % reaction factor with temperature. (done)
 
-As another mechanical stability study, the movement of the Bartington fluxgate flying lead due to thermal expansion was estimated. If the fluxgate flying lead move about 1 mm normal to the horizontal plane, which is parallel to the axis of the witness cylinder, the magnetic field will change about 30 ppm/$^{\circ}$ over 20 $^{\circ}$ temperature changes.
+
+%Temperature dependence of fluxgate and SCU
+In these measurements, a Mag-03IEL70 Bartington magnetic field sensor which has individual sensor elements and a Mag-03SCU signal conditioning unit were used.
+The magnetic field sensor is a low noise sensor with a range of $\pm$70 $\mu$T and it has a scaling temperature coefficient of 15 ppm/$^{\circ}$C.
+
+
+As another mechanical stability study, the movement of the Bartington fluxgate flying lead due to thermal expansion was estimated. If the fluxgate flying lead move about 1 mm normal to its axis of symmetry which is parallel to the axis of the witness cylinder, the magnetic field will change about 30 ppm/$^{\circ}$ over 20 $^{\circ}$ temperature changes.
 The thermal expansion of the mu-metal cylinder is at the order of 10 ppm/$^{\circ}$ \cite{kruppvdm}.
-The temperature dependence of an SRS830 lock-in amplifier is 50 ppm/$^\circ$C amplitude stability.
+An SRS830 lock-in amplifier has 50 ppm/$^\circ$C amplitude stability. It is documented in the operating manual \cite{bib:lockin}.
 
-An SRS830 lock-in amplifier has a 50 ppm/$^\circ$C amplitude stability \cite{bib:lockin}. This was also tested by measuring the voltage across a 1 $\Omega$ temperature controlled resistor. 
+%We did this for the transformer technique
+The temperature dependence of the coil resistance was also measured by measuring the voltage across a temperature controlled
+1 $\Omega$ resistor.
+%The results?
 
-
+%Taraneh: I calculated from the long summary
+The stability of the system was tested by replacing the mu-metal witness cylinder with a similar copper cylinder. For all those measurements the stability was < 0.1 \%/K. Although these type of measurements help to find an error bar on the stability of the system in general, they do not help to find the sources of the systematic uncertainty.
 
 
 
@@ -500,13 +508,7 @@ An SRS830 lock-in amplifier has a 50 ppm/$^\circ$C amplitude stability \cite{bib
 
 
 In this method it was found that 0.6\%/K
-$\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim 2.3\%$/K. Although for
-most of the measurements the general trend of $B(T)$ graphs was
-consistent, the shape and positions of the minor loops were changing
-due to unidentified sources of systematic errors and these are all
-included in the reported error bar of this measurement. A reasonable
-hypothesis might be different properties of each witness cylinder
-related to different annealing processes.
+$\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim 2.3\%$/K. Although for most of the measurements the general trend of $B(T)$ graphs was consistent, the shape and positions of the minor loops were changing due to unidentified sources of systematic errors and these are all included in the reported error bar of this measurement. A reasonable hypothesis might be different properties of each witness cylinder related to different annealing processes.
 
 
 
