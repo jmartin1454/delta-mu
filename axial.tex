@@ -41,10 +41,12 @@ cylinder was held in place by a wooden stand.
 
 A Bartington fluxgate magnetometer Mag-03IEL70 (low noise) measured the
 magnetic field at the center of the witness cylinder.
+% Taraneh: describe mounting fixture?  Explain that only one axis was
+% used.
 
 
-% while the
-%temperature of the shield was measured.
+%% while the
+%%temperature of the shield was measured.
 
 
 To increase the resolution of the measured signal from the fluxgate, a
@@ -55,8 +57,9 @@ providing the in-phase and out-of-phase components of the signal.
 (The sinusoidal output of the lock-in amplifier reference output
 itself was normally used to drive the solenoid generating the magnetic
 field.)  The time constant on the lock-in was typically set to 3
-seconds with 12~dB filter. The sensitivity settings was set by the
-amplitude of the measured signal.
+seconds with 12~dB filter.
+%The sensitivity setting of the lock-in
+%amplifier was chosen by the amplitude of the measured signal.
 % describe the lock-in settings
 
 \begin{figure}[h!]
@@ -78,11 +81,12 @@ amplitude of the measured signal.
 % diagram.
 
 
+\subsubsection{Temperature measurement and data acquisition}
+
 % To do (Taraneh and/or Jeff): where is the desciption of the
 % temperature sensors!?!?!?  General data acquisition scheme?  How was
 % the temperature even varied?  There are some serious missing pieces
 % to the description of how the experiment was done!
-
 
 % Note to Jeff: Done experiment description (for now - I expect some
 % of the above is a part of what was discovered to be missing in
@@ -94,19 +98,20 @@ amplitude of the measured signal.
 \subsubsection{Data and Interpretation}
 
 An example of the typical data acquired is shown in
-Fig.~\ref{fig:B_vs_Temp}. Graph (a) shows the temperature of the
-witness cylinder over four days. The temperature changes are about
-3.5~K and are caused by temperature variations of the room. The
-magnetic field $B$ is the sum, in quadrature, of the in-phase and
-out-of-phase components. For $f\lesssim 1$ Hz most of the measured
-fluxgate signal is in the in-phase component. The magnetic field
-tracks the temperature trend in an opposite way which is shown in
-graph (b). The slope of the graph (c) has been calculated by using a
-linear fit to the data. In general, we measured 0.3 \%/K $< \vert
-\frac{1}{B} \frac{dB}{dT} \vert <$ 2.3 \%/K with the sign being
-negative. The range also encompasses the typical deviation from a
-linear $B(T)$ in the data (for example, those seen in
-Fig.~\ref{fig:B_vs_Temp}(c).), and so we adopt this as an
+Fig.~\ref{fig:B_vs_Temp}.  Fig.~\ref{fig:B_vs_Temp}(a) shows the
+temperature of the witness cylinder over a four-day measurement.  The
+temperature changes are about 3.5~K and are caused by temperature
+variations of the laboratory.  The magnetic field $B$ is the sum, in
+quadrature, of the in-phase and out-of-phase components. 
+% Frequency of the measurement?
+For $f\lesssim 1$~Hz most of the measured fluxgate signal is in the
+in-phase component. The magnetic field tracks the temperature trend in
+an opposite way which is shown in graph (b). The slope of the graph
+(c) has been calculated by using a linear fit to the data. In general,
+we measured 0.3 \%/K $< \vert \frac{1}{B} \frac{dB}{dT} \vert <$ 2.3
+\%/K with the sign being negative. The range also encompasses the
+typical deviation from a linear $B(T)$ in the data (for example, those
+seen in Fig.~\ref{fig:B_vs_Temp}(c).), and so we adopt this as an
 uncertainty. Through a comprehensive set of systematic studies, the
 source of the deviations from linearity could not be found. We suspect
 it is due to a combination of mechanical stability and properties of
