@@ -60,9 +60,16 @@ cylinder was pushed to the side with the end caps on the passive
 shields.
 
 
-A Bartington fluxgate magnetometer Mag-03IEL70 (low noise) measured the
-magnetic field at the center of the witness cylinder. A plastic rod with 2.5~cm diameter used to hold the fluxgate flying lead. A hole with a diameter of 0.8~cm was drilled along the axis of the plastic holder to the middle. The fluxgate flying lead was then held at the center of the holder while a plastic screw prevented its movement. The plastic rod was then placed along the axis of symmetry of the witness cylinder and coupled to it by using two plastic end caps that screwed to the plastic rod.
-In all data acquisitions, only one fluxgate flying lead was used.
+A Bartington fluxgate magnetometer Mag-03IEL70 (low noise) measured
+the magnetic field at the center of the witness cylinder. A plastic
+rod with 2.5~cm diameter used to hold the fluxgate flying lead. A hole
+with a diameter of 0.8~cm was drilled along the axis of the plastic
+holder to the middle. The fluxgate flying lead was then held at the
+center of the holder while a plastic screw prevented its movement. The
+plastic rod was then placed along the axis of symmetry of the witness
+cylinder and coupled to it by using two plastic end caps that screwed
+to the plastic rod.  In all data acquisitions, only one fluxgate
+flying lead was used.
 
 
 % Taraneh: describe mounting fixture?  Explain that only one axis was
@@ -99,9 +106,29 @@ seconds with 12~dB filter.
     \end{center}
 \end{figure}
 
-% Need to explain the local coil here, alternately, or above. (done)
+As shall be described in Section~\ref{sec:axialsyst}, a concern in the
+measurement was changes in the field measured by the fluxgate that
+could arise due from motion of the system components.  This could
+generate a false slope with temperature that might incorrectly be
+interpreted as a change in the magnetic properties of the witness
+cylinder.
 
-Another coil that was used had a one loop of copper wire with a radius of $\sim$5~cm. The coil was mounted on a plastic holder with an inner radius of $\sim$2.7~cm and an outer radius of about $\sim$5~cm. This enabled the witness cylinder to fit inside the loop coil holder. Some plastic set screws fixed the loop coil holder at the center of the witness cylinder. 
+To address possible motion of the witness cylinder with respect to the
+field generation system, another coil was wound on a plastic holder
+mounted rigidly to the witness cylinder.  The coil was one loop of
+copper wire with a radius of 5~cm. The loop coil holder had inner
+radius of 2.7~cm and an outer radius of about 5~cm.  Plastic set
+screws in the holder fixed the loop coil to be coaxial with the
+witness cylinder.
+
+Systematic differences in the results from the two coils (the
+solenoidal coil, and the loop coil) were used to search for motion
+artifacts.  As well, some differences could arise due to the different
+magnetic field produced by each coil, and so such measurements could
+reveal a dependence on the profile of the applied magnetic field.  In
+the end, no conclusive difference in the results from either coil
+could be found.  This is described further in
+Section~\ref{sec:axialsyst}.
 
 
 \subsubsection{Temperature measurement and data acquisition}
@@ -167,6 +194,8 @@ To express this inherent uncertainty in the slope, we phrase our
 result as a range of slopes that were typical of data acquired over
 time periods of $\sim$ days.  In general, we measured
 0.3\%/K~$<\vert\frac{1}{B}\frac{dB}{dT}\vert<$~2.3\%/K with the sign
+% question for Taraneh: should be solenoidal coil only? or what's the
+% answer for solenoidal coils as compared to loop coil?
 being negative.  The range also encompasses the typical deviation from
 a linear $B(T)$ in the data (for example, those seen in
 Fig.~\ref{fig:B_vs_Temp}(c).).  Since the data cannot be embodied by a
@@ -183,9 +212,15 @@ for the possible temperature dependence, rather than a value.
       versus time.  (c) magnetic field versus temperature. The red
       line in (c) is a linear fit to data. At 22$^\circ$C,
       $\frac{1}{|B|}\frac{d|B|}{dT}=-1.5\%$/K.}
+% This was actually measured by the local coil!!!
+% This was actually measured by the local coil!!!
     \label{fig:B_vs_Temp}
     \end{center}
 \end{figure} 
+
+% This was actually measured by the local coil!!!
+% This was actually measured by the local coil!!!
+%
 
 
 \subsubsection{Systematic Studies\label{sec:axialsyst}}
@@ -296,16 +331,34 @@ the uncertainty from this effect into our stated uncertainty already.
 
 \paragraph{Field profile dependence and mechanical stability}
 
-% Jeff got to here:  A concern in the measurement was that 
+As mentioned earlier, a concern in the measurement was that motion of
+the witness cylinder, the solenoidal coil, and the innermost magnetic
+shield relative to one another could generate a false temperature
+slope.  Another concern was that the spatial variation of the magnetic
+field generated by the coil could somehow affect the measurement.  To
+address these concerns, a loop coil rigidly mounted to the witness
+cylinder was used to search for any differences compared to results
+measured with the solenoidal coil.
 
-To eliminate the coupling of the field profile and mechanical
-stabilities, another coil was used which was coupled to the witness
-cylinder as shown in Fig.~\ref{fig:geometry}.  This also enabled us to
-study the dependence of the field profile to $\mu(T)$. The result of
-this study did not show a significant change and data was similar to
-Fig. \ref{fig:B_vs_Temp} (c). Therefore, the systematic error due to
-the field profile is smaller than the unknown systematic errors of
-Fig. \ref{fig:B_vs_Temp} and similar figures.
+The result of this study was that it did not reduce the typical slopes
+measured, nor improve their reproducibility.  In the end, repeated
+measurements of temperature slopes using the loop coil fell in the
+range
+0.5\%/K~$<\vert\frac{1}{B}\frac{dB}{dT}\vert<$~1.5\%/K.
+% 0.5 is from Page 15 of Taraneh's summary.
+% 1.5 is from the Figure showed in the paper (page 14 of Taraneh's summary).
+Similar measurements for the solenoidal coil yielded
+0.3\%/K~$<\vert\frac{1}{B}\frac{dB}{dT}\vert<$~0.7\%/K.
+% 0.3 is from Page 30 of Taraneh's summary
+% 
+% Jeff was here.
+
+
+We conclude that whatever is causing the slopes to change is likely
+unrelated to motion of the witness cylinder relative to the magnetic
+elements in the system.
+
+
 % What is the value of the systematic error deduced from this study?
 % I would say that the result of this study was that we got similar
 % data to Fig. 3(c).  Therefore the systematic error due to field
