@@ -230,7 +230,7 @@ magnetic field changes by 0.7~nT.
 
 
 
-\subsection{Magnetostatic Simulation Results}
+\subsection{Magnetostatic Simulation Results \label{sec:femm}}
 
 Finite-element analysis simulations were conducted to analyze the
 effect of discretizing the surface current, and to test the geometry
@@ -280,6 +280,7 @@ statement.
 %\end{itemize}
 
 \subsubsection{Field within the passive flux return for EDM experiments}
+The total magnetic flux produced by the coil is conserved. It means, the total number of the magnetic field lines that come out of the coil will enter the shield material. Therefore the magnetic field internal to the material can be estimated. For a cylindrical geometry similar to what described in Sec. \ref{sec:femm}, the $B$ field is 170 $\mu$T. At $\mu$=20000, the $H$ field would be 0.007~A/m.
 
 % Taraneh to do: state B, H in the material arising from these
 % simulations.  (It can be calculated in FEMM very easily, and will
@@ -328,6 +329,8 @@ typical nEDM experiment, the sensitivity of the internal magnetic
 field to changes in $\mu$ is $\frac{\mu}{B}\frac{dB}{d\mu}\sim 0.01$.
 The coupling can be much reduced by replacing the shield-coupled coils
 with the self-shielded coils.
+Neutron EDM experiments are DC measurements with frequencies smaller than 0.01 Hz. The applied static magnetic field   is typically 1~$\mu$T. This produces a $B$ field of 170~$\mu$T and an $H$ field of 0.007~A/m internal to the shield material for dimensions described in Sec. \ref{sec:femm}.
+%Taraneh asking: Is it good enough?
 
 % Taraneh to do: Summarize B,H,f relevant for EDM experiments as well.
 
@@ -345,12 +348,13 @@ temperature~\cite{bib:couderchon}. Based on the data sheet of a
 similar material, $\mu$ would depend on temperature as
 $\frac{1}{\mu}\frac{d\mu}{dT}\simeq$0.3-0.7\%/K~\cite{bib:kruppvdm}. These
 are measurements of the temperature dependence of $\mu$ at frequencies
-much higher than the nEDM experiment (50~Hz compared to 0.01~Hz). In
-addition, the applied magnetic field $H$ and magnetic flux density $B$
-in these experiments are not clear while the static magnetic field for
+much higher than the nEDM experiment (50~Hz compared to 0.01~Hz). 
+The applied $B$ field in these measurements was at the order of $\mu$T. For the first technique the internal $B$ field was at the order of 100~$\mu$T and the internal $H$ field at $\mu$=20000 was a few mA/m. In the second technique, the internal $B$ field was at the order of $10^{-3}$T while the $H$ field was at the order of $0.1$~$\mu$T. In those measurements, the applied frequency was 1~Hz.
+However, for the nEDM measurement, the internal $B$ field is at the order of $\mu$T and the internal $H$ field is very small and at the order of $10^{-5}$ A/m while the applied frequency is less than 0.01~Hz.
+
 % Taraneh to do: actually, both are very clear.  Find out what they
 % are and relate them here.
-the nEDM experiment is about 1~$\mu$T.
+
 
 The goal of our experiments was to develop techniques to characterize
 the material properties of our own magnetic shields, as they relate to
@@ -360,7 +364,11 @@ prototype passive shield at the University of Winnipeg is a four-layer
 mu-metal shield. The inner radius of the innermost shield is 18.44 cm
 which is equal to its half length. The radius of the next shield is
 larger by a factor of 1.27.
+%shielding factor measurements
+The three inner passive shields are assembled and the shielding factor of each individual shield as well as the assembled geometry have been measured. The measurements were done at 0.1,1,10,30 and 60~Hz and at 3.5~$\mu$T and 35~$\mu$T axial and transverse applied field. 
 
+% Taraneh says: I don't know which values are relevant here. Axial or transverse field? 35 or 3.5~\mu T????
+% The results are in the first few pages of my summary.
 
 % To do (Taraneh and/or Russ): describe prototype magnetic shielding
 % system parameters.  It would be worthwhile to describe briefly the
