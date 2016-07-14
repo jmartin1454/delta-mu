@@ -61,23 +61,23 @@ shields.
 
 
 A Bartington fluxgate magnetometer Mag-03IEL70 (low noise) measured
-the magnetic field at the center of the witness cylinder. A plastic
-rod with 2.5~cm diameter used to hold the fluxgate flying lead. A hole
-with a diameter of 0.8~cm was drilled along the axis of the plastic
-holder to the middle. The fluxgate flying lead was then held at the
-center of the holder while a plastic screw prevented its movement. The
-plastic rod was then placed along the axis of symmetry of the witness
-cylinder and coupled to it by using two plastic end caps that screwed
-to the plastic rod.  In all data acquisitions, only one fluxgate
-flying lead was used.
-
-
-% Taraneh: describe mounting fixture?  Explain that only one axis was
-% used.
-% plastic holder... (done)
-
-%% while the
-%%temperature of the shield was measured.
+the magnetic field at the center of the witness cylinder.  The
+fluxgate is a ``flying lead'' model, meaning that each axis is
+available on the end of a short electrical lead, separable from the
+other axes.  One ``flying lead'' was placed in the center of the
+witness cylinder, the axis of the fluxgate being aligned with that of
+the witness cylinder.  The fluxgate was held in place rigidly by a
+plastic mounting fixture, which was itself mounted to the witness
+cylinder.
+% leftovers after Jeff's editing, which might be useful...
+% A plastic rod with 2.5~cm diameter used to hold the fluxgate
+% flying lead. A hole with a diameter of 0.8~cm was drilled along the
+% axis of the plastic rod to reach the middle.  One ``flying lead'' (or
+% axis) was held at the hollow center of the holder by a plastic set
+% screw. The plastic rod was then placed along the axis of symmetry of
+% the witness cylinder and coupled to it by using two plastic end caps
+% that threaded onto the plastic rod.  In all data acquisitions, only
+% one fluxgate flying lead was used.
 
 
 To increase the resolution of the measured signal from the fluxgate, a
@@ -108,10 +108,10 @@ seconds with 12~dB filter.
 
 As shall be described in Section~\ref{sec:axialsyst}, a concern in the
 measurement was changes in the field measured by the fluxgate that
-could arise due from motion of the system components.  This could
-generate a false slope with temperature that might incorrectly be
-interpreted as a change in the magnetic properties of the witness
-cylinder.
+could arise due from motion of the system components, or other
+temperature dependences.  This could generate a false slope with
+temperature that might incorrectly be interpreted as a change in the
+magnetic properties of the witness cylinder.
 
 To address possible motion of the witness cylinder with respect to the
 field generation system, another coil was wound on a plastic holder
@@ -195,7 +195,9 @@ result as a range of slopes that were typical of data acquired over
 time periods of $\sim$ days.  In general, we measured
 0.3\%/K~$<\vert\frac{1}{B}\frac{dB}{dT}\vert<$~2.3\%/K with the sign
 % question for Taraneh: should be solenoidal coil only? or what's the
-% answer for solenoidal coils as compared to loop coil?
+% answer for solenoidal coils as compared to loop coil?  answer from
+% Jeff and Taraneh, so far: this needs to be fixed.  We should put
+% both measurements up here and explain the difference.
 being negative.  The range also encompasses the typical deviation from
 a linear $B(T)$ in the data (for example, those seen in
 Fig.~\ref{fig:B_vs_Temp}(c).).  Since the data cannot be embodied by a
@@ -250,11 +252,16 @@ the end, using the ambient temperature changes in the room gave the
 most reproducible results.  These followed a relatively stable diurnal
 cycle with the function of the building's air conditioning system.
 
-The changes in the $B$ vs.~temperature slope always correlate with
-sharper changes in the temperature with time.  The effect is most
-pronounced when a temperature that is decreasing with time suddenly
-changes to increasing, or vice-versa.  However, we have incorporated
-the uncertainty from this effect into our stated uncertainty already.
+Although for most of the measurements the general trend of $B(T)$
+graphs was consistent, the shape and positions of the nonlinear parts
+of $B-T$ graphs were changing.  The changes in the $B$ vs.~temperature
+slope always correlate with sharper changes in the temperature with
+time.  The effect is most pronounced when a temperature that is
+decreasing with time suddenly changes to increasing, or vice-versa.
+However, we have incorporated the uncertainty from this effect into
+our stated range of values.
+
+
 
 
 %\paragraph{Final Design} 
@@ -353,6 +360,10 @@ Similar measurements for the solenoidal coil yielded
 % 0.3 is from Page 30 of Taraneh's summary
 % 0.75 is from Page 34 of Taraneh's logbook, Volume 1, Aug 2014-Dec 2015.
 
+% Jeff notes: these results should be stated as the primary results,
+% right after/near the figure of the data.
+
+
 In general, the slopes measured with the loop coil are larger than for
 the solenoidal coil.  A partial explanation of this difference is
 offered by the field profile generated by each coil, and its
@@ -391,12 +402,95 @@ motion artifacts.
 %which is parallel to the axis of the witness cylinder, the magnetic
 %field will change about 30~ppm/K over 20~K temperature changes.
 
+% %vibration
+% Since the experiment site is located at the heart of downtown it is
+% also possible that vibrations of the building affected the experiment
+%setup and its machanical stability.
+% Jeff says:  I can't think of much to say here.
+
+
+%effect of the end caps
+
+% Taraneh's version:
+
+% In this experiment, one side of our prototype passive shield was
+% closed with the end caps while the other side left open for easier
+% access to the interior region. The result of the magnetic field map
+% inside the prototype shield when the solenoid was turned on showed
+% that closer to the far side of the shield, where the shield is closed,
+% the magnetic field is more uniform. For a 10$\mu$T applied magnetic
+% field the maximum change of the magnetic field along the axis of the
+% passive shield was the order of 0.1~$\mu$T.  Therefore the witness
+% cylinder was pushed to the far side of the prototype shield to reduce
+% the non uniformity of the magnetic field.
+% This is from oldElog entry 146: field map by Andrew Harrison
+
+% Jeff's version (slightly shorter)
+
+% As stated in Section~\ref{sec:axialapparatus}, the measurements were
+% conducted within the magnetically shielded volume inside our
+% prototype magnetic shields.  Most of the measurements were conducted
+% with the endcaps of this shielding system removed on one side.  No
+% systematic effect was found to arise from the removal of the
+% endcaps.  The only effect was that the field produced by the
+% solenoid was somewhat less homogeneous, which could easily be
+% accounted for by moving the witness cylinder slightly closer to the
+% side which has its endcaps on.  This was verified by measuring a
+% magnetic field map of the region.
+
+% Jeff's final version
+
+% say nothing - this is an unimportant detail.  It had no effect on
+% the measurement.  As far as we know, we would get the same value
+% endcaps on or off.  I think it is more confusing to raise some
+% possible issue about it and then say it wasn't a problem.
+
+%temperature dependence of reaction factor
+As the witness cylinder was put through its diurnal heating and
+cooling cycles, so too was the magnetic shield within which the
+apparatus was placed.  Since this magnetic shield is used as a flux
+return, especially for the solenoidal coil, a concern could be that
+the measurement confounds temperature dependence of the flux return
+with the temperature dependence of the shielding factor of the
+solenoid.  We want to clarify that this cannot be the case: any change
+in $\mu$ of the flux return will have an exceedingly small effect on
+the field produced by the solenoid.  This is perhaps best demonstrated
+by Fig. \ref{fig:Magnetic_Field}, where the reaction factor in a
+similar cylindrical geometry is graphed as a function of $\mu$.  Based
+on our measurements, this limits systematic errors from such an effect
+to be $<200$~ppm/K.
+
+% This number above comes from:
+
+% mu/B dB/dmu = 0.01
+
+% times
+
+% 1/mu dmu/dT < 2%/K
+
+%degaussing
+The magnetization of the witness cylinder changes the magnetic
+permeability of the material and so the shielding factor changes.  Our
+studies of degaussing the witness cylinder were consistent with
+studies that we will report in
+Section~\ref{sec:transformerdegaussing}.  Essentially, if the shields
+were degaussed, or if they were left for long periods of time in the
+small AC field generated by the solenoid, the results for temperature
+dependences were similar.  Improper degaussing procedures were found
+to induce long-term drifts in the measurement, uncorrelated with
+temperature.  We do not include such data when quoting our
+measurements of temperature slopes.  We do think that part of the
+range of slopes that we measured is due to the magnetic properties of
+the material, and that it is possible that some of this range is yet
+due to insufficient degaussing on our part.  This is something we plan
+to improve in planned future experiments on DC field stability.
 
 
 
 \paragraph{Temperature slopes of various components of the apparatus}
 
-The temperature coefficients o
+The temperature coefficients of various components that could affect
+the measurement were also considered.
 
 The Mag-03IEL70 Bartington magnetic field sensor has a scaling
 temperature coefficient of 15~ppm/K~\cite{bib:bartman}.  There is also
@@ -406,9 +500,6 @@ demodulation technique used.
 
 The SRS830 lock-in amplifier has 50~ppm/K amplitude
 stability~\cite{bib:lockin}.
-% Is this stability of sinusoidal drive?
-% What about stability of measured signal?
-%
 % We did this for the transformer technique.
 % Yes, but I think it is valid for this measurement as well, so let's put
 % it here.
@@ -447,65 +538,24 @@ cylinder will not make the same change.  Nonetheless it is an
 encouraging result that the system does not measure a strong
 temperature dependence of the magnetic field when no mu-metal witness
 cylinder is present.  The magnitude of the magnetic field measured at
-the fluxgate sensor was larger
-% during these measurement - Jeff got to here.
-, because of the lack of magnetic
-shielding from the copper.  So, in some tests the magnetic field
-generated by the reference channel of the lock-in amplifier was
-reduced to make.
+the fluxgate sensor was larger during these measurements because of
+the lack of magnetic shielding from the copper.  So, in some tests the
+magnetic field generated by the reference channel of the lock-in
+amplifier was reduced to search for any problems arising from smaller
+fluxgate signals.  No difference was seen within the upper bound
+stated above.
 
-Although these
-type of measurements help to find an error bar on the stability of the
-system in general, they do not help to find the sources of the
-systematic uncertainty.
+\paragraph{Different Witness Cylinders}
 
+The manufacturer of our prototype magnetic shields provided us with
+three witness cylinders.  All three were used in these measurements.
+Different cylinders possessed systematically different temperature
+slopes, although always within the ranges quoted above.  These changes
+are believed to arise from the manufacturing and annealing process.
+It is known that the take-out temperature in the annealing process has
+a strong effect on the temperature slopes measured at
+50~Hz~\cite{bib:kruppdatasheet}.
 
-%effect of the end caps
-In this experiment, one side of our prototype passive shield was
-closed with the end caps while the other side left open for easier
-access to the interior region. The result of the magnetic field map
-inside the prototype shield when the solenoid was turned on showed
-that closer to the far side of the shield, where the shield is closed,
-the magnetic field is more uniform. For a 10$\mu$T applied magnetic
-field the maximum change of the magnetic field along the axis of the
-passive shield was the order of 0.1~$\mu$T.  Therefore the witness
-cylinder was pushed to the far side of the prototype shield to reduce
-the non uniformity of the magnetic field.
-%This is from oldElog entry 146: field map by Andrew Harrison
-
-%temperature dependence of reaction factor
-The changes in magnetic permeability has an effect on the measured
-magnetic field inside the witness cylinder. Since the reaction factor
-for this geometry is not strongly correlated to $/mu$ in
-Fig. \ref{fig:Magnetic_Field}, the changes of the magnetic field due
-to magnetic permeability changes in negligible. For XXX change in
-$\mu$ the magnetic field internal to the witness cylinder changes by
-XXX.
-
-%degaussing
-The magnetization of the prototype passive shield changes the magnetic
-permeability of the material and so the reaction factor changes. The
-degaussing procedure has a considerable effect on the initial magnetic
-field.
-%what next?
-
-%different witness cylinders
-Three witness cylinders were tested for these measurements. In most
-cases, despite keeping the conditions the same, the results were
-significantly different for each witness cylinder. The systematic
-studies could not address these sources of error. As a result these
-changes is believed to be driven by the intrinsic properties of the
-witness cylinders.  In general, annealing process and take-out
-temperatures have a strong effect on the properties of the shields and
-so their $\mu$ value.
-%vibration
-Since the experiment site is located at the heart of downtown it is
-also possible that vibrations of the building affected the experiment
-setup and its machanical stability.
-
-Although for most of the measurements the general trend of $B(T)$
-graphs was consistent, the shape and positions of the nonlinear parts
-of $B-T$ graphs were changing.
 
 
 % Two possibilities:
@@ -526,8 +576,8 @@ cylinder as a function of $\mu$ must be known.  Finite element
 simulations in FEMM and OPERA were performed to determine this factor.
 
 Combining the measurement and the simulations, the temperature
-dependence of the effective $\mu$ (at $\mu$=20000) can be calculated
-by
+dependence of the effective $\mu$ (at $\mu=20 000$, which is consistent
+with our measurements) can be calculated by
 \begin{equation}
 \frac{1}{\mu}\frac{d\mu}{dT}=-\frac{\frac{1}{B}\frac{dB}{dT}}{\frac{\mu}{B}\frac{dB}{d\mu}}.
 \end{equation}
@@ -550,16 +600,22 @@ the lower value being given by FEMM and the upper value being given by
 a 3D OPERA simulation, for identical geometries.  This is somewhat
 lower than the value suggested by
 Paperno~\cite{bib:paperno-open-ended} in his fits to simulations
-performed in OPERA, which we estimate to be 0.6.  For the loop coil,
-we determine $\frac{\mu}{B}\frac{dB}{d\mu}=0.56-0.65$, the range being
-given again by a difference between FEMM and OPERA.
+performed in OPERA, which we estimate to be 0.6.  We adopt our value
+since it is difficult to determine precisely from
+Ref.~\cite{bib:paperno-open-ended}.  For the loop coil, we determine
+$\frac{\mu}{B}\frac{dB}{d\mu}=0.56-0.65$, the range being given again
+by a difference between FEMM and OPERA.
+
+\begin{table}
+\caption{A table to be filled in by Taraneh, and described in this
+  caption and the surrounding text.}
+\label{tab:axialsummary}
+\end{table}
 
 
 
-
-
-Taking all these systematics into account, in this method it was found that 0.6\%/K
-$\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim 2.3\%$/K. 
+Taking all these systematics into account, in this method it was found
+that 0.6\%/K~$\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim 2.7\%$/K.
 
 
 
