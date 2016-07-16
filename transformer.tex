@@ -1,13 +1,54 @@
 
 \subsection{Transformer Core Measurements}
-In second approach, the witness cylinder was used as the core of a
-transformer. Two coils (primary and sense coils) were wound on the
-witness cylinder using copper wire. For this technique, three witness cylinder used and each had different number of winding on primary and secondary coil. This enabled more saturation of the material. The primary coil generated an AC magnetic field
-using the internal oscillator of a SRS830 lock-in amplifier while the
-sense coil measured the sense voltage and picked up the magnetic
-field flux produced by the primary coil. This experiment was done at 1
-Hz and as small as possible $H$, the order of 0.1~A/m,
-% state typical value
+
+As an alternate method of measuring changes in $\mu$, a method similar
+to the standard method of magnetic materials characterization via
+magnetic induction was used.  In this measurement technique, the
+witness cylinder was used as the core of a transformer.  Two coils
+(primary and secondary) were wound on the witness cylinder using
+multistranded 20-gauge copper wire.  The windings were made as tight
+as possible, but not so tight as to potentially stress the material.
+The windings were not potted in place.
+
+Each of the three witness cylinders was tested.  Results were compared
+using different numbers of turns on both the primary and secondary
+coils (from six to 48 on the primary, and from 7 to 24 on the
+secondary).
+% Table 9 on page 65 of Taraneh's report shows the different windings.
+% Can guess which core is which.
+
+%In the end, a transformer with 48 windings on the primary and 21
+%windings on the secondary was used.
+
+%This enabled more saturation of the material.
+
+The primary coil generated an AC magnetic field $H(t)$, while the
+secondary coil was used to measure the EMF induced by the time-varying
+magnetic flux and hence being proportional to $dB(t)/dt$.  To a good
+approximation
+\begin{equation}
+H(t)=frac{N_pI(t)}{2\pi R}
+\end{equation}
+where $N_p$ is the number of turns in the primary, $I(t)$ is the
+current in the primary, and $R$ is the radius of the witness cylinder,
+and
+\begin{equation}
+\frac{dB(t)}{dt}=\frac{V(t)}{t\ell}
+\end{equation}
+where $V(t)$ is the voltage generated in the secondary into a high
+impedance, and $t$ and $\ell$ are the thickness and length of the
+witness cylinder.
+
+Under the assumptions that the drive current $I(t)$ is sinusoidal, and
+that $B(t)=\mu H(t)$ with $\mu$ being a constant, 
+
+% Jeff got to here...
+
+using the internal
+oscillator of a SRS830 lock-in amplifier while the sense coil measured
+the sense voltage and picked up the magnetic field flux produced by
+the primary coil. This experiment was done at 1 Hz and as small as
+possible $H$, typically 0.1~A/m in amplitude,
 to measure the slope of the minor $B-H$ loops near the origin of the
 $B-H$ space. In lower frequencies, noise dominated the actual signal.
 % why?
