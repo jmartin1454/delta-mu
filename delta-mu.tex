@@ -433,15 +433,81 @@ We now discuss the details and results of each technique.
 \input{transformer.tex}
 
 \subsection{Summary of $\mu(T)$}
-%Insert Summary Here.
-The overall error bar in $\mu$ from both measurement techniques is 0.1\%/K $\leq \frac{1}{\mu}\frac{d\mu}{dT} \leq$ 2.3 \%/K and it is consistent with previous data.
-Comparing to the static nEDM experiment with $f < 0.01$ Hz, these measurements are mostly done at frequencies close to 1 Hz. Hence, the effective $\mu$ extracted from these type of experiments give
-only a qualitative information on the actual nEDM experiment situation and to reach higher accuracy the nEDM experiment has to be built. 
+
+Each measurement (axial shielding factor measurement, or transformer
+core measurement) is of the temperature dependence of an effective
+$\mu$, done in an AC mode at a particular driving amplitude of $H(t)$.
+
+In the axial shielding factor case, we found
+0.6\%/K~$\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim 2.7\%$/K, with
+the measurement being conducted with a typical $H$-amplitude of XXX
+and at a frequency of 1~Hz.  In the transformer core case, we found
+0.1\%/K~$\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim 2.1\%$/K, with
+the measurement being conducted with a typical $H$-amplitude of
+0.1~A/m and at a frequency of 1~Hz.
+
+Our desire is to provide information relevant to EDM experiments where
+the coil would couple to innermost magnetic shield in the experiment.
+We think it would be reasonable to assume that for the parameters
+relevant to EDM experiments ($H$ of typically XXX and frequencies
+$<0.01$~Hz), the temperature dependence of the effective permeability
+could be of similar scale to these measurements
+i.e.~$\frac{1}{\mu}\frac{d\mu}{dT}$ ranging from 0.1 to 2.7\%/K.
+
 \section{Summary and Conclusions}
-The magnetic field internal to the passive shields as a function of $\mu$ for spherical geometry with parameters close to the ILL nEDM experiment has been analytically calculated and compared to axis-symmetric simulations with similar parameters for both spherical and cylindrical geometries. For spherical geometry $\frac{dB_0}{d\mu}\sim 4 \times 10^{-13}$ and it can be much reduced for the shield coupled coils.
-The temperature dependence of $\mu$ has been measured by two different techniques using open-ended mu-metal cylinders with 6 inches in length. The overall result gives 0.1\%/K$\frac{1}{\mu}\frac{d\mu}{dT}$2.3 \%/K. Because of the different values in $f$, $B$ and $H$ fields as opposed to the nEDM experiments, these  measurements help to set the specifications for the actual nEDM setup. The nonlinearities in the witness cylinder material such as hysteresis dominated the systematic uncertainties at both measurements and so it was difficult to achieve consistent sub-percent determinations although the sign and the magnitude of the problem was in agreement.
-To achieve the required 1~pT stability in the internal field, the temperature should be controlled to 0.1 K level.
-The next step is to measure $\mu(T)$ for the nEDM setup with different coil geometries to achieve the best stability.
+
+
+Neutron EDM experiments are typically designed with the DC coil being
+magnetically coupled to the innermost magnetic shield.  If the
+magnetic permeability of the shield changes, this results in a change
+in the field in the measurement region by an amount
+$\frac{\mu}{B}\frac{dB}{d\mu}\sim 0.01$.  Temperature changes could
+result in such changes, and it is those temperature changes we sought
+to constrain by measurement.
+
+The temperature dependence of $\mu$ has been measured by two different
+techniques using open-ended mu-metal cylinders with 6 inches in
+length.  We summarize the overall result as
+0.1\%/K$<\frac{1}{\mu}\frac{d\mu}{dT}<$2.7\%/K, where the range is
+driven in part by material properties of the different mu-metal
+cylinders, and in part by fluctuations measured in the temperature
+slopes in each measurement.
+
+We provide this range with the following caveats:
+\begin{itemize}
+\item The measurement techniques rely on considerably larger
+  frequencies and $H$-fields than those relevant to typical nEDM
+  experiments.  For frequency, both techniques typically used a 1~Hz
+  AC field, whereas for nEDM experiments the field is DC and stable at
+  the 0.01~Hz level.  Furthermore, in one measurement technique the
+  amplitude of $H$ was $\sim XXX$ and in the other was $\sim 0.1$~A/m,
+  while for nEDM experiments $H\sim XXX$ and is DC.
+\item Both measurement techniques extract an effective $\mu$ that
+  describes the slope of minor loops in B-H space.  A more correct
+  treatment would include a more comprehensive accounting of
+  hysteresis in the material, which is beyond the scope of this work.
+\end{itemize}
+
+
+Assuming our measurement of
+0.1\%/K$<\frac{1}{\mu}\frac{d\mu}{dT}<$2.7\%/K and the generic EDM
+experiment sensitivity of $\frac{\mu}{B}\frac{dB}{d\mu}\sim 0.01$
+results in a temperature dependence of the magnetic field in a typical
+EDM experiment of $\frac{dB}{dT}=10-270$~pT/K.  To achieve a goal
+$\sim pT$ stability in the internal field for EDM experiments, the
+temperature of the innermost magnetic shield in the EDM experiment
+should then be controlled to 0.1-0.004~K level.  This could be a
+serious problem for future nEDM experiments.  The dependence could be
+reduced significantly by using self-shielded coils in the EDM
+experiment, which would reduce the coupling to the innermost magnetic
+shield.
+
+
+
+
+
+%The next step is to measure $\mu(T)$ for the nEDM setup with different
+%coil geometries to achieve the best stability.
 
 
 
