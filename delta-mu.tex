@@ -104,66 +104,95 @@ magnetometers~\cite{bib:brys,bib:afach,bib:fierlingerroom,bib:sturmthesis,bib:pa
 %\item State the problem addressed in this paper (changes in $\mu$) and
  % the result.
 %\end{itemize}
-The nEDM experiment at TRIUMF aims to determine $\delta d_n \sim
-10^{-27}$ e$\cdot$cm. This level of precision requires a 1 $\mu$T
-magnetic field with the homogeneity of $<$ 1 nT/m and the stability of
-pT over the UCN free-precession time.
+The nEDM experiment at TRIUMF aims to determine $\delta d_n\sim
+10^{-27}~e\cdot$cm. A DC magnetic field of typically $B_0=1~\mu$T is
+used to provide the quantization axis for the UCN, normally directed
+vertically in the apparatus.  The experimental cycle involves a Ramsey
+sequence, where the UCN spins are oriented into the horizontal plane
+by applying an oscillating horizontal $B_1$ field, followed by a free
+precession period, then an additional application of a second $B_1$
+pulse coherent in phase with the first.  The UCN are then drained from
+the measurement cell and the number of UCN in both the spin-up state
+and spin-down state are counted.  By varying the $B_1$ oscillation
+frequency, the central resonant frequency may be deduce with high
+precision.  Normally four fills of the measurement cell, with four
+different $B_1$ frequencies are used to extract the resonant
+frequency.  In order to extract $d_n$, the resonant frequency
+measurement is conducted with an electric field $E$ oriented parallel
+to the main $B_0$ field, and then again with $E$ oriented antiparallel
+to the main $B_0$ field.  A problem in these experiments is if the
+magnetic field drifts over the course of the measurement period, it
+worsens the statistical precision with which $d_n$ can be determined.
+For a $\delta d_n\sim 10^{-27}~e\cdot$cm measurement, the average
+field over one fill of the measurement cell must be known to the 10~fT
+level or better (which occurs typically on a timescale of 100~s), and
+the field is seldom stable to this level.  For this reason,
+experiments use a comagnetometer and/or surrounding atomic
+magnetometers to correct the magnetic field to this
+level~\cite{something,somethingelse,somethingelse2}.  In order for
+this correction technique succeed, gradient fields must be controlled
+or corrected for at the $<1$~nT/m level.  Furthermore the stability of
+the $B_0$ field must be controlled as well as possible, normally at
+the 1-10~pT level over the UCN free-precession time.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Taraneh
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% general layout of magnetic system for an EDM experiment
-%
+The $B_0$ magnetic field generation system for a typical nEDM
+experiment comprises a coil placed within a passively magnetically
+shielded volume.  The passive magnetic shield is generally composed of
+a multi-layer shield formed from thin shells of high-permeability
+metal (mu-metal).  The outer layers of this shield are normally
+cylindrical \cite{bib:} or forming the walls of a magnetically
+shielded room \cite{bib:}.  The innermost magnetic shield is normally
+a specially shaped shield, where the design of the coil in relation to
+shield is carefully taken into account to achieve adequate
+homogeneity.
 
-The magnetic field system for the future nEDM experiment at TRIUMF comprises the components used to null environment magnetic fields and provide a stable homogeneous static magnetic field. It includes an active compensation system, a magnetically shielded room (MSR), several more layers of passive shielding, and  an internal coil system.
-The active compensation system will be used to reduce the external magnetic field at the measurement site to $\mu$T level and prevent the saturation of the passive magnetic shields.
-The passive shielding system nullifies the residual background fields to the pT level with a two-stage system including a 2-layer MSR and a smaller 3-layer shield that fits inside the room and surrounds the nEDM apparatus.
-Mechanical and temperature changes of this system and the demagnetization procedure of the passive magnetic shielding will affect the stability of the magnetic field within the measurement volume\cite{bib:thiel,bib:altarev2014,bib:altarev2015,bib:voigt}.
+%The active compensation system will be used to reduce the external
+%magnetic field at the measurement site to $\mu$T level and prevent the
+%saturation of the passive magnetic shields.
 
-%
-% demagnetization:  cite Thiel et al., recent Fierlinger paper
-%
+Mechanical and temperature changes of the passive magnetic
+shielding~\cite{bib:voigt,bib:thiel}, and the demagnetization
+procedure~\cite{bib:thiel,bib:fierlinger2016}, affect the stability of
+the magnetic field within magnetically shielded
+rooms.
+%~\cite{bib:thiel,bib:altarev2014,bib:altarev2015,bib:voigt}.  
+Active stabilization of the magnetic field surrounding magnetically
+shielded rooms can also improve the internal
+stability~\cite{bib:franke,bib:voigtorthielorwhat?}.  In nEDM
+experiments, care must also be taken to stabilize the current supplied
+to the $B_0$ coil~\cite{someoneagain}, and the coil must be stabilized
+mechanically relative to the magnetic shielding as well.
 
-%
-% mech/temp:  cite BMSR paper
-%
+% Jeff says: I question whether altarev2014 or 2015 actually say
+% anything about magnetic stability.
 
-%
-% mech - other citations?  What have other people done to characterize
-% their MSR's?
-%
+One additional affect, which is the subject of this paper, relates to
+the fact that the $B_0$ coil in most nEDM experiments is magnetically
+coupled to the innermost magnetic shield.  If the magnetic properties
+of the innermost magnetic shield would change as a function of time,
+it then results in a source of instability of $B_0$.  In the present
+work, we sought to estimate this effect, and to characterize one
+possible source of instability: changes the magnetic permeability
+$\mu$ of the material with temperature.
 
-
-The passive shields for the nEDM experiments are made of highly
-permeable materials such as Mu-Metal which is an Ni-Fe alloy that
-allows measurements at low frequency magnetic fields. These alloys
-operate at room temperature and are sensitive to small temperature
-variations which affects the electromagnetic behaviour of the material
-such as the magnetic permeability,
-$\mu$~\cite{bib:couderchon,bib:kruppvdm}. For these type of alloys
-$\mu$ depends also on the annealing
-process~\cite{bib:gupta,bib:bozorth,bib:kruppvdm}.
+While the senstivity of magnetic alloys to temperature variations has
+been characterized in the past~\cite{bib:couderchon,bib:kruppvdm}, we
+sought to make these measurements in regimes closer to the operating
+parameters relevant to nEDM experiments.  For these alloys, it is also
+known that the magnetic properties are set during the final annealing
+process~\cite{bib:gupta,bib:bozorth,bib:kruppvdm}.  In this spirit we
+performed our measurements on small witness cylinders that were
+annealed using the process typically used in setting these properties.
 
 
 
 %The temperature dependence of $\mu$ has been measured from two different approaches and the overall result found to be 0.1\%/K $<\frac{1}{\mu} \frac{d\mu}{dT}<$2.3\%/K.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Taraneh
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
-% more literature?
-%
-
-
 \section{Sensitivity of Internally Generated Field to Permeability of the Shield $B_0(\mu)$}
 
 \subsection{Analytical Calculations in Spherical (and Cylindrical) Geometry}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
-% Taraneh
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
+
 %\begin{itemize}
 %\item State basic physics of problem, define reaction factor, note
 %  return flux through shield, etc.
@@ -173,17 +202,24 @@ process~\cite{bib:gupta,bib:bozorth,bib:kruppvdm}.
 
 The presence of a coil inside the innermost passive shield turns the
 shield into a return yoke and it is due to the penetration of the
-magnetic field flux into the magnetic shield. The ratio of the
+magnetic field flux into the magnetic shield.  The ratio of the
 magnetic field inside the coil in the presence of the magnetic shield
-to the coil in free space can be called the reaction factor $C$ which
-is $>$ 1 for spherical and cylindrical
-geometries~\cite{bib:bidinosti}. The coupling of the coil to the
-innermost layer of the magnetic shield suggests that any changes in
-the properties of the magnetic shield gives rise to a change in the
-internal field. One of these properties is $\mu$ which is of
-significant importance because of the high permeability of the passive
-shields. As a result, the stability of the magnetic shields
-contributes to the stability of the internal field.
+to that of the coil in free space is called the reaction
+factor~\cite{bib:read_our_other_paper_for_some_references_that_say_this}.
+Normally the reaction factor is larger than unity for spherical and
+cylindrical geometries.  The key issue of interest for this work is
+the dependence of the reaction factor on $\mu$.  This factor can be
+calculated analytically for spherical and cylindrical
+geometries~\cite{bib:bidinosti,bib:some_paper_from_1899}.  Although
+the dependence of the reaction factor on $\mu$ is generally rather
+weak, for typical nEDM size scales, it 
+
+% Jeff got to here on second pass.
+
+gives rise to a change in the internal field. One of these properties
+is $\mu$ which is of significant importance because of the high
+permeability of the passive shields. As a result, the stability of the
+magnetic shields contributes to the stability of the internal field.
 
 %From Refs. \cite{bib:smythe, bib:ferraro} for a zonal surface current
 %\begin{equation}
