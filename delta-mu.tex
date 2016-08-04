@@ -237,12 +237,6 @@ innermost shield can result in an unacceptably large change in $B_0$.
 %\end{equation}
 %Fig. \ref{fig:Magnetic_Field} shows the magnetic field $B$ as a function of relative $\mu$ for $\ell=0.53$ m, $a=0.57$ m and a thickness of 1.5 mm for the shield which are comparable to the dimensions of the ILL nEDM experiment setup \cite{bib:baker, bib:knecht}.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
-% Taraneh
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%55
-% make it clear this is for a spherical geometry that is close to the
-%  ILL geometry.
-%
 Fig.~\ref{fig:Magnetic_Field} shows the central magnetic field $B$ as
 a function of relative $\mu_r=\mu/\mu_0$ for coil radius 0.53~m inside
 a magnetic shield with the inner radius of $0.57$~m and a thickness of
@@ -255,7 +249,7 @@ geometry~\cite{bib:baker,bib:knecht}.
     \caption{Magnetic field as a function of relative magnetic
       permeability $\mu_r$ for geometries similar to the ILL nEDM
       experiment.  The dashed line is for an ideal spherical surface
-      current of radius $0.53$~m inside a spherical shell of inner
+      current of radius 0.53~m inside a spherical shell of inner
       radius 0.57~m, thickness 1.5~mm.  Open and close circles are
       FEMM-based simulations of spherical and cylindrical geometries
       with similar dimensions, described in the text.  The coil
@@ -326,25 +320,15 @@ used to estimate the magnetic field internal to the material, and in
 our studies gave good agreement with FEA-based simulations.  For the
 cylindrical geometry described in Sec.~\ref{sec:femm}, the $B$ field
 is largest in the side walls of the cylindrical flux return, attaining
-a maximum value of 170 $\mu$T.  At $\mu_r$=20,000 (a typical realistic
-value for the DC value of $\mu_r$ in these shields), the $H$ field
-would be 0.007~A/m.
+a maximum value of 170~$\mu$T.  For $\mu_r$=20,000 (a typical
+realistic value for the DC value of $\mu_r$ in these shields), the $H$
+field is 0.007~A/m.  These values are weakly dependent on $\mu_r$.
+They set a scale for the values of $B$ and $H$ which we sought to
+replicate in our experiments reported in Section~\ref{sec:tdep}.
 
-% Jeff got to here on second pass.
+% Jeff and Taraneh to do: confirm by checking against FEMM.  Possibly
+% add more numbers for spherical geometry.
 
-% Taraneh to do: state B, H in the material arising from these
-% simulations.  (It can be calculated in FEMM very easily, and will
-% agree perfectly with analytical calculation.  Perhaps we should just
-% look it up in the FEMM simulation.)
-
-% State principle of conservation of flux, useful for analytical
-% calculations.
-
-% Note that the value is therefore very weakly dependendent on mu.
-
-% Jeff to do: this is not enough information and needs to be edited
-% and likely increased.  Need to create a task list and gather more
-% numbers.
 
 \subsection{Self-Shielded Coils}
 
@@ -376,69 +360,102 @@ experiments~\cite{bib:cpviolwithoutstrangeness}.
 
 \subsection{Summary of $B_0(\mu)$}
 
-For shield-coupled coils, the magnetic field in the region interior
-to the coil is coupled to the properties of the magnetic shell which is caused
-by the penetration of the magnetic field flux into the shell material. In a
-typical nEDM experiment, the sensitivity of the internal magnetic
-field to changes in $\mu$ is $\frac{\mu}{B}\frac{dB}{d\mu}\sim 0.01$.
-The coupling can be much reduced by replacing the shield-coupled coils
-with the self-shielded coils.
+For shield-coupled coils, the magnetic field in the region interior to
+the coil is coupled to the properties of the magnetic shell which is
+caused by the penetration of the magnetic field flux into the shell
+material. In a typical nEDM experiment, the sensitivity of the
+internal magnetic field to changes in $\mu$ is
+$\frac{\mu}{B}\frac{dB}{d\mu}\sim 0.01$.  The coupling can be reduced
+considerably by using a self-shielded coil design, which does not
+couple strongly to the innermost magnetic shield.
 
-Neutron EDM experiments are DC measurements with frequencies smaller
-than 0.01 Hz. The applied static magnetic field is typically
-1~$\mu$T. This produces a $B$ field of 170~$\mu$T and an $H$ field of
-0.007~A/m internal to the shield material for dimensions described in
-Sec. \ref{sec:femm}.
-% Taraneh asking: Is it good enough?
-% Jeff's answer:  no it is not!
-% Jeff to do:  fix this and make a more clear task list.
+The field generated in the innermost magnetic shield by a
+shield-coupled coil is typically $B=170~\mu$T, corresponding to
+$H=0.007$~A/m.  The field in the nEDM measurement volume, as well as
+in the magnetic shield, must be stable for periods of typically
+hundreds of seconds (corresponding to frequencies $<<0.01$~Hz).  This
+sets the relevant measurement scales for magnetic properties that
+would be most relevant to nEDM experiment.
 
-% Taraneh to do: Summarize B,H,f relevant for EDM experiments as well.
 
 \section{Measurements of $\mu(T)$}
 
 \subsection{Previous Measurements and their Relationship to nEDM Experiments\label{previousmeasurement}}
 
-The interest in the soft magnetic alloys and their properties have
-been increased in the last few
-decades~\cite{bib:pfeifer,bib:bozorth,bib:couderchon}. Couderchon et
-al. measured the thermal variation of $\mu$ of two different Ni-Fe
-alloys in a low field and they found
-$\frac{1}{\mu}\frac{d\mu}{dT}\simeq$1\%/K at room
-temperature~\cite{bib:couderchon}. Based on the data sheet of a
-similar material, $\mu$ would depend on temperature as
-$\frac{1}{\mu}\frac{d\mu}{dT}\simeq$0.3-0.7\%/K~\cite{bib:kruppvdm}. These
-are measurements of the temperature dependence of $\mu$ at frequencies
-much higher than the nEDM experiment (50~Hz compared to 0.01~Hz). 
-The applied $B$ field in these measurements was at the order of $\mu$T. For the first technique the internal $B$ field was at the order of 100~$\mu$T and the internal $H$ field at $\mu$=20000 was a few mA/m. In the second technique, the internal $B$ field was at the order of $10^{-3}$T while the $H$ field was at the order of $0.1$~$\mu$T. In those measurements, the applied frequency was 1~Hz.
-However, for the nEDM measurement, the internal $B$ field is at the order of $\mu$T and the internal $H$ field is very small and at the order of $10^{-5}$ A/m while the applied frequency is less than 0.01~Hz.
+Previous measurements of the temperature dependence of the magnetic
+properties of high-permeability alloys have been summarized in
+Refs.~\cite{bib:pfeifer,bib:bozorth,bib:couderchon}.  These
+measurements are normally conducted using a sample of the material to
+create a toroidal core, where a thin layer of the material is used in
+order to avoid eddy-current and skin-depth
+effects~\cite{bib:pfeifer,bib:kruppvdm}.  A value of $\mu$ is
+determined by dividing the amplitude of the sensed $B$-field by the
+amplitude of the driving AC $H$-field.  The value of $\mu$ is then
+quoted either at or near its maximum attainable value by adjusting
+$H$.  Depending on the details of the $B-H$ curve for the material in
+question, this normally means that $\mu$ is quoted for $H$ being at or
+near the coercivity of the
+material~\cite{bib:couderchon,bib:kruppvdm}, often resulting in large
+values up to $\mu_r=4\times 10^5$.
 
-% It used to be written here that neither B, H, nor f were very clear
-% in either Coucherdon or Krupp-VDM.
+It is well known that $\mu$ measured for toroidal, thin metal wound
+cores depends on the annealing process used, in particular on the
+take-out or tempering temperature after the high-temperature portion
+of the annealing process has been
+completed~\cite{bib:pfeifer,bib:kruppvdm,bib:couderchon}.  Such
+studies normally suggest a take-out temperature of 490-500$^\circ$C.
+This ensures that the large $\mu_r=4\times 10^{5}$ is furthermore
+maximal at room temperature.  Slight variations around room
+temperature, and assuming the take-out temperature is not controlled
+to better than a degree, imply a scale of possible temperature
+variation of $\mu$ of approximately
+$\frac{1}{\mu}\frac{d\mu}{dT}\simeq$0.3-1\%/K at room temperature would be
+reasonable to assume~\cite{bib:couderchon,bib:kruppvdm}.
 
-% Taraneh to do: actually, both are very clear.  Find out what they
-% are and relate them here.
+The chief challenge in applying these results to temperature stability
+of nEDM experiments is that, when used as DC magnetic shielding, the
+high-permeability alloys are usually operated for significantly
+different parameters ($B$, $H$, and frequencies).
+
+For example, when used in a shielding configuration, the effective
+permeability is often measured to be typically $\mu_r=20,000$, in part
+because the $H$-field in the material is below the DC coercivity
+(typically $H_c=0.4$~A/m \cite{bib:kruppvdm}).  Another example is
+that, as noted in Section~\ref{sec:edmbh}, a more appropriate $H$ for
+the innermost magnetic shield of an nEDM experiment used as a magnetic
+flux return for the $B_0$ coil is 0.007~A/m, again well below the DC
+coercivity.  Furthermore, the innermost magnetic shield of an nEDM
+experiment is not operated in an AC mode, but rather a DC mode where
+time (and temperature) stability of the DC $B_0$ field is the most
+crucial parameter; i.e.~nEDM experiments are typically concerned with
+slow drifts at $<0.01$~Hz timescales whereas the previously reported
+$\frac{1}{\mu}\frac{d\mu}{dT}$ measurements are cycled at 50~Hz
+frequencies.
 
 
 The goal of our experiments was to develop techniques to characterize
-the material properties of our own magnetic shields, as they relate to
-EDM experiments.  We created a prototype magnetic shield system in
-support of this and other precision magnetic field work.  The
-prototype passive shield at the University of Winnipeg is a four-layer
-mu-metal shield. The inner radius of the innermost shield is 18.44 cm
-which is equal to its half length. The radius of the next shield is
-larger by a factor of 1.27.
-%shielding factor measurements
-The three inner passive shields are assembled and the shielding factor of each individual shield as well as the assembled geometry have been measured. The measurements were done at 0.1,1,10,30 and 60~Hz and at 3.5~$\mu$T and 35~$\mu$T axial and transverse applied field. 
+the material properties of our own magnetic shields post-annealing, in
+regimes more relevant to nEDM experiments.  We created a prototype
+passive magnetic shield system in support of this (and other)
+precision magnetic field research for the future nEDM experiment to be
+conducted at TRIUMF.  The shield system is a four-layer mu-metal
+shield formed from nested right-circular cylindrical shells with
+endcaps.  The inner radius of the innermost shield is 18.44~cm which
+is equal to its half length. The radii and half-lengths of the
+progressively larger outer shields increase geometrically by a factor
+of 1.27.  Each cylinder has two end-caps which possess a XXX~cm
+diameter central hole.  A stove-pipe of length XXX~cm is place on each
+hole was designed to minimize leakage of external fields into the
+progressively shielded inner volumes.  The design is similar to
+another smaller prototype shield discussed in
+Ref.~\cite{bib:nmorpaper}.  The magnetic shielding factors of each of
+the four cylindrical shells, and of various combinations of them, were
+measured and found to be consistent with $\mu_r\sim 20,000-40,000$ for
+3.5~$\mu$T applied external axial and transverse fields at frequencies
+$<0.1$~Hz, where the uncertainty in $\mu_r$ comes a model uncertainty
+resulting from incomplete inclusion of the geometry.
 
-% Taraneh says: I don't know which values are relevant here. Axial or transverse field? 35 or 3.5~\mu T????
-% The results are in the first few pages of my summary.
-
-% To do (Taraneh and/or Russ): describe prototype magnetic shielding
-% system parameters.  It would be worthwhile to describe briefly the
-% shielding factor measurements that were done, as well, I think.  And
-% it should be mentioned that normally the inner three shields are
-% used.
+% Taraneh to do:  replace XXX with numbers
 
 In our studies of the material properties of these magnetic shields,
 two different approaches to measure temperature dependence of $\mu$
@@ -451,24 +468,15 @@ advantage of being smaller and easier to perform measurements with.
 
 
 
-%\begin{itemize}
-%\item Coucheron et al.?
-%\item Krupp-VDM data sheet?
-%\item Proper literature search on past measurements of $\mu(T)$.
-%
-%
-% Taraneh to do:
-%\item State caveats in order to use these:  dependence on B, H, f.
-%\item State typical B, H, f that nEDM needs.  Motivates additional
-% measurements.
-%\end{itemize}
-
 The two techniques used were:
 \begin{enumerate}
-\item to measure the axial shielding factor of the witness cylinder as
+\item measuring the axial shielding factor of the witness cylinder as
   a function of temperature, and
-\item to measure the temperature-dependence of the slope of a minor
-  B-H loop, using the witness cylinder as a transformer core.
+\item measuring the temperature-dependence of the slope of a minor B-H
+  loop, using the witness cylinder as a transformer core, similar to
+  previous measurements of the temperature dependence of $\mu$, but
+  for parameters slightly closer to those encountered in nEDM
+  experiments.
 \end{enumerate}
 We now discuss the details and results of each technique.
 
