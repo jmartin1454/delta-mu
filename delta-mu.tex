@@ -211,15 +211,10 @@ cylindrical geometries.  The key issue of interest for this work is
 the dependence of the reaction factor on $\mu$.  This factor can be
 calculated analytically for spherical and cylindrical
 geometries~\cite{bib:bidinosti,bib:some_paper_from_1899}.  Although
-the dependence of the reaction factor on $\mu$ is generally rather
-weak, for typical nEDM size scales, it 
-
-% Jeff got to here on second pass.
-
-gives rise to a change in the internal field. One of these properties
-is $\mu$ which is of significant importance because of the high
-permeability of the passive shields. As a result, the stability of the
-magnetic shields contributes to the stability of the internal field.
+the dependence of the reaction factor on $\mu$ is rather weak for
+these geometries, the constraints on $B_0$ stability are very
+stringent.  Thus a small change in the magnetic properties of the
+innermost shield can result in an unacceptably large change in $B_0$.
 
 %From Refs. \cite{bib:smythe, bib:ferraro} for a zonal surface current
 %\begin{equation}
@@ -245,8 +240,9 @@ magnetic shields contributes to the stability of the internal field.
 Fig.~\ref{fig:Magnetic_Field} shows the central magnetic field $B$ as
 a function of relative $\mu_r=\mu/\mu_0$ for coil radius 0.53~m inside
 a magnetic shield with the inner radius of $0.57$~m and a thickness of
-1.5~mm which are comparable to the dimensions of the ILL nEDM
-experiment geometry~\cite{bib:baker,bib:knecht}.
+1.5~mm.  The dimensions have been selected to be comparable to the
+dimensions of the ILL nEDM experiment
+geometry~\cite{bib:baker,bib:knecht}.
 \begin{figure}[h!]
 \begin{center}
    \includegraphics[width=0.6\textwidth]{femm_and_calcs.pdf}
@@ -258,11 +254,11 @@ experiment geometry~\cite{bib:baker,bib:knecht}.
       FEMM-based simulations of spherical and cylindrical geometries
       with similar dimensions, described in the text.  The coil
       currents have been arranged to give a $1~\mu$T field at the
-      $\mu_r=20000$ point.}
+      $\mu_r=20,000$ point.}
     \label{fig:Magnetic_Field}
     \end{center}
 \end{figure} 
-For a 10\% change in relative $\mu$ (from 20000 to 22000), the
+For a 10\% change in relative $\mu_r$ (from 20000 to 22000), the
 magnetic field changes by 0.7~nT.
 
 
@@ -273,13 +269,13 @@ Finite-element analysis simulations were conducted to analyze the
 effect of discretizing the surface current, and to test the geometry
 dependence of the sensitivity of the experiment to changes in $\mu$.
 Two axially symmetric simulations were conducted using
-FEMM~\cite{bib:femm}.  In the first simulation, the same spherical geometry was
-used as for the analytical calculations.  However, the surface current
-was discretized to 50 individual circular wire, inscribed onto a
-sphere, and equally spaced vertically (i.e.~a discrete sin$\phi$
-coil).  A square coil profile of side length 1~mm was used.  As shown
-in Fig.~\ref{fig:Magnetic_Field}, this simulation gave good agreement
-with the analytical calculation.
+FEMM~\cite{bib:femm}.  In the first simulation, the same spherical
+geometry was used as for the analytical calculations.  However, the
+surface current was discretized to 50 individual circular wires,
+inscribed onto a sphere, and equally spaced vertically (i.e.~a
+discrete cos$\theta$ coil).  A square sire profile of side length 1~mm
+was used.  As shown in Fig.~\ref{fig:Magnetic_Field}, this simulation
+gave good agreement with the analytical calculation.
 
 As an example of one additional axially symmetric geometry, a solenoid
 within a cylindrical shield was simulated, with equal coil spacings.
@@ -292,7 +288,7 @@ generate the correct image currents in the infinite $\mu$ limit.
 
 As shown in Fig.~\ref{fig:Magnetic_Field}, the slope of $B(\mu)$ is
 somewhat steeper, and similar in magnitude to the spherical case.  We
-therefore conclude that the scale of the sensitivity of a generic nEDM
+therefore estimate that the scale of the sensitivity of a generic nEDM
 experiment to global changes in the magnetic permeability is
 $\frac{\mu}{B}\frac{dB}{d\mu}\sim 0.01$.
 
@@ -303,7 +299,7 @@ return).  In the cylindrical case the reaction factor is 1.35.  If the
 reaction factor is closer to unity, the calculated
 $\frac{\mu}{B}\frac{dB}{d\mu}$ will be smaller, and the EDM experiment
 less sensitive to changes in $\mu$.  The results in the two geometries
-show that there is also a weaker geometry-dependence to this
+show that there is also a weaker geometry dependence to this
 statement.
 
 
@@ -317,12 +313,18 @@ statement.
 %\end{itemize}
 
 \subsubsection{Field within the passive flux return for EDM experiments}
-The total magnetic flux produced by the coil is conserved. It means,
-the total number of the magnetic field lines that come out of the coil
-will enter the shield material. Therefore the magnetic field internal
-to the material can be estimated. For a cylindrical geometry similar
-to what described in Sec. \ref{sec:femm}, the $B$ field is 170
-$\mu$T. At $\mu_r=\mu/\mu_0$=20,000, the $H$ field would be 0.007~A/m.
+
+For a high-$\mu$ innermost shield, the magnetic field lines emanating
+from the coil all return through the shield.  This principle can be
+used to estimate the magnetic field internal to the material, and in
+our studies gave good agreement with FEA-based simulations.  For the
+cylindrical geometry described in Sec.~\ref{sec:femm}, the $B$ field
+is largest in the side walls of the cylindrical flux return, attaining
+a maximum value of 170 $\mu$T.  At $\mu_r$=20,000 (a typical realistic
+value for the DC value of $\mu_r$ in these shields), the $H$ field
+would be 0.007~A/m.
+
+% Jeff got to here on second pass.
 
 % Taraneh to do: state B, H in the material arising from these
 % simulations.  (It can be calculated in FEMM very easily, and will
