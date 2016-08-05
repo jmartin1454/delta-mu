@@ -161,8 +161,8 @@ Section~\ref{sec:axialsyst}.
 \subsubsection{Data and Interpretation}
 
 An example of the typical data acquired is shown in
-Fig.~\ref{fig:B_vs_Temp}.  The field amplitude produced by the
-solenoid was 2.6~$\mu$T, at a frequency of 1~Hz.
+Fig.~\ref{fig:B_vs_Temp}.  For these data, the field applied by the
+solenoid coil was 1~$\mu$T in amplitude, at a frequency of 1~Hz.
 Fig.~\ref{fig:B_vs_Temp}(a) shows the temperature of the witness
 cylinder over a four-day measurement.  The temperature changes are
 about 3.5~K and are caused by temperature variations of the
@@ -172,82 +172,74 @@ laboratory.
 % For $f\lesssim 1$~Hz most of the measured fluxgate signal is in the
 % in-phase component.
 %
-The magnetic field $B$ is anti-correlated with the temperature trend
-in an shown in Fig.~\ref{fig:B_vs_Temp}(b).  Here, $B$ is the sum, in
-quadrature, of the amplitudes of the in-phase and out-of-phase
-components.  Magnetic field is then interpreted to depend on the
-temperature, and they are graphed as a function of one another in
-Fig.~\ref{fig:B_vs_Temp}(c).  The slope of Fig.~\ref{fig:B_vs_Temp}(c)
-has been calculated using a linear fit to the data.  In this
-measurement, the slope is found to be
-$\frac{1}{|B|}\frac{d|B|}{dT}\simeq -1.5\%$/K.
+The shielded magnetic field $B$ within the witness cylinder is
+anti-correlated with the temperature trend as shown in
+Fig.~\ref{fig:B_vs_Temp}(b).  Here, $B$ is the sum in quadrature of
+the amplitudes of the in-phase and out-of-phase components.  Magnetic
+field is then interpreted to depend on the temperature, and they are
+graphed as a function of one another in Fig.~\ref{fig:B_vs_Temp}(c).
+The slope of Fig.~\ref{fig:B_vs_Temp}(c) has been calculated using a
+linear fit to the data.  The relative slope at 23$^\circ$C was found
+to be $\frac{1}{|B|}\frac{d|B|}{dT}\simeq -0.75\%$/K.
 
-Deviations from the linear straight-line dependence can be seen in the
-data.  For example at the start of the data-taking, the slope is
-almost zero.  This is typical of the data that we acquired, that the
-magnetic field as a function of temperature would not necessarily lie
-along a straight line, but rather would have different slope
-temporarily after changing the sign of the temperature slope with
-time.
+Some deviations from the linear straight-line dependence can be seen
+in the data.  For example, when the temperature changes rapidly, the
+magnetic field takes some time to respond, resulting in a slope in
+$B-T$ space that is temporarily different than when the temperature is
+slowly varying.  This is typical of the data that we acquired, that
+the data would generally follow a straight line if the temperature
+followed a slow and smooth dependence with time, but the data would
+not be linear if the temperature varied rapidly or non-monotonically
+with time.
 
 Another feature of the data was that, on subsequent similar
 measurements, the value of the slope would not be the same, on a
-measurement-to-measurement basis.
+measurement-to-measurement basis, even if very similar experimental
+parameters were used.  A comprehensive set of systematic studies of
+the factors affecting the slope were performed, and these are
+presented in Section~\ref{sec:axialsyst}.  A basic summary of those
+studies was that no external parameter was found that could explain
+the periodic changes in slope that were observed.  Based on these
+studies, we expect the change in slope is either due to an
+irreproducibility in the magnetic properties of the material, or due
+to an uncharacterized systematic error such as a long-time mechanical
+relaxation of some element of the apparatus.
 
-A comprehensive set of systematic studies of the factors affecting the
-slope were performed, and these are presented in
-Section~\ref{sec:axialsyst}.  A basic summary of those studies was
-that no external parameter was found that could explain the periodic
-changes in slope that were observed.  Based on these studies, we
-expect the change in slope is either due to an irreproducibility in
-the magnetic properties of the material, or due to an uncharacterized
-systematic error such as a long-time mechanical relaxation of some
-element of the apparatus.
+% Instead of scooping ourselves here, I will leave the following
+% discussion to stand for itself in the systematics section.
 
-To express this inherent uncertainty in the slope, we phrase our
-result as a range of slopes that were typical of data acquired over
-time periods of $\sim$ days.  In general, we measured
-0.3\%/K~$<\vert\frac{1}{B}\frac{dB}{dT}\vert<$~2.3\%/K with the sign
-% Jeff got to here on pass 2.
-% question for Taraneh: should be solenoidal coil only? or what's the
-% answer for solenoidal coils as compared to loop coil?  answer from
-% Jeff and Taraneh, so far: this needs to be fixed.  We should put
-% both measurements up here and explain the difference.
-being negative.  The range also encompasses the typical deviation from
-a linear $B(T)$ in the data (for example, those seen in
-Fig.~\ref{fig:B_vs_Temp}(c).).  Since the data cannot be embodied by a
-single temperature slope, the experiment tends to set a scale and sign
-for the possible temperature dependence, rather than a value.
+% To express this uncertainty, we phrase our result as a range of slopes
+% that were typical of data acquired.  Taking the full range of
+% systematic studies reported in Section~\ref{sec:axialsyst}, we
+% measured 0.3\%/K~$<\vert\frac{1}{B}\frac{dB}{dT}\vert<$~0.8\%/K with
+% the sign
+% % question for Taraneh: should be solenoidal coil only? or what's the
+% % answer for solenoidal coils as compared to loop coil?  answer from
+% % Jeff and Taraneh, so far: this needs to be fixed.  We should put
+% % both measurements up here and explain the difference.
+% being negative.  The range also encompasses the typical deviation from
+% a linear $B(T)$ in the data (for example, those seen in
+% Fig.~\ref{fig:B_vs_Temp}(c).).  Since the data cannot be embodied by a
+% single temperature slope, the experiment tends to set a scale and sign
+% for the possible temperature dependence, rather than a value.
 
 \begin{figure}
 \begin{center}
-   \includegraphics[width=0.5\textwidth]{B_vs_T.png}
-% Taraneh to do: vertical label should likely be ``B amplitude'' or
-% ``amplitude of measured field'', to make it clear that this has been
-% multiplied by sqrt(2).  Either that, or the sqrt(2) should be
-% removed to avoid inconsistency with the transformer measurements
-% presented later.
+   \includegraphics[width=0.5\textwidth]{B_vs_T_solenoid.png}
+% Taraneh to do: be careful that the figure captions and text use the
+% same symbols.  Might want to consider using a different symbol than
+% $B$.
     \caption{Ambient temperature and shielded magnetic field
-      amplitude, measured over a 90 hour period. (a) temperature of
+      amplitude, measured over a 70 hour period. (a) temperature of
       the witness cylinder as a function of time.  (b) magnetic field
       amplitude measured by fluxgate at center of witness cylinder
       versus time.  (c) magnetic field versus temperature. The red
-      line in (c) is a linear fit to data. At 22$^\circ$C,
-      $\frac{1}{|B|}\frac{d|B|}{dT}=-1.5\%$/K.}
-% This was actually measured by the local coil!!!
-% This was actually measured by the local coil!!!
+      line in (c) is a linear fit to data. At 23$^\circ$C,
+      $\frac{1}{|B|}\frac{d|B|}{dT}=-0.75\%$/K.}
     \label{fig:B_vs_Temp}
     \end{center}
 \end{figure} 
 
-% This was actually measured by the local coil!!!
-% This was actually measured by the local coil!!!
-
-% Taraneh says: Several data from March 2015 is now added to the long
-% report on Plone. We might need to consider replacing this graph with
-% another one. I am aware of the fact that the graphs in the long
-% report are not publication quality. But once we decide on some
-% particular data, I will make nicer looking graphs.
 
 \subsubsection{Systematic Studies\label{sec:axialsyst}}
 
@@ -287,43 +279,6 @@ our stated range of values.
 
 
 
-
-%\paragraph{Final Design} 
-
-% This has all been said and could be deleted, I think:
-
-%final design
-%The final design included the witness cylinder, which was placed with
-%a holder inside the innermost prototype passive shield. The
-%temperature variations of the witness cylinder was due to the
-%temperature changes in the room which was following the on and off
-%cycles of the building air conditioner.
-%A Bartington magnetic field
-%sensor (fluxgate) was hold inside the witness cylinder at the centre
-%by plastic holder. The signal from the sensor was then demodulated by
-%an SRS830 lock-in amplifier. To convert the final measured voltage
-%from the sensor to $\mu$T, the sum in quadratures of the in-phase and
-%out of phase components of the lock-in amplifier was multiplied by the
-%scaling factor on the magnetic field sensor which is 7 $\mu$T/V.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% This is all new and needs to move up to the apparatus section: (done)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% The
-% mu-metal alloy has a thermal conductivity of 0.35
-% W/(cm$\cdot$K). Therefore, four thermocouples placed on different
-% spots on the witness cylinder to correct for small temperature
-% differences on each end of the witness cylinder.  In these
-% measurements, the farther side of the passive shields had the end caps
-% while the other side was left open to give access to the interior
-% region. Based on the magnetic field maps inside the passive shields,
-% for 10 $\mu$T applied magnetic field, the stability of the field was
-% to 0.1 $\mu$T level and the magnetic field was even more stable closer
-% to the closed side of the passive shields. Therefore the witness
-% cylinder was pushed to the side with the end caps on the passive
-% shields.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Another list
 % - amplitude measurement on oscilloscope (no lock-in). (done)
@@ -384,13 +339,6 @@ Similar measurements for the solenoidal coil yielded
 % 0.3 is from Page 30 of Taraneh's summary
 % 0.75 is from Page 34 of Taraneh's logbook, Volume 1, Aug 2014-Dec 2015.
 
-% Jeff notes: these results should be stated as the primary results,
-% right after/near the figure of the data.
-
-% Taraneh to do: make a comment on H, right here, right now.  We
-% should have a value for both the solenoidal coil and the loop coil.
-% You might have to force Jeff to get it from his FEMM simulations.
-
 In general, the slopes measured with the loop coil are larger than for
 the solenoidal coil.  A partial explanation of this difference is
 offered by the field profile generated by each coil, and its
@@ -412,7 +360,7 @@ witness cylinder relative to the magnetic elements in the system.
 
 Other potential motion artifacts due to thermal expansion of
 components was also considered.  The thermal expansion coefficient of
-mu-metal is $\sim$10~ppm/K~\cite{kruppvdm}.  However if the witness
+mu-metal is $\sim$10~ppm/K~\cite{bib:kruppvdm}.  However if the witness
 cylinder expands uniformly in both thickness and radius, the shielding
 factor is to first order unchanged.  In general, even unnatural
 asymmetric and twisting motions of the fluxgate sensor and witness
@@ -598,16 +546,15 @@ a strong effect on the temperature slopes measured at
 
 \subsubsection{Geometry correction and determination of $\mu(T)$\label{sec:axialsims}}
 
-To relate the data to $\mu(T)$, the shielding factor of the witness
-cylinder as a function of $\mu$ must be known.  Finite element
+To relate the data on $B(T)$ to $\mu(T)$, the shielding factor of the
+witness cylinder as a function of $\mu$ must be known.  Finite element
 simulations in FEMM and OPERA were performed to determine this factor.
+The simulations are also useful for determining the effective values
+of $B$ and $H$ in the material (sometimes called the ``demagnetization
+factor'' in the literature), which will be useful to compare to the
+case for typical nEDM experiments when the innermost shield is used as
+a flux return.
 
-Combining the measurement and the simulations, the temperature
-dependence of the effective $\mu$ (at $\mu=20 000$, which is consistent
-with our measurements) can be calculated by
-\begin{equation}
-\frac{1}{\mu}\frac{d\mu}{dT}=-\frac{\frac{1}{B}\frac{dB}{dT}}{\frac{\mu}{B}\frac{dB}{d\mu}}.
-\end{equation}
 
 From the simulations the ratio $\frac{\mu}{B} \frac{dB}{d\mu}$ was
 calculated.  A linear model of the material was used where
@@ -620,7 +567,6 @@ a constant rather than infinity.
 The simulations differed slightly in their results, dependent on
 whether OPERA or FEMM was used, and whether the solenoidal coil or
 loop coil were used.
-
 Based on the simulations, the result is
 $\frac{\mu}{B}\frac{dB}{d\mu}=0.42-0.50$ for the solenoidal coil, with
 the lower value being given by FEMM and the upper value being given by
@@ -631,8 +577,17 @@ performed in OPERA, which we estimate to be 0.6.  We adopt our value
 since it is difficult to determine precisely from
 Ref.~\cite{bib:paperno-open-ended}.  For the loop coil, we determine
 $\frac{\mu}{B}\frac{dB}{d\mu}=0.56-0.65$, the range being given again
-by a difference between FEMM and OPERA. These are presented in the second left column of Table~\ref{tab:axialsummary}. The third column from left summarizes the values of $B(T)$ measurements for both coil geometries discussed earlier in this section. The last column is the ratio of the third to the second column. 
+by a difference between FEMM and OPERA.
 
+
+Combining the measurement and the simulations, the temperature
+dependence of the effective $\mu$ (at $\mu=20 000$, which is consistent
+with our measurements) can be calculated by
+\begin{equation}
+\frac{1}{\mu}\frac{d\mu}{dT}=-\frac{\frac{1}{B}\frac{dB}{dT}}{\frac{\mu}{B}\frac{dB}{d\mu}}.
+\end{equation}
+The results of the simulations and measurements are presented in
+Table~\ref{tab:axialsummary}.
 
 
 \begin{table}
@@ -645,21 +600,29 @@ Solenoidal Coil & 0.42-0.50 & 0.3-0.8 & 0.6-1.9 \\
 Loop Coil & 0.56-0.65 & 0.4-1.5 & 0.6-2.7 \\ 
 \hline 
 \end{tabular} 
-%\caption{A table to be filled in by Taraneh, and described in this
-% caption and the surrounding text.}
-\caption{The result of OPERA and FEMM simulations and the shielding factor measurement as well as the temperature dependence of $\mu$ for solenoidal and loop coil is summarized here. More detail is provided in the text.}
+\caption{Summary of OPERA and FEMM simulations and shielding factor
+  measurements, resulting in extracted temperature slopes of $\mu$.}
 \label{tab:axialsummary}
 
 \end{table}
 
 
-Taking all these systematics into account, in this method it was found
-that 0.6\%/K~$\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim 2.7\%$/K.
-This is quoted for a typical $H$ amplitude of XXX and a frequency of
-1~Hz.
+Combining the loop coil and solenoidal coil results, we find
+0.6\%/K~$\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim 2.7\%$/K to be a
+reasonable range for the possible temperature slope of $\mu$.
+
+As stated earlier, the simulations also provided a way to determine
+the typical $B$ and $H$ internal to the material of the witness
+cylinder.  According to the simulations, the $B$ amplitude was
+typically XXX and the $H$ amplitude was typically XXX.  These are
+somewhat larger than the values normally encountered in nEDM
+experiments, when the innermost shield is used as a flux return.
 
 % Taraneh to do: look up number XXX for $H$.
 
+Furthermore, we remind the reader that the measurements were conducted
+using AC fields at typically 1~Hz, as opposed to the DC fields
+normally used in nEDM experiments.
 
 
 %\begin{itemize}
