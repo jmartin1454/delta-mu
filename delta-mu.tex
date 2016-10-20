@@ -164,16 +164,15 @@ quantization axis for the UCN.
 The $B_0$ magnetic field generation system typically includes a coil
 placed within a passively magnetically shielded volume.  The passive
 magnetic shield is generally composed of a multi-layer shield formed
-from thin shells of high-permeability metal (mu-metal).  The outer
-layers of this shield are normally cylindrical \cite{bib:nedm3.5, bib:
-  nedm2 } or forming the walls of a magnetically shielded room
+from thin shells of high-permeability material (mu-metal).  The outer
+layers of the shield are normally cylindrical \cite{bib:nedm3.5, bib:
+  nedm2 } or form the walls of a magnetically shielded room
 \cite{bib:altarev2014}.  The innermost magnetic shield is normally a
 specially shaped shield, where the design of the coil in relation to
 shield is carefully taken into account to achieve adequate
 homogeneity.
 
-%
-The active compensation system will be used to reduce the external
+%The active compensation system will be used to reduce the external
 %magnetic field at the measurement site to $\mu$T level and prevent the
 %saturation of the passive magnetic shields.
 
@@ -187,7 +186,7 @@ Active stabilization of the magnetic field surrounding magnetically
 shielded rooms can also improve the internal
 stability~\cite{bib:franke,bib:voigt, bib:afach}.  In nEDM
 experiments, care must also be taken to stabilize the current supplied
-to the $B_0$ coil~\cite{bib:brys}, and the coil must be stabilized
+to the $B_0$ coil~\cite{bib:brys}. The coil must be stabilized
 mechanically relative to the magnetic shielding as well.
 
 % Jeff says: I question whether altarev2014 or 2015 actually say
@@ -205,7 +204,7 @@ coupled to the innermost magnetic shield.  If the magnetic properties
 of the innermost magnetic shield would change as a function of time,
 it then results in a source of instability of $B_0$.  In the present
 work, we sought to estimate this effect, and to characterize one
-possible source of instability: changes the magnetic permeability
+possible source of instability: changes of the magnetic permeability
 $\mu$ of the material with temperature.
 
 While the senstivity of magnetic alloys to temperature variations has
@@ -215,7 +214,7 @@ parameters relevant to nEDM experiments.  For these alloys, it is also
 known that the magnetic properties are set during the final annealing
 process~\cite{bib:gupta,bib:bozorth,bib:kruppvdm}.  In this spirit we
 performed our measurements on small witness cylinders that were
-annealed using the process typically used in setting these properties.
+annealed using the typical process.
 
 % The temperature dependence of $\mu$ has been measured from two
 % different approaches and the overall result found to be 0.1\%/K
@@ -238,19 +237,20 @@ measurements are normally conducted using a sample of the material to
 create a toroidal core, where a thin layer of the material is used in
 order to avoid eddy-current and skin-depth
 effects~\cite{bib:pfeifer,bib:kruppvdm}.  A value of $\mu$ is
-determined by dividing the amplitude of the sensed $B$-field by the
-amplitude of the driving AC $H$-field.  The value of $\mu$ is then
-quoted either at or near its maximum attainable value by adjusting
-$H$.  Depending on the details of the $B-H$ curve for the material in
-question, this normally means that $\mu$ is quoted for $H$ being at or
-near the coercivity of the
-material~\cite{bib:couderchon,bib:kruppvdm}, often resulting in large
-values up to $\mu_r=4\times 10^5$.
+determined by dividing the amplitude of the sensed $B_m$-field by the
+amplitude of the driving AC $H_m$-field, as described in
+Section~\ref{sec:transformer}.  The value of $\mu$ is then quoted
+either at or near its maximum attainable value by adjusting the
+amplitude of $H_m$.  Depending on the details of the $B_m-H_m$ curve
+for the material in question, this normally means that $\mu$ is quoted
+for the amplitude of $H_m$ being at or near the coercivity of the
+material~\cite{bib:couderchon,bib:kruppvdm}, resulting in large values
+up to $\mu_r=4\times 10^5$.
 
 It is well known that $\mu$ measured for toroidal, thin metal wound
-cores depends on the annealing process used, in particular on the
-take-out or tempering temperature after the high-temperature portion
-of the annealing process has been
+cores depends on the annealing process used.  There is a particularly
+strong dependence on the take-out or tempering temperature after the
+high-temperature portion of the annealing process has been
 completed~\cite{bib:pfeifer,bib:kruppvdm,bib:couderchon}.  Such
 studies normally suggest a take-out temperature of 490-500$^\circ$C.
 This ensures that the large $\mu_r=4\times 10^{5}$ is furthermore
@@ -258,29 +258,27 @@ maximal at room temperature.  Slight variations around room
 temperature, and assuming the take-out temperature is not controlled
 to better than a degree, imply a scale of possible temperature
 variation of $\mu$ of approximately
-$\frac{1}{\mu}\frac{d\mu}{dT}\simeq$0.3-1\%/K at room temperature would be
-reasonable to assume~\cite{bib:couderchon,bib:kruppvdm}.
+$\left|\frac{1}{\mu}\frac{d\mu}{dT}\right|\simeq 0.3$-1\%/K at room temperature
+would be reasonable to assume~\cite{bib:couderchon,bib:kruppvdm}.
 
-The chief challenge in applying these results to temperature stability
-of nEDM experiments is that, when used as DC magnetic shielding, the
+A challenge in applying these results to temperature stability of nEDM
+experiments is that, when used as DC magnetic shielding, the
 high-permeability alloys are usually operated for significantly
-different parameters ($B$, $H$, and frequencies).
+different parameters ($B_m$, $H_m$, and frequencies).
 
 For example, when used in a shielding configuration, the effective
-permeability is often measured to be typically $\mu_r=20,000$, in part
-because the $H$-field in the material is below the DC coercivity
-(typically $H_c=0.4$~A/m \cite{bib:kruppvdm}).  Another example is
-that, as noted in Section~\ref{sec:theory_summary}, a more appropriate $H$ for
-the innermost magnetic shield of an nEDM experiment used as a magnetic
-flux return for the $B_0$ coil is 0.007~A/m, again well below the DC
-coercivity.  Furthermore, the innermost magnetic shield of an nEDM
-experiment is not operated in an AC mode, but rather a DC mode where
-time (and temperature) stability of the DC $B_0$ field is the most
-crucial parameter; i.e.~nEDM experiments are typically concerned with
-slow drifts at $<0.01$~Hz timescales whereas the previously reported
-$\frac{1}{\mu}\frac{d\mu}{dT}$ measurements are cycled at 50~Hz
-frequencies.
+permeability is often measured to be typically $\mu_r=20,000$ rather
+than $4\times 10^5$.  This arises in part because $H_m$ is well below
+the DC coercivity.  As noted in Section~\ref{sec:theory_summary}, a
+more appropriate $H_m$ for the innermost magnetic shield of an nEDM
+experiment is 0.007~A/m, whereas the coercivity is
+$H_c=0.4$~A/m~\cite{bib:kruppvdm}.  The frequency dependence of the
+measurements could also be an issue.  Typically, nEDM experiments are
+concerned with slow drifts at $<0.01$~Hz timescales whereas the
+previously reported $\mu(T)$ measurements are performed in an AC mode
+at 50~Hz frequencies.
 
+%Jeff got to here
 
 The goal of our experiments was to develop techniques to characterize
 the material properties of our own magnetic shields post-annealing, in
