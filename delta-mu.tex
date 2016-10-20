@@ -88,12 +88,12 @@ The next generation of neutron electric dipole moment (EDM)
 experiments aim to measure the EDM $d_n$ with proposed precision
 $\delta d_n\lesssim
 10^{-27}$~e-cm~\cite{bib:nedm1,bib:nedm2,bib:nedm2.5,bib:nedm3,bib:nedm3.5,bib:nedm4,bib:nedm5,bib:nedm6,bib:nedm6.5}.
-In the previous best experiment \cite{bib:pendlebury}, which discovered
-$d_n<3\times 10^{-26}$~e-cm (90\% C.L), effects related to magnetic field
-homogeneity and instability were found to dominate the systematic
-error.  A detailed understanding of passive and active magnetic
-shielding, magnetic field generation within shielded volumes, and
-precision magnetometry is expected to be crucial to achieve the
+In the previous best experiment \cite{bib:pendlebury}, which
+discovered $d_n<3.0\times 10^{-26}$~e-cm (90\% C.L), effects related
+to magnetic field homogeneity and instability were found to dominate
+the systematic error.  A detailed understanding of passive and active
+magnetic shielding, magnetic field generation within shielded volumes,
+and precision magnetometry is expected to be crucial to achieve the
 systematic error goals for the next generation of experiments.  Much
 of the R\&D effort for these experiments is focused on careful design
 and testing of various magnetic shield geometries with precision
@@ -106,47 +106,68 @@ magnetometers~\cite{bib:brys,bib:afach,bib:fierlingerroom,bib:sturmthesis,bib:pa
 %\item State the problem addressed in this paper (changes in $\mu$) and
  % the result.
 %\end{itemize}
-The nEDM experiment at TRIUMF aims to determine $\delta d_n\sim
-10^{-27}~e\cdot$cm. A DC magnetic field of typically $B_0=1~\mu$T is
-used to provide the quantization axis for the UCN, normally directed
-vertically in the apparatus.  The experimental cycle involves a Ramsey
-sequence, where the UCN spins are oriented into the horizontal plane
-by applying an oscillating horizontal $B_1$ field, followed by a free
-precession period, then an additional application of a second $B_1$
-pulse coherent in phase with the first.  The UCN are then drained from
-the measurement cell and the number of UCN in both the spin-up state
-and spin-down state are counted.  By varying the $B_1$ oscillation
-frequency, the central resonant frequency may be deduce with high
-precision.  Normally four fills of the measurement cell, with four
-different $B_1$ frequencies are used to extract the resonant
-frequency.  In order to extract $d_n$, the resonant frequency
-measurement is conducted with an electric field $E$ oriented parallel
-to the main $B_0$ field, and then again with $E$ oriented antiparallel
-to the main $B_0$ field.  A problem in these experiments is if the
-magnetic field drifts over the course of the measurement period, it
-worsens the statistical precision with which $d_n$ can be determined.
-For a $\delta d_n\sim 10^{-27}~e\cdot$cm measurement, the average
-field over one fill of the measurement cell must be known to the 10~fT
-level or better (which occurs typically on a timescale of 100~s), and
-the field is seldom stable to this level.  For this reason,
-experiments use a comagnetometer and/or surrounding atomic
-magnetometers to correct the magnetic field to this
-level~\cite{bib:nedm4,bib:afach,bib:brys}.  In order for
-this correction technique succeed, gradient fields must be controlled
-or corrected for at the $<1$~nT/m level.  Furthermore the stability of
-the $B_0$ field must be controlled as well as possible, normally at
-the 1-10~pT level over the UCN free-precession time.
+
+In nEDM experiments, the spin-precession frequency $\nu$ of neutrons
+placed in static magnetic $B_0$ and electric $E$ fields is measured.
+The measured frequencies for parallel $\nu_+$ and antiparallel $\nu_-$
+relative orientations of the fields is sensitive to the neutron
+electric dipole moment $d_n$
+\begin{equation}
+h\nu_\pm=2\mu_nB_0\pm d_nE
+\end{equation}
+where $\mu_n$ is the magnetic moment of the neutron.
 
 
-The $B_0$ magnetic field generation system for a typical nEDM
-experiment comprises a coil placed within a passively magnetically
-shielded volume.  The passive magnetic shield is generally composed of
-a multi-layer shield formed from thin shells of high-permeability
-metal (mu-metal).  The outer layers of this shield are normally
-cylindrical \cite{bib:nedm3.5, bib: nedm2
-} or forming the walls of a magnetically
-shielded room \cite{bib:altarev2014}.  The innermost magnetic shield is normally
-a specially shaped shield, where the design of the coil in relation to
+
+%The experimental cycle involves a Ramsey
+%sequence, where the UCN spins are oriented into the horizontal plane
+%by applying an oscillating horizontal $B_1$ field, followed by a free
+%precession period, then an additional application of a second $B_1$
+%pulse coherent in phase with the first.  The UCN are then drained from
+%the measurement cell and the number of UCN in both the spin-up state
+%and spin-down state are counted.  By varying the $B_1$ oscillation
+%frequency, the central resonant frequency may be deduce with high
+%precision.  Normally four fills of the measurement cell, with four
+%different $B_1$ frequencies are used to extract the resonant
+%frequency.  In order to extract $d_n$, the resonant frequency
+%measurement is conducted with an electric field $E$ oriented parallel
+%to the main $B_0$ field, and then again with $E$ oriented antiparallel
+%to the main $B_0$ field.
+
+
+
+A problem in these experiments is that if the magnetic field $B_0$
+drifts over the course of the measurement period, it worsens the
+statistical precision with which $d_n$ can be determined.  For a
+$\delta d_n\sim 10^{-27}~e\cdot$cm measurement, the average field over
+one fill of the measurement cell must be known to the 10~fT level or
+better (which occurs typically on a timescale of 100~s), and the field
+is seldom stable to this level.  For this reason, experiments use a
+comagnetometer and/or surrounding atomic magnetometers to correct the
+magnetic field to this level~\cite{bib:nedm4,bib:afach,bib:brys}.
+%In
+%order for this correction technique succeed, gradient fields must be
+%controlled or corrected for at the $<1$~nT/m level.  Furthermore the
+%stability of the $B_0$ field must be controlled as well as possible,
+%normally at the 1-10~pT level over the UCN free-precession time.
+Drifts of 1-10~pT in $B_0$ can be corrected using the comagnetometer
+technique, setting a goal magnetic stability in a typical nEDM
+experiment.
+
+%The nEDM experiment at TRIUMF aims to determine $\delta d_n\sim
+%10^{-27}~e\cdot$cm.
+
+In nEDM experiments, typically $B_0=1~\mu$T is used to provide the
+quantization axis for the UCN.
+%, normally directed vertically in the apparatus.  
+The $B_0$ magnetic field generation system typically comprises a coil
+placed within a passively magnetically shielded volume.  The passive
+magnetic shield is generally composed of a multi-layer shield formed
+from thin shells of high-permeability metal (mu-metal).  The outer
+layers of this shield are normally cylindrical \cite{bib:nedm3.5, bib:
+  nedm2 } or forming the walls of a magnetically shielded room
+\cite{bib:altarev2014}.  The innermost magnetic shield is normally a
+specially shaped shield, where the design of the coil in relation to
 shield is carefully taken into account to achieve adequate
 homogeneity.
 
