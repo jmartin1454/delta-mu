@@ -91,12 +91,13 @@ seconds with 12~dB/oct rolloff.
 \begin{center}
    \includegraphics[width=0.8\textwidth]{geometry.PNG}
     \caption{Axial shielding factor measurement setup. The witness
-      cylinder with a radius of 2.54~cm and a length of 15.2~cm is placed
-      inside a solenoid with a radius and a half length of
-      17.44~cm. The axis of symmetry is along the $z$-axis. The
-      windings of the solenoid is shown in red. The blue coil with one
-      turn is coupled to the witness cylinder and it has a radius of
-      5~cm.  }
+      cylinder with an inner diameter of 5.2~cm and a length of
+      15.2~cm is placed inside a solenoid with a diameter of 30.8~cm
+      and a half length of 17.4~cm.  The thickness of the witness
+      cylinder is nominally 1/16''=0.16~cm.  The axis of symmetry is
+      along the $z$-axis. The windings of the solenoid are shown in
+      red. The loop coil (shown in blue) is mechanically coupled to
+      the witness cylinder and has a diameter of 9.7~cm.}
 % Note to Jeff (self): fix this figure caption!!!
 % (Need to look at it in the pdf form to think more about it.)
     \label{fig:geometry}
@@ -111,12 +112,11 @@ temperature that might incorrectly be interpreted as a change in the
 magnetic properties of the witness cylinder.
 
 To address possible motion of the witness cylinder with respect to the
-field generation system, another coil was wound on a plastic holder
-mounted rigidly to the witness cylinder.  The coil was one loop of
-copper wire with a radius of 5~cm, as shown in
-Fig.~\ref{fig:geometry}. The loop coil holder had inner radius of
-2.7~cm and an outer radius of about 5~cm.  Plastic set screws in the
-holder fixed the loop coil to be coaxial with the witness cylinder.
+field generation system, another coil (the loop coil, shown in
+Fig.~\ref{fig:geometry}) was wound on a plastic holder mounted rigidly
+to the witness cylinder.  The coil was one loop of copper wire with a
+diameter of 9.7~cm.  Plastic set screws in the holder fixed the loop
+coil to be coaxial with the witness cylinder.
 
 Systematic differences in the results from the two coils (the
 solenoidal coil, and the loop coil) were used to search for motion
@@ -165,7 +165,7 @@ techiques were also tested.  These are described further in
 Section~\ref{sec:axialsyst}.
 
 
-\subsubsection{Data and Interpretation}
+\subsubsection{Data and Interpretation\label{sec:axialsyst}}
 
 An example of the typical data acquired is shown in
 Fig.~\ref{fig:B_vs_Temp}.  For these data, the field applied by the
@@ -196,14 +196,18 @@ is slowly varying.  This is typical of the data that we acquired, that
 the data would generally follow a straight line if the temperature
 followed a slow and smooth dependence with time, but the data would
 not be linear if the temperature varied rapidly or non-monotonically
-with time.
+with time.  We also tried other methods of temperature control, such
+as forced air, liquid flowing through tubing, and thermo-electric
+coolers.  The diurnal cycle followed by the building's air
+conditioning was found to be the most stable and gave the most
+reproducible results for temperature slopes.
 
-Another feature of the data was that, on subsequent similar
-measurements, the value of the slope would not be the same, on a
-measurement-to-measurement basis, even if very similar experimental
-parameters were used.  A comprehensive set of systematic studies of
-the factors affecting the slope were performed, and these are
-presented in Section~\ref{sec:axialsyst}.  
+%Another feature of the data was that, on subsequent similar
+%measurements, the value of the slope would not be the same, on a
+%measurement-to-measurement basis, even if very similar experimental
+%parameters were used.  A comprehensive set of systematic studies of
+%the factors affecting the slope were performed, and these are
+%presented in Section~\ref{sec:axialsyst}.  
 
 % Again don't scoop ourselves here.
 
@@ -251,95 +255,24 @@ presented in Section~\ref{sec:axialsyst}.
 \end{figure} 
 
 
-\subsubsection{Systematic Studies\label{sec:axialsyst}}
+%\subsubsection{Systematic Studies\label{sec:axialsyst}}
 
-\paragraph{Methods of Temperature Variation}
+%\paragraph{Field profile dependence and mechanical stability}
 
-In addition to ambient temperature changes, we tried other methods of
-forced temperature change.  In one design, Tygon tubing was wrapped
-around the witness cylinder in a spiral pattern to flow water whose
-temperature could be controlled.  Mechanical stability issues clearly
-dominated the systematic uncertainty in that measurement.  When water
-was flowing, the flexibility of the tubing caused a movement in the
-witness cylinder.  The motion was itself temperature-dependent because
-warmer water caused the tubing to become more supple.  To address this
-effect, the tubes were replaced by copper tubing.  But in this case,
-the challenge was to create enough contact between the tubes and the
-witness cylinder which was not successful. In another design, a TEC
-was replaced with the tubing. The main issue with this design was that
-it did not provide enough cooling for the witness cylinder and also it
-was creating only local temperature changes on the witness
-cylinder. In addition, despite of using heat sinks, the heat created
-by the TEC itself made it very inefficient.  We also tried using
-forced air to heat the witness cylinder.  This worked rather well, but
-the heating had to be done slowly in order to avoid temperature
-gradients across the apparatus, including the witness cylinder.  In
-the end, using the ambient temperature changes in the room gave the
-most reproducible results.  These followed a relatively stable diurnal
-cycle with the function of the building's air conditioning system.
+%As mentioned earlier, a concern in the measurement was that motion of
+%the witness cylinder, the solenoidal coil, and the innermost magnetic
+%shield relative to one another could generate a false temperature
+%slope.  Another concern was that the spatial variation of the magnetic
+%field generated by the coil could somehow affect the measurement.  To
+%address these concerns, a loop coil rigidly mounted to the witness
+%cylinder was used to search for any differences compared to results
+%measured with the solenoidal coil.
 
-Although for most of the measurements the general trend of $B(T)$
-graphs was consistent, the shape and positions of the nonlinear parts
-of $B-T$ graphs were changing.  The changes in the $B$ vs.~temperature
-slope always correlate with sharper changes in the temperature with
-time.  The effect is most pronounced when a temperature that is
-decreasing with time suddenly changes to increasing, or vice-versa.
-However, we have incorporated the uncertainty from this effect into
-our stated range of values.
-
-
-
-
-% Another list
-% - amplitude measurement on oscilloscope (no lock-in). (done)
-% - speed of temperature change? temperature homogeneity?  (not here yet) 
-% - other methods of cooling and why they didn't work. (not here yet)(done)
-% - magnetic contamination by thermocouples (done)
-
-% The above list maybe explains other possible variations on the
-% method that you tried that all seemed to have worse systematic
-% errors.
-
-% Then, a list of systematic errors once you settled on the final
-% measurement technique...
-
-% - field profile/homogeneity (done)
-% - mechanical stability (done)
-% - thermal expansion (done)
-% - temperature dependence of fluxgate and SCU (done)
-% - temperature dependence of lock-in (done)
-% - temperature dependence of coil resistance (not here yet) (done)
-%    - Cupron/etc. study. plus
-%    - measuring across the precision resistor
-% - null measurement (Cu, and why it doesn't give the whole story, not here yet) (done)
-% - effect of endcaps? (influence of external fields, not here yet)(done)
-% - temperature dependence of reaction factor (negligible, not here yet)(done)
-% - degaussing (not here yet)(done)
-% - measurements on different witness cylinders? (not here yet)(done)
-% - vibrations of the building?(done)
-% - ...
-%
-% Another list is on the oldelog somewhere.  Please find it.
-% The above list is longer and inclusive of the old list.
-% See oldelog entry 141 in Magnetic Fields.
-%
-% This list of systematics is addressed now...
-
-\paragraph{Field profile dependence and mechanical stability}
-
-As mentioned earlier, a concern in the measurement was that motion of
-the witness cylinder, the solenoidal coil, and the innermost magnetic
-shield relative to one another could generate a false temperature
-slope.  Another concern was that the spatial variation of the magnetic
-field generated by the coil could somehow affect the measurement.  To
-address these concerns, a loop coil rigidly mounted to the witness
-cylinder was used to search for any differences compared to results
-measured with the solenoidal coil.
-
-The result of this study was that it did not reduce the typical slopes
-measured, nor improve their reproducibility.  In the end, repeated
-measurements of temperature slopes using the loop coil fell in the
-range
+%The result of this study was that it did not reduce the typical slopes
+%measured, nor improve their reproducibility.  In the end, 
+As mentioned earlier, data were acquired for both the solenoid coil
+and the loop coil.  Repeated measurements of temperature slopes using
+the loop coil fell in the range
 0.4\%/K~$<\vert\frac{1}{B}\frac{dB}{dT}\vert<$~1.5\%/K.
 % 0.5 is from Page 15 of Taraneh's summary.
 % 0.4 is seen on Page 34 of Taraneh's logbook, Volume 1, Aug 2014-Dec 2015.
@@ -349,16 +282,18 @@ Similar measurements for the solenoidal coil yielded
 % 0.3 is from Page 30 of Taraneh's summary
 % 0.75 is from Page 34 of Taraneh's logbook, Volume 1, Aug 2014-Dec 2015.
 
-In general, the slopes measured with the loop coil are larger than for
+In general, the slopes measured with the loop coil were larger than for
 the solenoidal coil.  A partial explanation of this difference is
 offered by the field profile generated by each coil, and its
 interaction with the witness cylinder.  This is addressed further in
 Section~\ref{sec:axialsims}.
 
-However, the range of slopes measured in different trials still varied
-within the stated ranges.  We conclude that whatever is causing the
-slopes to change periodically is likely unrelated to motion of the
-witness cylinder relative to the magnetic elements in the system.
+The range of slopes measured in different trials varied within the
+stated ranges.  We conclude that whatever is causing the slopes to
+change periodically is likely unrelated to motion of the witness
+cylinder relative to the magnetic elements in the system, given that
+the loop coil data has a similar range as the solenoid coil data,
+despite the more rigid mounting of the loop coil.
 
 
 % What is the value of the systematic error deduced from this study?
@@ -367,6 +302,16 @@ witness cylinder relative to the magnetic elements in the system.
 % profile is smaller than the unknown systematic error of Fig. 3(c)
 % and similar figures.  also partly addresses possible changes in
 % reaction factor with temperature. (done)
+
+Several other possible systematic effects were considered, all of
+which were found to give uncertainties on the measured slopes
+$<0.1\%$/K.  These included: thermal expansion of components including
+the witness cylinder itself, temperature variations of the magnetic
+shielding system within which the experiments were conducted,
+degaussing of the witness cylinder, and temperature slopes of various
+components e.g. the fluxgate magnetometer and the lock-in amplifier.
+
+%% Jeff got to here.
 
 Other potential motion artifacts due to thermal expansion of
 components was also considered.  The thermal expansion coefficient of
