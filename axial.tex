@@ -10,6 +10,7 @@ temperature.  The relative slope of $\mu(T)$ can then be calculated
 using
 \begin{equation}
 \frac{1}{\mu}\frac{d\mu}{dT}=-\frac{\frac{1}{B_s}\frac{dB_s}{dT}}{\frac{\mu}{B_s}\frac{dB_s}{d\mu}}.
+\label{eqn:axial}
 \end{equation}
 The numerator was taken from the measurements described above. The
 denominator was taken from finite-element simulations of the shielding
@@ -88,20 +89,18 @@ field.)  The time constant on the lock-in was typically set to 3
 seconds with 12~dB/oct rolloff.
 
 \begin{figure}
-\begin{center}
-   \includegraphics[width=0.8\textwidth]{geometry.PNG}
+  \begin{center}
+    \includegraphics[width=0.8\textwidth]{geometry.PNG}
     \caption{Axial shielding factor measurement setup. The witness
       cylinder with an inner diameter of 5.2~cm and a length of
       15.2~cm is placed inside a solenoid with a diameter of 30.8~cm
-      and a half length of 17.4~cm.  The thickness of the witness
-      cylinder is nominally 1/16''=0.16~cm.  The axis of symmetry is
-      along the $z$-axis. The windings of the solenoid are shown in
+      and a length of 35.5~cm, containing 14 turns.  The thickness of
+      the witness cylinder is $1/16''=0.16$~cm.  The axis of symmetry
+      is along the $z$-axis. The windings of the solenoid are shown in
       red. The loop coil (shown in blue) is mechanically coupled to
       the witness cylinder and has a diameter of 9.7~cm.}
-% Note to Jeff (self): fix this figure caption!!!
-% (Need to look at it in the pdf form to think more about it.)
     \label{fig:geometry}
-    \end{center}
+  \end{center}
 \end{figure}
 
 As shall be described in Section~\ref{sec:axialsyst}, a concern in the
@@ -238,11 +237,8 @@ reproducible results for temperature slopes.
 % for the possible temperature dependence, rather than a value.
 
 \begin{figure}
-\begin{center}
-   \includegraphics[width=0.9\textwidth]{B_vs_T_solenoid.pdf}
-% Taraneh to do: be careful that the figure captions and text use the
-% same symbols.  Might want to consider using a different symbol than
-% $B$.
+  \begin{center}
+    \includegraphics[width=0.9\textwidth]{B_vs_T_solenoid.pdf}
     \caption{Ambient temperature and shielded magnetic field
       amplitude, measured over a 70 hour period. (a) temperature of
       the witness cylinder as a function of time.  (b) magnetic field
@@ -251,7 +247,7 @@ reproducible results for temperature slopes.
       line in (c) is a linear fit to data. At 23$^\circ$C,
       $\frac{1}{B_s}\frac{dB_s}{dT}=-0.75\%$/K.}
     \label{fig:B_vs_Temp}
-    \end{center}
+  \end{center}
 \end{figure} 
 
 
@@ -311,182 +307,32 @@ shielding system within which the experiments were conducted,
 degaussing of the witness cylinder, and temperature slopes of various
 components e.g. the fluxgate magnetometer and the lock-in amplifier.
 
-%% Jeff got to here.
-
-Other potential motion artifacts due to thermal expansion of
-components was also considered.  The thermal expansion coefficient of
-mu-metal is $\sim$10~ppm/K~\cite{bib:kruppvdm}.  However if the witness
-cylinder expands uniformly in both thickness and radius, the shielding
-factor is to first order unchanged.  In general, even unnatural
-asymmetric and twisting motions of the fluxgate sensor and witness
-cylinder tended to generate temperature slopes in the magnetic field
-at the level $<30$~ppm/K.  The general homogeneity of the magnetic
-field at the fluxgate sensor position and of the applied magnetic
-field within which the witness cylinder was placed aided in minimizing
-motion artifacts.
-
-% http://nuclear.uwinnipeg.ca/oldelog/Magnetic+Fields/141
-%As another mechanical stability study, the movement of the Bartington
-%fluxgate flying lead due to thermal expansion was estimated. If the
-%fluxgate flying lead move about 1 mm normal to its axis of symmetry
-%which is parallel to the axis of the witness cylinder, the magnetic
-%field will change about 30~ppm/K over 20~K temperature changes.
-
-% %vibration
-% Since the experiment site is located at the heart of downtown it is
-% also possible that vibrations of the building affected the experiment
-%setup and its machanical stability.
-% Jeff says:  I can't think of much to say here.
-
-
-%effect of the end caps
-
-% Taraneh's version:
-
-% In this experiment, one side of our prototype passive shield was
-% closed with the end caps while the other side left open for easier
-% access to the interior region. The result of the magnetic field map
-% inside the prototype shield when the solenoid was turned on showed
-% that closer to the far side of the shield, where the shield is closed,
-% the magnetic field is more uniform. For a 10$\mu$T applied magnetic
-% field the maximum change of the magnetic field along the axis of the
-% passive shield was the order of 0.1~$\mu$T.  Therefore the witness
-% cylinder was pushed to the far side of the prototype shield to reduce
-% the non uniformity of the magnetic field.
-% This is from oldElog entry 146: field map by Andrew Harrison
-
-% Jeff's version (slightly shorter)
-
-% As stated in Section~\ref{sec:axialapparatus}, the measurements were
-% conducted within the magnetically shielded volume inside our
-% prototype magnetic shields.  Most of the measurements were conducted
-% with the endcaps of this shielding system removed on one side.  No
-% systematic effect was found to arise from the removal of the
-% endcaps.  The only effect was that the field produced by the
-% solenoid was somewhat less homogeneous, which could easily be
-% accounted for by moving the witness cylinder slightly closer to the
-% side which has its endcaps on.  This was verified by measuring a
-% magnetic field map of the region.
-
-% Jeff's final version
-
-% say nothing - this is an unimportant detail.  It had no effect on
-% the measurement.  As far as we know, we would get the same value
-% endcaps on or off.  I think it is more confusing to raise some
-% possible issue about it and then say it wasn't a problem.
-
-%temperature dependence of reaction factor
-As the witness cylinder was put through its diurnal heating and
-cooling cycles, so too was the magnetic shield within which the
-apparatus was placed.  Since this magnetic shield is used as a flux
-return, especially for the solenoidal coil, a concern could be that
-the measurement confounds temperature dependence of the flux return
-with the temperature dependence of the shielding factor of the
-solenoid.  We want to clarify that this cannot be the case: any change
-in $\mu$ of the flux return will have an exceedingly small effect on
-the field produced by the solenoid.  This is perhaps best demonstrated
-by Fig. \ref{fig:Magnetic_Field}, where the reaction factor in a
-similar cylindrical geometry is graphed as a function of $\mu$.  Based
-on our measurements, this limits systematic errors from such an effect
-to be $<200$~ppm/K.
-
-% This number above comes from:
-
-% mu/B dB/dmu = 0.01
-
-% times
-
-% 1/mu dmu/dT < 2%/K
-
-%degaussing
-The magnetization of the witness cylinder changes the magnetic
-permeability of the material and so the shielding factor changes.  Our
-studies of degaussing the witness cylinder were consistent with
-studies that we will report in
-Section~\ref{sec:transformersystematics}.  Essentially, if the shields
-were degaussed, or if they were left for long periods of time in the
-small AC field generated by the solenoid, the results for temperature
-dependences were similar.  Improper degaussing procedures were found
-to induce long-term drifts in the measurement, uncorrelated with
-temperature.  We do not include such data when quoting our
-measurements of temperature slopes.  We do think that part of the
-range of slopes that we measured is due to the magnetic properties of
-the material, and that it is possible that some of this range is yet
-due to insufficient degaussing on our part.  This is something we plan
-to improve in planned future experiments on DC field stability.
-
-
-
-\paragraph{Temperature slopes of various components of the apparatus}
-
-The temperature coefficients of various components that could affect
-the measurement were also considered.
-
-The Mag-03IEL70 Bartington magnetic field sensor has a scaling
-temperature coefficient of 15~ppm/K~\cite{bib:bartman}.  There is also
-temperature coefficient for the offset of these sensors, but this is
-irrelevant for this measurement because of the AC fields and
-demodulation technique used.
-
-The SRS830 lock-in amplifier has 50~ppm/K amplitude
-stability~\cite{bib:lockin}.
-% We did this for the transformer technique.
-% Yes, but I think it is valid for this measurement as well, so let's put
-% it here.
-To further test this, the lock-in amplifier was connected to the coil
-through a 1~$\Omega$ resistor with small temperature coefficient.  The
-voltage across the resistor was measured with the lock-in amplifier
-itself.  Any change would then be interpreted as a change in the
-current supplied to the coil by the lock-in amplifier.  The measured
-temperature dependence was always $<0.1$\%/K.
-
-% To address this effect, another measurement conducted with local coil
-% with Cupron wire windings. Cupron has higher resistivity compared to
-% copper wires. The results showed no linear correlation between the
-% measured magnetic field and the temperature of the witness cylinder.
-
-% Taraneh asks:  The results?  Stride gum?  What to say?
-
-% Jeff responds: I am not sure what to say about these results.  We
-% didn't do the same measurement with the 1 Ohm resistor, I think, so
-% it's hard to say if it was a problem with the temperature
-% coefficient of resistance, or some geometrical change due to
-% temperature change, or what.  Basically it is a confusing result in
-% a somewhat weird experimental setup.
-
-%Taraneh: I calculated from the long summary
 The stability of the system was also tested by replacing the mu-metal
 witness cylinder with a copper cylinder of very similar dimensions.
-All other components of the system were the same.  The apparatus was
-then run through its usual experimental cycle over several days.  For
-all such measurements the temperature dependence of the demodulated
-magnetic was $<0.1$\%/K.  This kind of measurement is unable to
-address all possible systematic uncertainties.  For example, if moving
-the mu-metal witness cylinder due to some thermal expansion would
-change the field at the site of the fluxgate, moving the copper
-cylinder will not make the same change.  Nonetheless it is an
-encouraging result that the system does not measure a strong
-temperature dependence of the magnetic field when no mu-metal witness
-cylinder is present.  The magnitude of the magnetic field measured at
-the fluxgate sensor was larger during these measurements because of
-the lack of magnetic shielding from the copper.  So, in some tests the
-magnetic field generated by the reference channel of the lock-in
-amplifier was reduced to search for any problems arising from smaller
-fluxgate signals.  No difference was seen within the upper bound
-stated above.
-
-\paragraph{Different Witness Cylinders}
-
-The manufacturer of our prototype magnetic shields provided us with
-three witness cylinders.  All three were used in these measurements.
-Different cylinders possessed systematically different temperature
-slopes, although always within the ranges quoted above.  These changes
-are believed to arise from the manufacturing and annealing process.
-It is known that the take-out temperature in the annealing process has
-a strong effect on the temperature slopes measured at
-50~Hz~\cite{bib:kruppvdm}.
+The apparatus was then run through its usual experimental cycle over
+several days, and this was done multiple times for different
+parameters such as coil current.  For all measurements the temperature
+dependence of the demodulated magnetic was $<0.1$\%/K, giving
+confidence that unknown systematic effects contribute below this
+level.
 
 
+% \paragraph{Different Witness Cylinders}
+%
+% The manufacturer of our prototype magnetic shields provided us with
+% three witness cylinders.  All three were used in these measurements.
+% Different cylinders possessed systematically different temperature
+% slopes, although always within the ranges quoted above.  These changes
+% are believed to arise from the manufacturing and annealing process.
+% It is known that the take-out temperature in the annealing process has
+% a strong effect on the temperature slopes measured at
+% 50~Hz~\cite{bib:kruppvdm}.
+
+Based on the systematic effects that we studied, we conclude that they
+do not explain the ranges of values measured for
+$\frac{1}{B}\frac{dB}{dT}$.  We suspect that the range measured is
+either some yet uncharacterize systematic effect, or a complicated
+property of the material possibly depending on the material history.
 
 % Two possibilities:
 
@@ -501,50 +347,50 @@ a strong effect on the temperature slopes measured at
 
 \subsubsection{Geometry correction and determination of $\mu(T)$\label{sec:axialsims}}
 
-To relate the data on $B(T)$ to $\mu(T)$, the shielding factor of the
-witness cylinder as a function of $\mu$ must be known.  Finite element
-simulations in FEMM and OPERA were performed to determine this factor.
-The simulations are also useful for determining the effective values
-of $B$ and $H$ in the material (sometimes called the ``demagnetization
-factor'' in the literature), which will be useful to compare to the
-case for typical nEDM experiments when the innermost shield is used as
-a flux return.
+To relate the data on $B_s(T)$ to $\mu(T)$, the shielding factor of
+the witness cylinder as a function of $\mu$ must be known.  Finite
+element simulations in FEMM and OPERA were performed to determine this
+factor.  The simulations are also useful for determining the effective
+values of $B_m$ and $H_m$ in the material (sometimes called the
+``demagnetization factor'' in the literature), which will be useful to
+compare to the case for typical nEDM experiments when the innermost
+shield is used as a flux return.
 
 
-From the simulations the ratio $\frac{\mu}{B} \frac{dB}{d\mu}$ was
+From the simulations the ratio $\frac{\mu}{B_s} \frac{dB_s}{d\mu}$ was
 calculated.  A linear model of the material was used where
-$\bold{B}=\mu \bold{H}$ and $\mu$ is a constant independent of
-$\bold{H}$.  The term $\frac{\mu}{B}\frac{dB}{d\mu}\neq 1$ because the
-witness cylinders are open ended, and hence even for very large
-$\mu\rightarrow\infty$ the shielding factor asymptotically approaches
-a constant rather than infinity.
+$\bold{B_m}=\mu \bold{H_m}$ and $\mu$ is a constant independent of
+$\bold{H_m}$.  The term $\frac{\mu}{B_s}\frac{dB_s}{d\mu}\neq 1$
+because the witness cylinders are open ended, and hence even for very
+large $\mu\rightarrow\infty$ the shielding factor asymptotically
+approaches a constant rather than infinity.
 
 The simulations differed slightly in their results, dependent on
 whether OPERA or FEMM was used, and whether the solenoidal coil or
-loop coil were used.
-Based on the simulations, the result is
-$\frac{\mu}{B}\frac{dB}{d\mu}=0.42-0.50$ for the solenoidal coil, with
-the lower value being given by FEMM and the upper value being given by
-a 3D OPERA simulation, for identical geometries.  This is somewhat
-lower than the value suggested by
-Paperno~\cite{bib:paperno-open-ended} in his fits to simulations
-performed in OPERA, which we estimate to be 0.6.  We adopt our value
-since it is difficult to determine precisely from
+loop coil were used.  Based on the simulations, the result is
+$\frac{\mu}{B_s}\frac{dB_s}{d\mu}=0.42-0.50$ for the solenoidal coil,
+with the lower value being given by FEMM and the upper value being
+given by a 3D OPERA simulation, for identical geometries.  This is
+somewhat lower than the value suggested by
+Ref.~\cite{bib:paperno-open-ended} with fits to simulations performed
+in OPERA, which we estimate to be 0.6.  We adopt our value since it is
+difficult to determine precisely from
 Ref.~\cite{bib:paperno-open-ended}.  For the loop coil, we determine
-$\frac{\mu}{B}\frac{dB}{d\mu}=0.56-0.65$, the range being given again
-by a difference between FEMM and OPERA.
+$\frac{\mu}{B_s}\frac{dB_s}{d\mu}=0.56-0.65$, the range being given
+again by a difference between FEMM and OPERA.
 
 Combining the measurement and the simulations, the temperature
-dependence of the effective $\mu$ (at $\mu=20 000$, which is
+dependence of the effective $\mu$ (at $\mu=20,000$, which is
 consistent with our measurements) can be calculated by
 equation~(\ref{eqn:axial}).  The results of the simulations and
 measurements are presented in Table~\ref{tab:axialsummary}.
 
-\begin{center}
 \begin{table}
+\begin{center}
 \begin{tabular}{|c|c|c|c|}
 \hline 
-  & $\vert \frac{\mu}{B}\frac{dB}{d\mu}\vert$ & $\vert \frac{1}{B} \frac{dB}{dT}\vert$~(\%/K) & $\frac{1}{\mu}\frac{d\mu}{dT}$~(\%/K) \\ 
+  & $\vert \frac{\mu}{B_s}\frac{dB_s}{d\mu}\vert$ & $\vert \frac{1}{B_s} \frac{dB_s}{dT}\vert$~(\%/K) & $\frac{1}{\mu}\frac{d\mu}{dT}$~(\%/K) \\ 
+ & (simulated) & (measured) & (extracted) \\
 \hline 
 Solenoidal Coil & 0.42-0.50 & 0.3-0.8 & 0.6-1.9 \\ 
 \hline 
@@ -554,33 +400,23 @@ Loop Coil & 0.56-0.65 & 0.4-1.5 & 0.6-2.7 \\
 \caption{Summary of OPERA and FEMM simulations and shielding factor
   measurements, resulting in extracted temperature slopes of $\mu$.}
 \label{tab:axialsummary}
+\end{center}
 
 \end{table}
-\end{center}
 
 Combining the loop coil and solenoidal coil results, we find
 0.6\%/K~$\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim 2.7\%$/K to be a
 reasonable range for the possible temperature slope of $\mu$.
 
 As stated earlier, the simulations also provided a way to determine
-the typical $B$ and $H$ internal to the material of the witness
-cylinder.  According to the simulations, the $B$ amplitude was
-typically 100~$\mu$T and the $H$ amplitude was typically 0.001~A/m.  These are
-somewhat larger than the values normally encountered in nEDM
-experiments, when the innermost shield is used as a flux return.
-
+the typical $B_m$ and $H_m$ internal to the material of the witness
+cylinder.  According to the simulations, the $B_m$ amplitude was
+typically 100~$\mu$T and the $H_m$ amplitude was typically 0.001~A/m.
+These are somewhat {\it larger????} than the values normally
+encountered in nEDM experiments, when the innermost shield is used as
+a flux return, recalling from Section~\ref{sec:theory_summary}, a more
+appropriate $H_m$ for the innermost magnetic shield of an nEDM
+experiment is 0.007~A/m.
 % Taraneh to do: look up number XXX for $H$.
-
-Furthermore, we remind the reader that the measurements were conducted
-using AC fields at typically 1~Hz, as opposed to the DC fields
-normally used in nEDM experiments.
-
-
-%\begin{itemize}
-%\item Describe experimental setup and important considerations
-%  (e.g. relationship of data to effective $\mu$)
-%\item Explain B, H, f, and dominant systematic effects.
-%\item One figure of experimental setup?
-%\item One data graph?
-%\item State overall result and systematic error.
-%\end{itemize}
+Also, these measurements were typically conducted using AC fields at
+1~Hz, as opposed to the DC fields normally used in nEDM experiments.

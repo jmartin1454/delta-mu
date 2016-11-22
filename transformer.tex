@@ -13,7 +13,7 @@ The windings were not potted in place.
 
 Each of the three witness cylinders was tested.  Data were acquired
 using different numbers of turns on both the primary and secondary
-coils (from six to 48 on the primary, and from 7 to 24 on the
+coils (from 6 to 48 on the primary, and from 7 to 24 on the
 secondary).
 % Table 9 on page 65 of Taraneh's report shows the different windings.
 % Can guess which core is which.
@@ -24,27 +24,27 @@ secondary).
 %This enabled more saturation of the material.
 
 The primary coil generated an AC magnetic field $H(t)$, while the
-secondary coil was used to measure the EMF induced by the time-varying
-magnetic flux and hence being proportional to $dB(t)/dt$.  To a good
+secondary coil was used to measure the emf induced by the time-varying
+magnetic flux proportional to $dB(t)/dt$.  To a good
 approximation
 \begin{equation}
-H(t)=\frac{N_pI(t)}{2\pi R}
+H_m(t)=\frac{N_pI(t)}{2\pi R}
 \end{equation}
 where $N_p$ is the number of turns in the primary, $I(t)$ is the
 current in the primary, and $R$ is the radius of the witness cylinder,
 and
 \begin{equation}
-\frac{dB(t)}{dt}=\frac{V(t)}{t\ell}
+\frac{dB_m(t)}{dt}=\frac{V(t)}{t\ell}
 \end{equation}
 where $V(t)$ is the voltage generated in the secondary, and $t$ and
 $\ell$ are the thickness and length of the witness cylinder.
 
 For a sinusoidal drive current $I(t)$, and under the assumption that
-$B(t)=\mu H(t)$ with $\mu$ being a constant, the voltage generated in
-the secondary $V(t)$ should be sinusoidal and out of phase with the
+$B_m(t)=\mu H_m(t)$ with $\mu$ being a constant, the voltage generated
+in the secondary $V(t)$ should be sinusoidal and out of phase with the
 primary current.
 
-The internal oscillator of a SRS830 lock-in amplifier was used to
+The internal oscillator of an SRS830 lock-in amplifier was used to
 generate $I(t)$.  This was monitored by measuring the voltage across a
 1~$\Omega$ resistor with small temperature coefficient in the primary
 loop.  The lock-in amplifier was then used to demodulate $V(t)$ into
