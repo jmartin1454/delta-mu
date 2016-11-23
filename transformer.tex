@@ -34,7 +34,8 @@ where $N_p$ is the number of turns in the primary, $I(t)$ is the
 current in the primary, and $R$ is the radius of the witness cylinder,
 and
 \begin{equation}
-\frac{dB_m(t)}{dt}=\frac{V(t)}{t\ell}
+\frac{dB_m(t)}{dt}=\dot{B}_m(t)=\frac{V(t)}{t\ell}
+\label{eqn:bdot}
 \end{equation}
 where $V(t)$ is the voltage generated in the secondary, and $t$ and
 $\ell$ are the thickness and length of the witness cylinder.
@@ -48,48 +49,54 @@ The internal oscillator of an SRS830 lock-in amplifier was used to
 generate $I(t)$.  This was monitored by measuring the voltage across a
 1~$\Omega$ resistor with small temperature coefficient in the primary
 loop.  The lock-in amplifier was then used to demodulate $V(t)$ into
-its in-phase $X$ and out-of-phase $Y$ components.  The experiment was
-done at 1 Hz and as small as possible $H(t)$, typically 0.1~A/m in
-amplitude, to measure the slope of the minor $B-H$ loops near the
-origin of the $B-H$ space.
+its in-phase $V_X$ and out-of-phase $V_Y$ components (or equivalently
+$\dot{B}_m(t)$ being demodulated into $\dot{B}_{m,X}$ and
+$\dot{B}_{m,Y}$, as in equation~(\ref{eqn:bdot})).  The experiment was
+done at 1~Hz and as small as possible $H_m(t)$, typically 0.1~A/m in
+amplitude, to measure the slope of the minor $B_m-H_m$ loops near the
+origin of the $B_m-H_m$ space.
 
-The temperature of the core was measured at the same time as the sense
-voltage using non-magnetic type T thermocouples.  Measurements of $Y$
-as a function of temperature would then signify a change in $\mu$ with
-temperature.  In general, we used ambient temperature variations, as
-for our axial shielding factor measurements.
+The temperature of the core was measured continuously using
+thermocouples.  Measurements of $V_Y$ as a function of temperature
+would then signify a change in $\mu$ with temperature.  In general, we
+used ambient temperature variations for the measurements, as for our
+axial shielding factor measurements.
 
 % Although we would have preferred to measure at even lower frequencies
 % and amplitudes, these settings were found to be the minimum possible
 % before noise would make it impossible to measurement the long-term
 % (hours) evolution of the $X$ and $Y$ readings.
 
-The naive expectation is that the out-of-phase $Y$ component should
-signify a non-zero $\mu$, wherease the in-phase $X$ component should
-be zero.  In practice, due to a combination of saturation, hysteresis,
-eddy-current losses, and skin-depth effects, the $X$ component is
-never zero.
+The naive expectation is that the out-of-phase $V_Y$ component should
+signify a non-zero $\mu$, and the in-phase $V_X$ component should be
+zero.  In practice, due to a combination of saturation, hysteresis,
+eddy-current losses, and skin-depth effects, the $V_X$ component is
+nonzero.  It was found experimentally that keeping the amplitude of
+$H_m(t)$ small compared to the apparent coercivity ($\sim 3$~A/m for
+the 0.16~cm thick material at 1~Hz frequencies) ensured that the $V_Y$
+component was larger than the $V_X$ component.  This is displayed
+graphically in Fig.~\ref{fig:data_and_simulation}, where the
+dependence of $\dot{B}_{m,Y}$ and $\dot{B}_{m,X}$ on the amplitude of
+the applied $H_m(t)$ is displayed, for a driving frequency of 1~Hz.
+Clearly the value of $\dot{B}_{m,X}$ can be considerable compared to
+$\dot{B}_{m,Y}$, for larger $H_m$ amplitudes near the coercivity.  At
+larger amplitudes, the material goes into saturation.  Both
+$\dot{B}_{m,Y}$ and $\dot{B}_{m,X}$ eventually decrease as expected at
+amplitudes much greater than the coercivity.  We desired to interpret
+our results for $\dot{B}_{m,Y}$ as an effective permeability $\mu$
+%Jeff got to here.
 
-It was found experimentally that the amplitude of $H(t)$ had to be
-kept small compared to the coercivity ($\sim 3$~A/m) in order to
-ensure that the $Y$ component was larger than the $X$ component.  This
-is displayed graphically in Fig.~\ref{fig:data_and_simulation}, where
-the dependence of $Y$ and $X$ on the amplitude of the applied $H(t)$
-is displayed, for a driving frequency of 1~Hz are shown.  Clearly the
-value of $X$ can be considerable compared to $Y$, for larger $H$
-amplitudes near the coercivity.  At large amplitudes, the material
-goes into saturation, and both $Y$ and $X$ eventually decrease at
-amplitudes much greater than the coercivity.  This behavior, and
+This behavior, and
 signal-to-noise considerations, drove our decision to measure at
 typically 0.1~A/m amplitude and 1~Hz.
 
-The observation of nonzero $X$ signal is due to effects such as
-hysteresis, saturation, eddy currents, and skin depth.  Therefore, it
-is not truly possible to embody the results as a single parameter
-$\mu$, although we desired to express our results as such.  To
-understand the behavior in Fig.~\ref{fig:data_and_simulation} effects,
-a theoretical model of the hysteresis based on Jiles~\cite{bib:jiles}
-was used.
+The observation of nonzero $\dot{B}_{m,X}$ signal is due to effects
+such as hysteresis, saturation, eddy currents, and skin depth.
+Therefore, it is not truly possible to embody the results as a single
+parameter $\mu$, although we desired to express our results as such.
+To understand the behavior in Fig.~\ref{fig:data_and_simulation}
+effects, a theoretical model of the hysteresis based on
+Jiles~\cite{bib:jiles} was used.
 
 The key parameters of Jiles' model are saturation magnetization $M_s$,
 mean field parameter $\alpha$ which represents interdomain coupling,
