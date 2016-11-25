@@ -51,10 +51,10 @@
 \author[manitoba]{T. Andalib\corref{mycorrespondingauthor}}
 \cortext[mycorrespondingauthor]{Corresponding author}
 \ead{andalibt@myumanitoba.ca}
+\author[winnipeg,manitoba]{J.W. Martin}
 \author[winnipeg,manitoba]{C.P. Bidinosti}
 \author[winnipeg,manitoba]{R.R. Mammei}
-\author[winnipeg,manitoba]{J.W. Martin}
-\author[winnipeg]{A.~Bunch~of~other~People}
+\author[manitoba]{M.~Lang}
 
 % Jeff to do: need to finalize author list.
 
@@ -66,12 +66,18 @@
 Future experiments seeking to measure the neutron electric dipole
 moment (nEDM) require stable and homogeneous magnetic fields.  The
 stability of the magnetic field within a magnetically shielded volume
-is influenced by a number of factors.  In this paper, we study one of
-these factors, which is the dependence of the internally generated
-field on the permeability of the material.  We also provide
-measurements of the temperature-dependence of the permeability of the
-material, and indicate the extrapolation yet required to adequately
-use these measurements to design future nEDM experiments.
+is influenced by a number of factors.  One of the factors is the
+dependence of the internally generated field on the permeability of
+the material.  We provide measurements of the temperature-dependence
+of the permeability of the material, and indicate the extrapolation
+yet required to adequately use these measurements to design future
+nEDM experiments.  Assuming our measurement of
+0.1\%/K$<\frac{1}{\mu}\frac{d\mu}{dT}<$2.7\%/K and a an nEDM
+experiment sensitivity of $\frac{\mu}{B_0}\frac{dB_0}{d\mu}\sim 0.01$
+results in a temperature dependence of the magnetic field in a typical
+EDM experiment of $\frac{dB_0}{dT}=10-270$~pT/K.  The results are
+useful for estimating the necessary level of temperature control in
+nEDM experiments.
 \end{abstract}
 
 \begin{keyword}
@@ -118,25 +124,6 @@ h\nu_\pm=2\mu_nB_0\pm d_nE
 \end{equation}
 where $\mu_n$ is the magnetic moment of the neutron.
 
-
-
-%The experimental cycle involves a Ramsey
-%sequence, where the UCN spins are oriented into the horizontal plane
-%by applying an oscillating horizontal $B_1$ field, followed by a free
-%precession period, then an additional application of a second $B_1$
-%pulse coherent in phase with the first.  The UCN are then drained from
-%the measurement cell and the number of UCN in both the spin-up state
-%and spin-down state are counted.  By varying the $B_1$ oscillation
-%frequency, the central resonant frequency may be deduce with high
-%precision.  Normally four fills of the measurement cell, with four
-%different $B_1$ frequencies are used to extract the resonant
-%frequency.  In order to extract $d_n$, the resonant frequency
-%measurement is conducted with an electric field $E$ oriented parallel
-%to the main $B_0$ field, and then again with $E$ oriented antiparallel
-%to the main $B_0$ field.
-
-
-
 A problem in these experiments is that if the magnetic field $B_0$
 drifts over the course of the measurement period, it worsens the
 statistical precision with which $d_n$ can be determined.  For a
@@ -146,59 +133,34 @@ better (which occurs typically on a timescale of 100~s), and the field
 is seldom stable to this level.  For this reason, experiments use a
 comagnetometer and/or surrounding atomic magnetometers to correct the
 magnetic field to this level~\cite{bib:nedm4,bib:afach,bib:brys}.
-%In
-%order for this correction technique succeed, gradient fields must be
-%controlled or corrected for at the $<1$~nT/m level.  Furthermore the
-%stability of the $B_0$ field must be controlled as well as possible,
-%normally at the 1-10~pT level over the UCN free-precession time.
 Drifts of 1-10~pT in $B_0$ may be corrected using the comagnetometer
 technique, setting a goal magnetic stability in a typical nEDM
 experiment.
 
-%The nEDM experiment at TRIUMF aims to determine $\delta d_n\sim
-%10^{-27}~e\cdot$cm.
-
 In nEDM experiments, typically $B_0=1~\mu$T is used to provide the
-quantization axis for the UCN.
-%, normally directed vertically in the apparatus.  
-The $B_0$ magnetic field generation system typically includes a coil
-placed within a passively magnetically shielded volume.  The passive
-magnetic shield is generally composed of a multi-layer shield formed
-from thin shells of high-permeability material (mu-metal).  The outer
-layers of the shield are normally cylindrical \cite{bib:nedm3.5, bib:
-  nedm2 } or form the walls of a magnetically shielded room
-\cite{bib:altarev2014}.  The innermost magnetic shield is normally a
-specially shaped shield, where the design of the coil in relation to
-shield is carefully taken into account to achieve adequate
-homogeneity.
+quantization axis for the UCN.  The $B_0$ magnetic field generation
+system typically includes a coil placed within a passively
+magnetically shielded volume.  The passive magnetic shield is
+generally composed of a multi-layer shield formed from thin shells of
+high-permeability material (mu-metal).  The outer layers of the shield
+are normally cylindrical~\cite{bib:nedm3.5,bib:nedm2} or form the
+walls of a magnetically shielded room~\cite{bib:altarev2014}.  The
+innermost magnetic shield is normally a specially shaped shield, where
+the design of the coil in relation to shield is carefully taken into
+account to achieve adequate homogeneity.
 
-%The active compensation system will be used to reduce the external
-%magnetic field at the measurement site to $\mu$T level and prevent the
-%saturation of the passive magnetic shields.
-
-mechanical and temperature changes of the passive magnetic
+Mechanical and temperature changes of the passive magnetic
 shielding~\cite{bib:voigt,bib:thiel}, and the demagnetization
 procedure~\cite{bib:thiel,bib:fierlinger2016}, affect the stability of
-the magnetic field within magnetically shielded
-rooms.
-%~\cite{bib:thiel,bib:altarev2014,bib:altarev2015,bib:voigt}.  
-Active stabilization of the magnetic field surrounding magnetically
-shielded rooms can also improve the internal
-stability~\cite{bib:franke,bib:voigt, bib:afach}.  In nEDM
-experiments, care must also be taken to stabilize the current supplied
-to the $B_0$ coil~\cite{bib:brys}. The coil must be stabilized
-mechanically relative to the magnetic shielding as well.
+the magnetic field within magnetically shielded rooms.  Active
+stabilization of the magnetic field surrounding magnetically shielded
+rooms can also improve the internal
+stability~\cite{bib:franke,bib:voigt,bib:afach}.  In nEDM experiments,
+care must also be taken to stabilize the current supplied to the $B_0$
+coil~\cite{bib:brys}. The coil must be stabilized mechanically
+relative to the magnetic shielding as well.
 
-% Jeff says: I question whether altarev2014 or 2015 actually say
-% anything about magnetic stability.
-
-% Taraneh answers: Altarev2014, they talk about their degaussing technique and
-% that it leads to very low and homogeneous residual fields. They refer to 
-% thiel's paper for its demonstration.
-% Altarev 2015 is also about minimizing residual fields. Perhaps they don't
-% belong to this section.
-
-One additional affect, which is the subject of this paper, relates to
+One additional effect, which is the subject of this paper, relates to
 the fact that the $B_0$ coil in most nEDM experiments is magnetically
 coupled to the innermost magnetic shield.  If the magnetic properties
 of the innermost magnetic shield would change as a function of time,
@@ -216,9 +178,6 @@ process~\cite{bib:gupta,bib:bozorth,bib:kruppvdm}.  In this spirit we
 performed our measurements on small witness cylinders that were
 annealed using the typical process.
 
-% The temperature dependence of $\mu$ has been measured from two
-% different approaches and the overall result found to be 0.1\%/K
-% $<\frac{1}{\mu} \frac{d\mu}{dT}<$2.3\%/K.
 
 
 \input{calculations.tex}
@@ -226,7 +185,7 @@ annealed using the typical process.
 
 
 
-\section{Measurements of $\mu(T)$}
+\section{Measurements of $\mu(T)$\label{sec:tdep}}
 
 \subsection{Previous Measurements and their Relationship to nEDM Experiments\label{sec:previousmeasurement}}
 
@@ -334,133 +293,111 @@ We now discuss the details and results of each technique.
 
 \input{transformer.tex}
 
-\subsection{Summary of $\mu(T)$}
-
-Finally we note the primary caveat to these measurements, discussed
-above, which is that both measurements (transformer core and axial
-shielding factor) do not truly measure $\mu$.  Rather they measure
-observables related to the slope of minor hysteresis loops in B-H
-space.  They would be more appropriately described by a model like
-that of Jiles~\cite{bib:jiles}, but to extract the temperature
-dependence of the five parameters of the model is beyond the scope of
-this work.  Instead we acknowledge this fact and relate the
-temperature dependence of the effective $\mu$ measured by each
-experiment.
-
-We think it is interesting and useful information that the two
-experiments measure the same scale and sign of the temperature
-dependence of their respective effective $\mu$'s.  We feel this is the
-principal contribution of this work.
-
-
-Each measurement (axial shielding factor measurement, or transformer
-core measurement) is of the temperature dependence of an effective
-$\mu$, done in an AC mode at a particular driving amplitude of $H(t)$.
-
-In the axial shielding factor case, we found
-0.6\%/K~$\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim 2.7\%$/K, with
-the measurement being conducted with a typical $H$-amplitude of 0.0001-0.001~A/m
-and at a frequency of 1~Hz.  In the transformer core case, we found
-0.1\%/K~$\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim 2.1\%$/K, with
-the measurement being conducted with a typical $H$-amplitude of
-0.1~A/m and at a frequency of 1~Hz.
-
-Our desire is to provide information relevant to EDM experiments where
-the coil would couple to innermost magnetic shield in the experiment.
-We think it would be reasonable to assume that for the parameters
-relevant to EDM experiments ($H$ of 0.-0.007~A/m and frequencies
-$<0.01$~Hz), the temperature dependence of the effective permeability
-could be of similar scale to these measurements
-i.e.~$\frac{1}{\mu}\frac{d\mu}{dT}$ ranging from 0.1 to 2.7\%/K.
-
-\section{Summary and Conclusions}
-
+\section{Relationship to nEDM experiments}
+%\subsection{Summary of $\mu(T)$}
 
 Neutron EDM experiments are typically designed with the DC coil being
-magnetically coupled to the innermost magnetic shield.  If the
-magnetic permeability of the shield changes, this results in a change
-in the field in the measurement region by an amount
-$\frac{\mu}{B}\frac{dB}{d\mu}\sim 0.01$.  Temperature changes could
-result in such changes, and it is those temperature changes we sought
-to constrain by measurement.
+magnetically coupled to the innermost magnetic shield.  As discussed
+in Section~\ref{sec:calculation}, if the magnetic permeability of the
+shield changes, this results in a change in the field in the
+measurement region by an amount $\frac{\mu}{B_0}\frac{dB_0}{d\mu}\sim
+0.01$.
 
-The temperature dependence of $\mu$ has been measured by two different
-techniques using open-ended mu-metal cylinders with 6 inches in
-length.  We summarize the overall result as
-0.1\%/K$<\frac{1}{\mu}\frac{d\mu}{dT}<$2.7\%/K, where the range is
+The temperature dependence of $\mu$ has been constrained by two
+different techniques using open-ended mu-metal witness cylinders
+annealed at the same time as our prototype mangetic shields.  We
+summarize the overall result as
+0.1\%/K~$<\frac{1}{\mu}\frac{d\mu}{dT}<$~2.7\%/K, where the range is
 driven in part by material properties of the different mu-metal
-cylinders, and in part by fluctuations measured in the temperature
-slopes in each measurement.
+cylinders, and in part by day-to-day fluctuations in the temperature
+slopes.
 
-We provide this range with the following caveats:
+
+
+We note the following caveats in relating this measurement to nEDM
+experiments:
 \begin{itemize}
-\item The measurement techniques rely on considerably larger
-  frequencies and $H$-fields than those relevant to typical nEDM
-  experiments.  For frequency, both techniques typically used a 1~Hz
+\item Although the measurement techniques rely on considerably larger
+  frequencies and different $H_m$-fields than those relevant to
+  typical nEDM experiments, we think it reasonable to assume the
+  temperature dependence of the effective permeability should be of
+  similar scale.  For frequency, both techniques typically used a 1~Hz
   AC field, whereas for nEDM experiments the field is DC and stable at
   the 0.01~Hz level.  Furthermore, in one measurement technique the
-  amplitude of $H$ was $\sim 0.001$~A/m and in the other was $\sim 0.1$~A/m,
-  while for nEDM experiments $H\sim 0.-0.007$~A/m and is DC.
+  amplitude of $H_m$ was $\sim 0.001$~A/m and in the other was $\sim
+  0.1$~A/m, while for nEDM experiments $H_m\sim 0.007$~A/m and is DC.
 \item Both measurement techniques extract an effective $\mu$ that
   describes the slope of minor loops in B-H space.  A more correct
   treatment would include a more comprehensive accounting of
   hysteresis in the material, which is beyond the scope of this work.
 \end{itemize}
 
-
 Assuming our measurement of
 0.1\%/K$<\frac{1}{\mu}\frac{d\mu}{dT}<$2.7\%/K and the generic EDM
-experiment sensitivity of $\frac{\mu}{B}\frac{dB}{d\mu}\sim 0.01$
+experiment sensitivity of $\frac{\mu}{B_0}\frac{dB_0}{d\mu}\sim 0.01$
 results in a temperature dependence of the magnetic field in a typical
-EDM experiment of $\frac{dB}{dT}=10-270$~pT/K.  To achieve a goal
+EDM experiment of $\frac{dB_0}{dT}=10-270$~pT/K.  To achieve a goal
 $\sim pT$ stability in the internal field for EDM experiments, the
 temperature of the innermost magnetic shield in the EDM experiment
-should then be controlled to 0.1-0.004~K level.  This could be a
-serious problem for future nEDM experiments.  The dependence could be
-reduced significantly by using self-shielded coils in the EDM
-experiment, which would reduce the coupling to the innermost magnetic
-shield.
+should then be controlled to 0.1-0.004~K level.  This poses a
+potentially serious problem for future nEDM experiments.
+
+The dependence could be reduced significantly by using self-shielded
+coils~\cite{bib:cpviolwithoutstrangeness,bib:someotherselfshieldedcoilpapers}
+in the EDM experiment, which would reduce the coupling to the
+innermost magnetic shield.  In self-shielded coils, the return flux is
+provided by a second larger coil, rather than through the permeable
+material of the magnetic shield.  In a perfect self-shielded coil, the
+field at the position of the magnetic shield would be zero, resulting
+in a reaction factor that is identically unity.  Such coils would
+completely decouple the properties of the magnetic shield from the
+homogeneity and stability of the coil itself.  Changes in $\mu$ of the
+shield material would then have no impact on the nEDM experiment.
+Coils incorporating self-shielding in their design are therefore an
+attractive option for nEDM
+experiments~\cite{bib:cpviolwithoutstrangeness}.
 
 
 
+\section{Conclusion}
 
-%The next step is to measure $\mu(T)$ for the nEDM setup with different
-%coil geometries to achieve the best stability.
+In the axial shielding factor measurement, we found
+0.6\%/K~$\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim 2.7\%$/K, with
+the measurement being conducted with a typical $H_m$-amplitude of
+0.0001-0.001~A/m and at a frequency of 1~Hz.  In the transformer core
+case, we found 0.1\%/K~$\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim
+2.1\%$/K, with the measurement being conducted with a typical
+$H_m$-amplitude of 0.1~A/m and at a frequency of 1~Hz.
+
+The primary caveat to these measurements is that both measurements
+(transformer core and axial shielding factor) do not truly measure
+$\mu$.  Rather they measure observables related to the slope of minor
+hysteresis loops in B-H space.  They would be more appropriately
+described by a hysteresis model like that of Jiles~\cite{bib:jiles},
+but to extract the temperature dependence of all the parameters of the
+model is beyond the scope of this work.  Instead we acknowledge this
+fact and relate the temperature dependence of the effective $\mu$
+measured by each experiment.
+
+We think it is interesting and useful information that the two
+experiments measure the same scale and sign of the temperature
+dependence of their respective effective $\mu$'s.  This is the
+principal contribution of this work.
+
+In future work, we plan to measure $B_0(T)$ directly for the nEDM-like
+geometries using precision atomic magnetometers.  We anticipate based
+on the present work that self-shielded coil geometries will achieve
+the best time and temperature stability.
 
 
 
-%\begin{itemize}
-%\item We determined $dB_0/d\mu$.  For reasonable parameters its $\sim$ XXX.  For self-shielded it's reduced by a factor of XXX for realistic windings.
-%\item We measured $d\mu/dT$.  We constrained it to be in the range 0.1
- % to 2.3 percent per Kelvin.  Dominant errors are XXX for each method.
-  %Neither method is for correct B, H, f.  Both methods are very
-  %difficult to achieve consistent sub-percent determinations, but tend
-  %to agree on sign and magnitude of problem.
-%\item Results imply temperature stability to XXX Kelvin for stability
- % goal of XXX pT.  Show that this could be a dominant issue for
-  %stability for future experiments.  Not addressed by many other
-  %measurements which tend to focus on stability at zero field or
-  %overall stability in full EDM experiment.
-%\item Future work: build full EDM experiment.  Capability of various
- % internal coil geometries and best achievable temperature stability
-  %are both important to success.
-%\end{itemize}
+\section{Acknowledgments}
 
-%\section{To Do List}
+We thank D.~Ostapchuk from The University of Winnipeg for technical
+support.  We gratefully acknowledge the support of the Natural
+Sciences and Engineering Research Council Canada, and the Canada
+Foundation for Innovation.
 
-%\begin{enumerate}
-%\item Collect graphs and figures.
-%\begin{enumerate}
-%\item Analytical comparison reaction factor vs. $\mu$ for
- % sphere and/or cylinder with reasonable geometry/$\mu$.
-%\item Same or additional comparison for more realistic geometry in
-%  simulation.  May include self-shielded geometry.
-%\item Axial shielding factor figure of setup.
-%\item Axial shielding factor data.
-%\item Transformer core Jiles-Atherton comparison?
-%\end{enumerate}
-%\item Write.
-%\end{enumerate}
 
 \section*{References}
 
@@ -523,7 +460,11 @@ shield.
 
 \bibitem{bib:kruppvdm} KruppVDM Magnifer 7904, MDS no. 9004 (2000).
 
-\bibitem{bib:jiles} D. C. Jiles, D. L. Atherton,  J. Magn. Magn. Mat. 61(1-2):48-60, (1986).
+\bibitem{bib:jiles} D. C. Jiles, J. Appl. Phys. 76, 5849 (1994).
+
+\bibitem{bib:jiles-atherton} D. C. Jiles and D. L. Atherton,
+  J. Appl. Phys. 55, 2115 (1984); D. C. Jiles and D. L. Atherton,
+  J. Magn. Magn. Mat. 61, 48 (1986).
 
 \bibitem{bib:pendlebury} J. M. Pendlebury {\it et al.}, Phys. Rev. D 92, 092003 (2015).
 
@@ -531,7 +472,8 @@ shield.
 
 \bibitem{bib:thiel} F. Thiel {\it et al.}, Rev. Sci. Instrum. 78, 035106 (2007).
 
-\bibitem{bib:altarev2014} I. Altarev {\it et al.},Rev. Sci. Instrum. 85, 075106 (2014).
+\bibitem{bib:altarev2014} I. Altarev {\it et al.},
+  Rev. Sci. Instrum. 85, 075106 (2014).
 
 \bibitem{bib:altarev2015} I. Altarev {\it et al.}, J. Appl. Phys. 117, 233903 (2015).
 
@@ -551,7 +493,7 @@ shield.
 
 \bibitem{bib:femm} D. Meeker, Finite Element Method Magnetics, FEMM, 4, 32 (2010)
 
-\bibitem{bib:cpviolationwithoutstrangeness} I. B. Khriplovich,
+\bibitem{bib:cpviolwithoutstrangeness} I. B. Khriplovich,
   S. Lamoreaux, { \it CP violation without strangeness: electric
     dipole moments of particles, atoms, and molecules. }, Springer
   Science \& Business Media (2012)
