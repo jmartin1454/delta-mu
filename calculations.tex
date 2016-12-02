@@ -90,16 +90,21 @@ from the coil all return through the shield.  This principle can be
 used to estimate the magnetic field internal to the material $B_m$,
 and in our studies gave good agreement with FEA-based simulations.
 For the cylindrical geometry described in Sec.~\ref{sec:femm}, $B_m$
-is largest in the side walls of the cylindrical flux return, attaining
-a maximum value of 170~$\mu$T.  For $\mu_r$=20,000 (a typical
-realistic value for the DC value of $\mu_r$ in these shields), the
-$H_m$ field is 0.007~A/m.  These values are weakly dependent on
-$\mu_r$.  They set a scale for the values of $B_m$ and $H_m$ which we
+is largest in the side walls of the solenoidal flux return, attaining
+a maximum value of 170~$\mu$T.  If we assume $\mu_r$=20,000, the $H_m$
+field is 0.007~A/m.  Typically the shield is degaussed (idealized)
+with the internal coil energized.  After degaussing, $B_m$ must be
+approximately the same, since all flux returns through the shield.
+However, the $H_m$ field must become significantly smaller, as the
+material must reside on the ideal magnetization curve in $B_m-H_m$
+space.  (For a discussion of the ideal magnetization curve, we refer
+the reader to Ref.~\cite{bib:bozorth}.)  In principle, the $H_m$ field
+could be reduced by an order of magnitude, depending on the steepness
+of the ideal magnetization curve near the origin.  Nonetheless, these
+parameters set a scale for the values of $B_m$ and $H_m$ which we
 sought to replicate in our experiments reported in
 Section~\ref{sec:tdep}.
 
-% Jeff and Taraneh to do: confirm by checking against FEMM.  Possibly
-% add more numbers for spherical geometry.
 
 
 
@@ -116,9 +121,9 @@ $\frac{\mu}{B_0}\frac{dB_0}{d\mu}\sim 0.01$.
 % innermost magnetic shield.
 
 The field generated in the innermost magnetic shield by a
-shield-coupled coil is typically $B_m=170~\mu$T, corresponding to
-$H_m=0.007$~A/m.  The field in the nEDM measurement volume, as well as
-in the magnetic shield, must be stable for periods of typically
-hundreds of seconds (corresponding to frequencies $<0.01$~Hz).  This
-sets the relevant measurement scales for magnetic properties that
-would be most relevant to nEDM experiment.
+shield-coupled coil is typically $B_m=170~\mu$T with $H_m<0.007$~A/m.
+The field in the nEDM measurement volume, as well as in the magnetic
+shield, must be stable for periods of typically hundreds of seconds
+(corresponding to frequencies $<0.01$~Hz).  This sets the relevant
+measurement scales for magnetic properties that would be most relevant
+to nEDM experiment.

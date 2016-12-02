@@ -106,14 +106,6 @@ of the R\&D effort for these experiments is focused on careful design
 and testing of various magnetic shield geometries with precision
 magnetometers~\cite{bib:brys,bib:afach,bib:fierlingerroom,bib:sturmthesis,bib:patton}.
 
-%\begin{itemize}
-%\item General requirements on field, stability of field, stability of gradient.
-%\item List all possible factors that can affect field stability -
- % degaussing, vibrations, etc. possibly with additional references.
-%\item State the problem addressed in this paper (changes in $\mu$) and
- % the result.
-%\end{itemize}
-
 In nEDM experiments, the spin-precession frequency $\nu$ of neutrons
 placed in static magnetic $B_0$ and electric $E$ fields is measured.
 The measured frequencies for parallel $\nu_+$ and antiparallel $\nu_-$
@@ -156,9 +148,9 @@ the magnetic field within magnetically shielded rooms.  Active
 stabilization of the magnetic field surrounding magnetically shielded
 rooms can also improve the internal
 stability~\cite{bib:franke,bib:voigt,bib:afach}.  In nEDM experiments,
-care must also be taken to stabilize the current supplied to the $B_0$
-coil~\cite{bib:brys}. The coil must be stabilized mechanically
-relative to the magnetic shielding as well.
+care must be taken to stabilize the current supplied to the $B_0$
+coil~\cite{bib:brys}. The coil must also be stabilized mechanically
+relative to the magnetic shielding.
 
 One additional effect, which is the subject of this paper, relates to
 the fact that the $B_0$ coil in most nEDM experiments is magnetically
@@ -230,7 +222,7 @@ permeability is often measured to be typically $\mu_r=20,000$ rather
 than $4\times 10^5$.  This arises in part because $H_m$ is well below
 the DC coercivity.  As noted in Section~\ref{sec:theory_summary}, a
 more appropriate $H_m$ for the innermost magnetic shield of an nEDM
-experiment is 0.007~A/m, whereas the coercivity is
+experiment is $<0.007$~A/m, whereas the coercivity is
 $H_c=0.4$~A/m~\cite{bib:kruppvdm}.  The frequency dependence of the
 measurements could also be an issue.  Typically, nEDM experiments are
 concerned with slow drifts at $<0.01$~Hz timescales whereas the
@@ -324,8 +316,8 @@ experiments:
   similar scale.  For frequency, both techniques typically used a 1~Hz
   AC field, whereas for nEDM experiments the field is DC and stable at
   the 0.01~Hz level.  Furthermore, in one measurement technique the
-  amplitude of $H_m$ was $\sim 0.001$~A/m and in the other was $\sim
-  0.1$~A/m, while for nEDM experiments $H_m\sim 0.007$~A/m and is DC.
+  amplitude of $H_m$ was $\sim 0.004$~A/m and in the other was $\sim
+  0.1$~A/m.  For nEDM experiments $H_m<0.007$~A/m and is DC.
 \item Both measurement techniques extract an effective $\mu$ that
   describes the slope of minor loops in B-H space.  A more correct
   treatment would include a more comprehensive accounting of
@@ -343,7 +335,7 @@ should then be controlled to 0.1-0.004~K level.  This poses a
 potentially serious problem for future nEDM experiments.
 
 The dependence could be reduced significantly by using self-shielded
-coils~\cite{bib:cpviolwithoutstrangeness,bib:someotherselfshieldedcoilpapers}
+coils~\cite{bib:cpviolwithoutstrangeness,bib:bidinosti}
 in the EDM experiment, which would reduce the coupling to the
 innermost magnetic shield.  In self-shielded coils, the return flux is
 provided by a second larger coil, rather than through the permeable
@@ -364,8 +356,8 @@ experiments~\cite{bib:cpviolwithoutstrangeness}.
 In the axial shielding factor measurement, we found
 0.6\%/K~$\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim 2.7\%$/K, with
 the measurement being conducted with a typical $H_m$-amplitude of
-0.0001-0.001~A/m and at a frequency of 1~Hz.  In the transformer core
-case, we found 0.1\%/K~$\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim
+0.004~A/m and at a frequency of 1~Hz.  In the transformer core case,
+we found 0.1\%/K~$\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim
 2.1\%$/K, with the measurement being conducted with a typical
 $H_m$-amplitude of 0.1~A/m and at a frequency of 1~Hz.
 
@@ -515,6 +507,9 @@ Foundation for Innovation.
 
 \bibitem{bib:bartman} Bartington Instruments Ltd., 10 Thorney Leys
   Business Park, Witney, Oxon, OX28 4GG, England.
+
+\bibitem{bib:bidinosti} C. P. Bidinosti, I. S. Kravchuk, and
+  M. E. Hayden, J. Magn. Res. {\bf 177}, 31 (2005).
 
 \end{thebibliography}
 
