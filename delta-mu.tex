@@ -48,15 +48,16 @@
 \title{Sensitivity of Fields within Magnetically Shielded Volumes to
   Changes in Permeability}
 
-\author[manitoba]{T. Andalib\corref{mycorrespondingauthor}}
+\author[manitoba]{T.~Andalib\corref{mycorrespondingauthor}}
 \cortext[mycorrespondingauthor]{Corresponding author}
 \ead{andalibt@myumanitoba.ca}
-\author[winnipeg,manitoba]{J.W. Martin}
-\author[winnipeg,manitoba]{C.P. Bidinosti}
-\author[winnipeg,manitoba]{R.R. Mammei}
+\author[winnipeg,manitoba]{J.W.~Martin}
+\author[winnipeg,manitoba]{C.P.~Bidinosti}
+\author[winnipeg,manitoba]{R.R.~Mammei}
+\author[winnipeg,manitoba]{B.~Jamieson}
 \author[manitoba]{M.~Lang}
 
-% Jeff to do: need to finalize author list.
+
 
 \address[winnipeg]{Physics Department, The University of Winnipeg, 515 Portage Avenue, Winnipeg, MB, R3B 2E9, Canada}
 \address[manitoba]{Department of Physics and Astronomy, University of Manitoba, Winnipeg, MB R3T 2N2, Canada}
@@ -65,17 +66,17 @@
 \begin{abstract}
 Future experiments seeking to measure the neutron electric dipole
 moment (nEDM) require stable and homogeneous magnetic fields.  The
-stability of the magnetic field within a magnetically shielded volume
-is influenced by a number of factors.  One of the factors is the
-dependence of the internally generated field on the permeability of
-the material.  We provide measurements of the temperature-dependence
-of the permeability of the material, and indicate the extrapolation
-yet required to adequately use these measurements to design future
-nEDM experiments.  Assuming our measurement of
-0.1\%/K$<\frac{1}{\mu}\frac{d\mu}{dT}<$2.7\%/K and a an nEDM
+stability of the magnetic field within the magnetically shielded
+measurement volume is influenced by a number of factors.  The factor
+studied here is the dependence of the internally generated field on
+the permeability of the material.  We provide measurements of the
+temperature-dependence of the permeability of the material, and
+indicate the extrapolation yet required to adequately use these
+measurements to design future nEDM experiments.  Assuming our
+measurement of $0.1<\frac{1}{\mu}\frac{d\mu}{dT}<2.7$\%/K and an nEDM
 experiment sensitivity of $\frac{\mu}{B_0}\frac{dB_0}{d\mu}\sim 0.01$
 results in a temperature dependence of the magnetic field in a typical
-EDM experiment of $\frac{dB_0}{dT}=10-270$~pT/K.  The results are
+nEDM experiment of $\frac{dB_0}{dT}=10-270$~pT/K.  The results are
 useful for estimating the necessary level of temperature control in
 nEDM experiments.
 \end{abstract}
@@ -91,19 +92,20 @@ Magnetic Shielding \sep Neutron Electric Dipole Moment \sep Magnetic Field Stabi
 \section{Introduction}
 
 
-The next generation of neutron electric dipole moment (EDM)
-experiments aim to measure the EDM $d_n$ with proposed precision
+The next generation of neutron electric dipole moment (nEDM)
+experiments aim to measure the nEDM $d_n$ with proposed precision
 $\delta d_n\lesssim
-10^{-27}$~e-cm~\cite{bib:nedm2,bib:nedm2.5,bib:nedm3,bib:nedm3.5,bib:nedm4,bib:nedm5,bib:nedm6,bib:nedm6.5}.
+10^{-27}~e\cdot$cm~\cite{bib:nedm2,bib:nedm2.5,bib:nedm3,bib:nedm3.5,bib:nedm5,bib:nedm6,bib:nedm6.5,bib:nedmtriumf}.
 In the previous best experiment \cite{bib:baker,bib:pendlebury} which
-discovered $d_n<3.0\times 10^{-26}$~e-cm (90\% C.L), effects related
-to magnetic field homogeneity and instability were found to dominate
-the systematic error.  A detailed understanding of passive and active
-magnetic shielding, magnetic field generation within shielded volumes,
-and precision magnetometry is expected to be crucial to achieve the
-systematic error goals for the next generation of experiments.  Much
-of the R\&D effort for these experiments is focused on careful design
-and testing of various magnetic shield geometries with precision
+discovered $d_n<3.0\times 10^{-26}~e\cdot$cm (90\% C.L), effects
+related to magnetic field homogeneity and instability were found to
+dominate the systematic error.  A detailed understanding of passive
+and active magnetic shielding, magnetic field generation within
+shielded volumes, and precision magnetometry is expected to be crucial
+to achieve the systematic error goals for the next generation of
+experiments.  Much of the R\&D effort for these experiments is focused
+on careful design and testing of various magnetic shield geometries
+with precision
 magnetometers~\cite{bib:brys,bib:afach,bib:fierlingerroom,bib:sturmthesis,bib:patton}.
 
 In nEDM experiments, the spin-precession frequency $\nu$ of neutrons
@@ -123,11 +125,12 @@ $\delta d_n\sim 10^{-27}~e\cdot$cm measurement, the average field over
 one fill of the measurement cell must be known to the 10~fT level or
 better (which occurs typically on a timescale of 100~s), and the field
 is seldom stable to this level.  For this reason, experiments use a
-comagnetometer and/or surrounding atomic magnetometers to correct the
-magnetic field to this level~\cite{bib:nedm4,bib:afach,bib:brys}.
-Drifts of 1-10~pT in $B_0$ may be corrected using the comagnetometer
-technique, setting a goal magnetic stability in a typical nEDM
-experiment.
+comagnetometer and/or surrounding atomic magnetometers to measure and
+correct the magnetic field to this
+level~\cite{bib:baker,bib:brys,bib:afach}.  Drifts of 1-10~pT in $B_0$
+may be corrected using the comagnetometer technique, setting a goal
+magnetic stability for the $B_0$ field generation system in a typical
+nEDM experiment.
 
 In nEDM experiments, typically $B_0=1~\mu$T is used to provide the
 quantization axis for the UCN.  The $B_0$ magnetic field generation
@@ -135,31 +138,32 @@ system typically includes a coil placed within a passively
 magnetically shielded volume.  The passive magnetic shield is
 generally composed of a multi-layer shield formed from thin shells of
 high-permeability material (mu-metal).  The outer layers of the shield
-are normally cylindrical~\cite{bib:nedm3.5,bib:nedm2} or form the
-walls of a magnetically shielded room~\cite{bib:altarev2014}.  The
-innermost magnetic shield is normally a specially shaped shield, where
-the design of the coil in relation to shield is carefully taken into
-account to achieve adequate homogeneity.
+are normally cylindrical~\cite{bib:nedm2,bib:nedm3.5} or form the
+walls of a magnetically shielded
+room~\cite{bib:altarev2014,bib:altarev2015}.  The innermost magnetic
+shield is normally a specially shaped shield, where the design of the
+coil in relation to shield is carefully taken into account to achieve
+adequate homogeneity.
 
 Mechanical and temperature changes of the passive magnetic
 shielding~\cite{bib:voigt,bib:thiel}, and the demagnetization
-procedure~\cite{bib:thiel,bib:fierlinger2016}, affect the stability of
-the magnetic field within magnetically shielded rooms.  Active
-stabilization of the magnetic field surrounding magnetically shielded
-rooms can also improve the internal
-stability~\cite{bib:franke,bib:voigt,bib:afach}.  In nEDM experiments,
-care must be taken to stabilize the current supplied to the $B_0$
-coil~\cite{bib:brys}. The coil must also be stabilized mechanically
+procedure~\cite{bib:thiel,bib:altarev2015,bib:fierlinger2016}, affect
+the stability of the magnetic field within magnetically shielded
+rooms.  Active stabilization of the magnetic field surrounding
+magnetically shielded rooms can also improve the internal
+stability~\cite{bib:voigt,bib:afach,bib:franke}.  The current supplied
+to the $B_0$ coil is generated by an ultra-stable current
+source~\cite{bib:brys}. The coil must also be stabilized mechanically
 relative to the magnetic shielding.
 
 One additional effect, which is the subject of this paper, relates to
 the fact that the $B_0$ coil in most nEDM experiments is magnetically
 coupled to the innermost magnetic shield.  If the magnetic properties
-of the innermost magnetic shield would change as a function of time,
-it then results in a source of instability of $B_0$.  In the present
-work, we sought to estimate this effect, and to characterize one
-possible source of instability: changes of the magnetic permeability
-$\mu$ of the material with temperature.
+of the innermost magnetic shield change as a function of time, it then
+results in a source of instability of $B_0$.  In the present work, we
+sought to estimate this effect, and to characterize one possible
+source of instability: changes of the magnetic permeability $\mu$ of
+the material with temperature.
 
 While the senstivity of magnetic alloys to temperature variations has
 been characterized in the past~\cite{bib:couderchon,bib:kruppvdm}, we
@@ -183,25 +187,26 @@ annealed using the typical process.
 
 Previous measurements of the temperature dependence of the magnetic
 properties of high-permeability alloys have been summarized in
-Refs.~\cite{bib:pfeifer,bib:bozorth,bib:couderchon}.  These
+Refs.~\cite{bib:couderchon,bib:bozorth,bib:pfeifer}.  These
 measurements are normally conducted using a sample of the material to
 create a toroidal core, where a thin layer of the material is used in
 order to avoid eddy-current and skin-depth
 effects~\cite{bib:pfeifer,bib:kruppvdm}.  A value of $\mu$ is
 determined by dividing the amplitude of the sensed $B_m$-field by the
-amplitude of the driving AC $H_m$-field, as described in
-Section~\ref{sec:transformer}.  The value of $\mu$ is then quoted
-either at or near its maximum attainable value by adjusting the
-amplitude of $H_m$.  Depending on the details of the $B_m-H_m$ curve
-for the material in question, this normally means that $\mu$ is quoted
-for the amplitude of $H_m$ being at or near the coercivity of the
-material~\cite{bib:couderchon,bib:kruppvdm}, resulting in large values
-up to $\mu_r=4\times 10^5$.
+amplitude of the driving AC $H_m$-field (similar to the method
+described in Section~\ref{sec:transformer}).  The value of $\mu$ is
+then quoted either at or near its maximum attainable value by
+adjusting the amplitude of $H_m$.  Depending on the details of the
+$B_m-H_m$ curve for the material in question, this normally means that
+$\mu$ is quoted for the amplitude of $H_m$ being at or near the
+coercivity of the material~\cite{bib:couderchon,bib:kruppvdm},
+resulting in large values up to $\mu_r=4\times 10^5$.
 
-It is well known that $\mu$ measured for toroidal, thin metal wound
-cores depends on the annealing process used.  There is a particularly
-strong dependence on the take-out or tempering temperature after the
-high-temperature portion of the annealing process has been
+It is well known that $\mu$ measured in this fashion for toroidal,
+thin metal wound cores depends on the annealing process used for the
+core.  There is a particularly strong dependence on the take-out or
+tempering temperature after the high-temperature portion of the
+annealing process has been
 completed~\cite{bib:pfeifer,bib:kruppvdm,bib:couderchon}.  Such
 studies normally suggest a take-out temperature of 490-500$^\circ$C.
 This ensures that the large $\mu_r=4\times 10^{5}$ is furthermore
@@ -209,8 +214,9 @@ maximal at room temperature.  Slight variations around room
 temperature, and assuming the take-out temperature is not controlled
 to better than a degree, imply a scale of possible temperature
 variation of $\mu$ of approximately
-$\left|\frac{1}{\mu}\frac{d\mu}{dT}\right|\simeq 0.3$-1\%/K at room temperature
-would be reasonable to assume~\cite{bib:couderchon,bib:kruppvdm}.
+$\left|\frac{1}{\mu}\frac{d\mu}{dT}\right|\simeq 0.3$-1\%/K at room
+temperature would be reasonable to
+assume~\cite{bib:couderchon,bib:kruppvdm}.
 
 A challenge in applying these results to temperature stability of nEDM
 experiments is that, when used as DC magnetic shielding, the
@@ -236,7 +242,7 @@ regimes more relevant to nEDM experiments.
 
 
 We created a prototype passive magnetic shield system in support of
-this (and other) precision magnetic field research for the future nEDM
+this and other precision magnetic field research for the future nEDM
 experiment to be conducted at TRIUMF.  The shield system is a
 four-layer mu-metal shield formed from nested right-circular
 cylindrical shells with endcaps.  The inner radius of the innermost
@@ -258,7 +264,7 @@ measured and found to be consistent with $\mu_r\sim 20,000$.
 In our studies of the material properties of these magnetic shields,
 two different approaches to measure $\mu(T)$ were pursued.  Both
 approaches involved experiments done using witness cylinders, which
-are smaller open-ended cylinders (See Fig.~\ref{fig:geometry}) made of
+are smaller open-ended cylinders (see Fig.~\ref{fig:geometry}) made of
 the same material and annealed at the same time as the prototype
 magnetic shields.  We therefore expect they have the same magnetic
 properties as the larger prototype shields, and they have the
@@ -319,8 +325,8 @@ experiments:
   amplitude of $H_m$ was $\sim 0.004$~A/m and in the other was $\sim
   0.1$~A/m.  For nEDM experiments $H_m<0.007$~A/m and is DC.
 \item Both measurement techniques extract an effective $\mu$ that
-  describes the slope of minor loops in B-H space.  A more correct
-  treatment would include a more comprehensive accounting of
+  describes the slope of minor loops in $B_m-H_m$ space.  A more
+  correct treatment would include a more comprehensive accounting of
   hysteresis in the material, which is beyond the scope of this work.
 \end{itemize}
 
@@ -329,23 +335,23 @@ Assuming our measurement of
 experiment sensitivity of $\frac{\mu}{B_0}\frac{dB_0}{d\mu}\sim 0.01$
 results in a temperature dependence of the magnetic field in a typical
 EDM experiment of $\frac{dB_0}{dT}=10-270$~pT/K.  To achieve a goal
-$\sim pT$ stability in the internal field for EDM experiments, the
+$\sim$pT stability in the internal field for EDM experiments, the
 temperature of the innermost magnetic shield in the EDM experiment
-should then be controlled to 0.1-0.004~K level.  This poses a
-potentially serious problem for future nEDM experiments.
+should then be controlled to the $0.1-0.004$~K level.  This poses a
+potentially serious design constraint for future nEDM experiments.
 
 The dependence could be reduced significantly by using self-shielded
-coils~\cite{bib:cpviolwithoutstrangeness,bib:bidinosti}
-in the EDM experiment, which would reduce the coupling to the
-innermost magnetic shield.  In self-shielded coils, the return flux is
-provided by a second larger coil, rather than through the permeable
-material of the magnetic shield.  In a perfect self-shielded coil, the
-field at the position of the magnetic shield would be zero, resulting
-in a reaction factor that is identically unity.  Such coils would
-completely decouple the properties of the magnetic shield from the
-homogeneity and stability of the coil itself.  Changes in $\mu$ of the
-shield material would then have no impact on the nEDM experiment.
-Coils incorporating self-shielding in their design are therefore an
+coils~\cite{bib:cpviolwithoutstrangeness,bib:bidinosti} in the EDM
+experiment, which would reduce the coupling to the innermost magnetic
+shield.  In self-shielded coils, the return flux is provided by a
+second larger coil, rather than through the permeable material of the
+magnetic shield.  In a perfect self-shielded coil, the field at the
+position of the magnetic shield would be zero, resulting in a reaction
+factor that is identically unity.  Such coils would completely
+decouple the properties of the magnetic shield from the homogeneity
+and stability of the coil itself, and changes in $\mu$ of the shield
+material would then have no impact on the nEDM experiment.  Coils
+incorporating self-shielding in their design are therefore an
 attractive option for nEDM
 experiments~\cite{bib:cpviolwithoutstrangeness}.
 
@@ -354,17 +360,17 @@ experiments~\cite{bib:cpviolwithoutstrangeness}.
 \section{Conclusion}
 
 In the axial shielding factor measurement, we found
-0.6\%/K~$\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim 2.7\%$/K, with
-the measurement being conducted with a typical $H_m$-amplitude of
-0.004~A/m and at a frequency of 1~Hz.  In the transformer core case,
-we found 0.1\%/K~$\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim
-2.1\%$/K, with the measurement being conducted with a typical
-$H_m$-amplitude of 0.1~A/m and at a frequency of 1~Hz.
+0.6\%/K~$<\frac{1}{\mu}\frac{d\mu}{dT}<2.7\%$/K, with the measurement
+being conducted with a typical $H_m$-amplitude of 0.004~A/m and at a
+frequency of 1~Hz.  In the transformer core case, we found
+0.1\%/K~$<\frac{1}{\mu}\frac{d\mu}{dT}<2.1\%$/K, with the measurement
+being conducted with a typical $H_m$-amplitude of 0.1~A/m and at a
+frequency of 1~Hz.
 
 The primary caveat to these measurements is that both measurements
 (transformer core and axial shielding factor) do not truly measure
 $\mu$.  Rather they measure observables related to the slope of minor
-hysteresis loops in B-H space.  They would be more appropriately
+hysteresis loops in $B_m-H_m$ space.  They would be more appropriately
 described by a hysteresis model like that of Jiles~\cite{bib:jiles},
 but to extract the temperature dependence of all the parameters of the
 model is beyond the scope of this work.  Instead we acknowledge this
@@ -373,10 +379,10 @@ measured by each experiment.
 
 We think it is interesting and useful information that the two
 experiments measure the same scale and sign of the temperature
-dependence of their respective effective $\mu$'s.  This is the
-principal contribution of this work.
+dependence of their respective effective $\mu$'s.  This is a principal
+contribution of this work.
 
-In future work, we plan to measure $B_0(T)$ directly for the nEDM-like
+In future work, we plan to measure $B_0(T)$ directly for nEDM-like
 geometries using precision atomic magnetometers.  We anticipate based
 on the present work that self-shielded coil geometries will achieve
 the best time and temperature stability.
@@ -387,8 +393,8 @@ the best time and temperature stability.
 
 We thank D.~Ostapchuk from The University of Winnipeg for technical
 support.  We gratefully acknowledge the support of the Natural
-Sciences and Engineering Research Council Canada, and the Canada
-Foundation for Innovation.
+Sciences and Engineering Research Council Canada, the Canada
+Foundation for Innovation, and the Canada Research Chairs program.
 
 
 \section*{References}
@@ -399,17 +405,13 @@ Foundation for Innovation.
 \bibitem{bib:nedm2} A. P. Serebrov {\it et al.}, JETP Lett. {\bf 99}, 4
   (2014).
 
-\bibitem{bib:nedm2.5} A. P. Serebrov {\it et al.}, Physics Procedia {\bf
+\bibitem{bib:nedm2.5} A. P. Serebrov {\it et al.}, Phys. Procedia {\bf
   17}, 251 (2011).
 
 \bibitem{bib:nedm3} K. Kirch, AIP Conf. Proc. {\bf 1560}, 90 (2013).
 
-\bibitem{bib:nedm3.5} C. A. Baker, {\it et al.}, Physics Procedia {\bf
+\bibitem{bib:nedm3.5} C. A. Baker, {\it et al.}, Phys. Procedia {\bf
   17}, 159 (2011).
-
-\bibitem{bib:nedm4} Y. Masuda, K. Asahi, K. Hatanaka, S.-C. Jeong,
-  S. Kawasaki, R. Matsumiya, K. Matsuta, M. Mihara, and Y. Watanabe,
-  Phys. Lett. A {\bf 376}, 1347 (2012).
 
 \bibitem{bib:nedm5} I. Altarev, {\it et al.}, Nuovo Cim. C {\bf
   35}, 122 (2012).
@@ -417,11 +419,18 @@ Foundation for Innovation.
 \bibitem{bib:nedm6} R. Golub and S. K. Lamoreaux, Phys. Rept.  {\bf
   237}, 1 (1994).
 
-\bibitem{bib:nedm6.5} T. M. Ito (the nEDM collaboration),
+\bibitem{bib:nedm6.5} T. M. Ito (for the nEDM Collaboration),
   J. Phys. Conf. Ser. {\bf 69} 012037, 2007.
+
+\bibitem{bib:nedmtriumf} R.~Picker (for the TRIUMF Japan-Canada UCN
+  Collaboration), in the proceedings of MENU2016, July 25-30, 2016,
+  Kyoto, Japan (in press).
 
 \bibitem{bib:baker} C. A. Baker, {\it et al.}, Phys. Rev. Lett. {\bf
   97}, 131801 (2006).
+
+\bibitem{bib:pendlebury} J. M. Pendlebury {\it et al.}, Phys. Rev. D
+  {\bf 92}, 092003 (2015).
 
 \bibitem{bib:brys} T. Bry\'s, {\it et al.}, Nucl. Instrum. Meth. A
   {\bf 554}, 527 (2005).
@@ -437,70 +446,58 @@ Foundation for Innovation.
 \bibitem{bib:patton} B. Patton, E. Zhivun, D. C. Hovde, and D. Budker,
   Phys. Rev. Lett. {\bf 113}, 013001 (2014).
 
+
+\bibitem{bib:altarev2014} I. Altarev {\it et al.},
+  Rev. Sci. Instrum. {\bf 85}, 075106 (2014).
+
+
+\bibitem{bib:altarev2015} I. Altarev {\it et al.}, J. Appl. Phys. {\bf 117}, 233903 (2015).
+
+
+
+\bibitem{bib:voigt} J. Voigt {\it et al.}, Metrol. Meas. Syst. {\bf 20}, 239 (2013).
+
+\bibitem{bib:thiel} F. Thiel {\it et al.}, Rev. Sci. Instrum. {\bf 78}, 035106 (2007).
+
+\bibitem{bib:fierlinger2016} Z. Sun {\it et al.}, J. Appl. Phys. {\bf
+  119}, 193902 (2016).
+
+\bibitem{bib:franke} B. Franke, PhD Thesis, ETH Z\"urich (2013).
+
 \bibitem{bib:couderchon} G. Couderchon, J. F. Tiers,
   J. Magn. Magn. Mat. {\bf 26}, 196 (1982).
-
-\bibitem{bib:bidinosti} C. P. Bidinosti, J. W. Martin, AIP Advances
-  {\bf 4}, 047135 (2014).
-
-\bibitem{bib:smythe} W. R. Smythe, {\it Static and Dynamic
-  Electricity} (McGraw-Hill, New York, 1950).
-
-\bibitem{bib:ferraro} V. C. A. Ferraro, {\it Electromagnetic Theory} (Athalone Press, London, 1967).
-
-\bibitem{bib:gupta} K. Gupta, K. K. Raina, S. K. Sinha, J. Alloys
-  Compd. {\bf 429}, 357 (2007).
-
-\bibitem{bib:knecht} A. Knecht, PhD Thesis, U. Z\"urich (2009).
 
 \bibitem{bib:kruppvdm} Krupp VDM Magnifer 7904, Material Data Sheet
   No.~9004, Aug. 2000, Krupp VDM GmbH, Postfach 18 20, D-58778
   Werdohl, Germany.
 
-\bibitem{bib:jiles} D. C. Jiles, J. Appl. Phys. {\bf 76}, 5849 (1994).
-
-\bibitem{bib:jiles-atherton} D. C. Jiles and D. L. Atherton,
-  J. Appl. Phys. {\bf 55}, 2115 (1984); D. C. Jiles and D. L. Atherton,
-  J. Magn. Magn. Mat. {\bf 61}, 48 (1986).
-
-\bibitem{bib:pendlebury} J. M. Pendlebury {\it et al.}, Phys. Rev. D {\bf 92}, 092003 (2015).
-
-\bibitem{bib:pfeifer} F. Pfeifer and C. Radeloff,
-  J. Magn. Magn. Mat. {\bf 19}, 190 (1980).
-
-\bibitem{bib:thiel} F. Thiel {\it et al.}, Rev. Sci. Instrum. {\bf 78}, 035106 (2007).
-
-\bibitem{bib:altarev2014} I. Altarev {\it et al.},
-  Rev. Sci. Instrum. {\bf 85}, 075106 (2014).
-
-\bibitem{bib:altarev2015} I. Altarev {\it et al.}, J. Appl. Phys. {\bf 117}, 233903 (2015).
-
-\bibitem{bib:voigt} J. Voigt {\it et al.}, Metrol. Meas. Syst. {\bf 20}, 239 (2013).
+\bibitem{bib:gupta} K. Gupta, K. K. Raina, S. K. Sinha, J. Alloys
+  Compd. {\bf 429}, 357 (2007).
 
 \bibitem{bib:bozorth} R. M. Bozorth, {\it Ferromagnetism} (IEEE Press,
   Piscataway, NJ, 1993).
 
-\bibitem{bib:lockin} Stanford Research Systems, 1290-D Reamwood Ave.,
-  Sunnyvale, CA 94089.
-
-\bibitem{bib:paperno-open-ended} E. Paperno, IEEE Trans. Magn. {\bf
-  35}, 3940 (1999).
-
-\bibitem{bib:fierlinger2016} Z. Sun {\it et al.}, J. App. Phys. {\bf
-  119}, 193902 (2016).
-
-\bibitem{bib:franke} B. Franke, PhD Thesis, ETH Z\"urich (2013).
+\bibitem{bib:bidinostimartin} C. P. Bidinosti, J. W. Martin, AIP Advances
+  {\bf 4}, 047135 (2014).
 
 \bibitem{bib:urankar} L. Urankar, R. Oppelt, IEEE
   Trans. Biomed. Eng. {\bf 43}, 697 (1996).
 
+\bibitem{bib:knecht} A. Knecht, PhD Thesis, U. Z\"urich (2009).
+
 \bibitem{bib:femm} Finite Element Method Magnetics FEMM version 4.2,
   available from {\tt http://www.femm.info}.
 
-\bibitem{bib:cpviolwithoutstrangeness} I. B. Khriplovich,
-  S. Lamoreaux, {\it CP violation without strangeness: electric dipole
-    moments of particles, atoms, and molecules.} (Springer-Verlag,
-  Berlin, 2012).
+
+
+%\bibitem{bib:smythe} W. R. Smythe, {\it Static and Dynamic
+%  Electricity} (McGraw-Hill, New York, 1950).
+
+%\bibitem{bib:ferraro} V. C. A. Ferraro, {\it Electromagnetic Theory}
+%(Athalone Press, London, 1967).
+
+\bibitem{bib:pfeifer} F. Pfeifer and C. Radeloff,
+  J. Magn. Magn. Mat. {\bf 19}, 190 (1980).
 
 \bibitem{bib:nmorpaper} J. W. Martin {\it et al.},
   Nucl. Instrum. Meth. A {\bf 778}, 61 (2015).
@@ -508,8 +505,36 @@ Foundation for Innovation.
 \bibitem{bib:bartman} Bartington Instruments Ltd., 10 Thorney Leys
   Business Park, Witney, Oxon, OX28 4GG, England.
 
+\bibitem{bib:lockin} Stanford Research Systems, 1290-D Reamwood Ave.,
+  Sunnyvale, CA 94089.
+
+\bibitem{bib:paperno-open-ended} E. Paperno, IEEE Trans. Magn. {\bf
+  35}, 3940 (1999).
+
+\bibitem{bib:jiles} D. C. Jiles, J. Appl. Phys. {\bf 76}, 5849 (1994).
+
+\bibitem{bib:jiles-atherton} D. C. Jiles and D. L. Atherton,
+  J. Appl. Phys. {\bf 55}, 2115 (1984); D. C. Jiles and D. L. Atherton,
+  J. Magn. Magn. Mat. {\bf 61}, 48 (1986).
+
+
+
+\bibitem{bib:cpviolwithoutstrangeness} I. B. Khriplovich,
+  S. Lamoreaux, {\it CP violation without strangeness: electric dipole
+    moments of particles, atoms, and molecules.} (Springer-Verlag,
+  Berlin, 2012).
+
 \bibitem{bib:bidinosti} C. P. Bidinosti, I. S. Kravchuk, and
   M. E. Hayden, J. Magn. Res. {\bf 177}, 31 (2005).
+
+
+
+
+
+
+
+
+
 
 \end{thebibliography}
 

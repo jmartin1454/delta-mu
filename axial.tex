@@ -2,13 +2,12 @@
 \subsection{Axial Shielding Factor Measurements\label{sec:axial}}
 
 
-In these measurements, the open-ended witness cylinder was used as a
-magnetic shield.  The shield was subjected to an AC magnetic field.
-The amplitude of the shielded magnetic field $B_s$ was measured at the
+In these measurements, a witness cylinder was used as a magnetic
+shield.  The shield was subjected to an AC magnetic field.  The
+amplitude of the shielded magnetic field $B_s$ was measured at the
 center of the witness cylinder.  Changes in $B_s$ with temperature
-were taken to signify a dependence of the permeability $\mu$ on
-temperature.  The relative slope of $\mu(T)$ can then be calculated
-using
+signify a dependence of the permeability $\mu$ on temperature.  The
+relative slope of $\mu(T)$ can then be calculated using
 \begin{equation}
 \frac{1}{\mu}\frac{d\mu}{dT}=-\frac{\frac{1}{B_s}\frac{dB_s}{dT}}{\frac{\mu}{B_s}\frac{dB_s}{d\mu}}.
 \label{eqn:axial}
@@ -17,14 +16,13 @@ The numerator was taken from the measurements described above. The
 denominator was taken from finite-element simulations of the shielding
 factor for this geometry as a function of $\mu$.
 
-This technique is quite different than the usual mutual inductance
-techniques used by other groups.  Our hope was that this geometry
-would give us more confidence that the properties we were measuring
-were indeed related to magnetic shielding properties rather than
-inherent properties of the material.
+This technique is quite different than the usual transformer core
+measurements conducted by other groups.  As shall be described, it
+offers an advantage that considerably smaller $B_m$ and $H_m$ fields
+can be accessed.
 
 
-\subsubsection{Experimental Apparatus}
+\subsubsection{Experimental Apparatus for Axial Shielding Factor Measurements}
 %\subsubsection{Magnetic Field Generation}
 
 The witness cylinder was placed within a homogeneous AC magnetic
@@ -59,13 +57,13 @@ The witness cylinder was placed into this magnetic field generation
 system as shown schematically in Fig.~\ref{fig:geometry}.  The
 cylinder was held in place by a wooden stand.
 
-A Bartington fluxgate magnetometer Mag-03IEL70~\cite{bib:bartman} (low noise) measured
-the axial magnetic field at the center of the witness cylinder.  The
-fluxgate is a ``flying lead'' model, meaning that each axis is
-available on the end of a short electrical lead, separable from the
-other axes.  One ``flying lead'' was placed in the center of the
-witness cylinder, the axis of the fluxgate being aligned with that of
-the witness cylinder.  The fluxgate was held in place rigidly by a
+A Bartington fluxgate magnetometer Mag-03IEL70~\cite{bib:bartman} (low
+noise) measured the axial magnetic field at the center of the witness
+cylinder.  The fluxgate was a ``flying lead'' model, meaning that each
+axis was available on the end of a short electrical lead, separable
+from the other axes.  One ``flying lead'' was placed in the center of
+the witness cylinder, the axis of the fluxgate being aligned with that
+of the witness cylinder.  The fluxgate was held in place rigidly by a
 plastic mounting fixture, which was itself mounted to the witness
 cylinder.
 % leftovers after Jeff's editing, which might be useful...
@@ -92,14 +90,13 @@ lock-in was typically set to 3 seconds with 12~dB/oct rolloff.
 \begin{figure}
   \begin{center}
     \includegraphics[width=0.6\textwidth]{geometry.PNG}
-    \caption{Axial shielding factor measurement setup. The witness
-      cylinder with an inner diameter of 5.2~cm and a length of
-      15.2~cm is placed inside a solenoid with a diameter of 30.8~cm
-      and a length of 35.5~cm, containing 14 turns.  The thickness of
-      the witness cylinder is $1/16''=0.16$~cm.  The axis of symmetry
-      is along the $z$-axis. The windings of the solenoid are shown in
-      red. The loop coil (shown in blue) is mechanically coupled to
-      the witness cylinder and has a diameter of 9.7~cm.}
+    \caption{(color online) Axial shielding factor measurement
+      setup. The witness cylinder with an inner diameter of 5.2~cm and
+      a length of 15.2~cm is placed inside a solenoid (shown in red)
+      with a diameter of 30.8~cm and a length of 35.5~cm, containing
+      14 turns.  The thickness of the witness cylinder is
+      $1/16''=0.16$~cm.  The loop coil (shown in blue) is mechanically
+      coupled to the witness cylinder and has a diameter of 9.7~cm.}
     \label{fig:geometry}
   \end{center}
 \end{figure}
@@ -112,7 +109,7 @@ temperature that might incorrectly be interpreted as a change in the
 magnetic properties of the witness cylinder.
 
 To address possible motion of the witness cylinder with respect to the
-field generation system, another coil (the loop coil, shown in
+field generation system, another coil (the loop coil, also shown in
 Fig.~\ref{fig:geometry}) was wound on a plastic holder mounted rigidly
 to the witness cylinder.  The coil was one loop of copper wire with a
 diameter of 9.7~cm.  Plastic set screws in the holder fixed the loop
@@ -171,8 +168,8 @@ An example of the typical data acquired is shown in
 Fig.~\ref{fig:B_vs_Temp}.  For these data, the field applied by the
 solenoid coil was 1~$\mu$T in amplitude, at a frequency of 1~Hz.
 Fig.~\ref{fig:B_vs_Temp}(a) shows the temperature of the witness
-cylinder over a 70-hr measurement.  The temperature changes are about
-1.4~K and are caused by temperature variations of the laboratory.
+cylinder over a 70-hr measurement.  The temperature changes of
+1.4~K are caused by diurnal variations in the laboratory.
 % The following statement belongs more in the systematic errors section:
 %
 % For $f\lesssim 1$~Hz most of the measured fluxgate signal is in the
@@ -181,12 +178,13 @@ cylinder over a 70-hr measurement.  The temperature changes are about
 The shielded magnetic field amplitude $B_s$ within the witness
 cylinder is anti-correlated with the temperature trend as shown in
 Fig.~\ref{fig:B_vs_Temp}(b).  Here, $B_s$ is the sum in quadrature of
-the amplitudes of the in-phase and out-of-phase components.  Magnetic
-field is then interpreted to depend on the temperature, and they are
-graphed as a function of one another in Fig.~\ref{fig:B_vs_Temp}(c).
-The slope of Fig.~\ref{fig:B_vs_Temp}(c) has been calculated using a
-linear fit to the data.  The relative slope at 23$^\circ$C was found
-to be $\frac{1}{B_s}\frac{dB_s}{dT}=-0.75\%$/K.
+the amplitudes of the in-phase and out-of-phase components (most of
+the signal is in phase).  The magnetic field is interpreted to depend
+on temperature, and they are graphed as a function of one another in
+Fig.~\ref{fig:B_vs_Temp}(c).  The slope in Fig.~\ref{fig:B_vs_Temp}(c)
+has been calculated using a linear fit to the data.  The relative
+slope at 23$^\circ$C was found to be
+$\frac{1}{B_s}\frac{dB_s}{dT}=-0.75\%$/K.
 
 Some deviations from the linear straight-line dependence can be seen
 in the data.  For example, when the temperature changes rapidly, the
@@ -239,14 +237,13 @@ reproducible results for temperature slopes.
 
 \begin{figure}
   \begin{center}
-    \includegraphics[width=0.9\textwidth]{B_vs_T_solenoid.pdf}
+    \includegraphics[width=0.75\textwidth]{B_vs_T_solenoid.pdf}
     \caption{Ambient temperature and shielded magnetic field
       amplitude, measured over a 70 hour period. (a) temperature of
       the witness cylinder as a function of time.  (b) magnetic field
       amplitude measured by fluxgate at center of witness cylinder
-      versus time.  (c) magnetic field versus temperature. The red
-      line in (c) is a linear fit to data. At 23$^\circ$C,
-      $\frac{1}{B_s}\frac{dB_s}{dT}=-0.75\%$/K.}
+      vs.~time.  (c) magnetic field vs.~temperature with linear fit to
+      data. At 23$^\circ$C, $\frac{1}{B_s}\frac{dB_s}{dT}=-0.75\%$/K.}
     \label{fig:B_vs_Temp}
   \end{center}
 \end{figure} 
@@ -331,7 +328,7 @@ level.
 
 Based on the systematic effects that we studied, we conclude that they
 do not explain the ranges of values measured for
-$\frac{1}{B}\frac{dB}{dT}$.  We suspect that the range measured is
+$\frac{1}{B_s}\frac{dB_s}{dT}$.  We suspect that the range measured is
 either some yet uncharacterize systematic effect, or a complicated
 property of the material possibly depending on the material history.
 
@@ -381,7 +378,7 @@ $\frac{\mu}{B_s}\frac{dB_s}{d\mu}=0.56-0.65$, the range being given
 again by a difference between FEMM and OPERA.
 
 Combining the measurement and the simulations, the temperature
-dependence of the effective $\mu$ (at $\mu=20,000$, which is
+dependence of the effective $\mu$ (at $\mu_r=20,000$ which is
 consistent with our measurements) can be calculated by
 equation~(\ref{eqn:axial}).  The results of the simulations and
 measurements are presented in Table~\ref{tab:axialsummary}.
@@ -406,17 +403,16 @@ Loop Coil & 0.56-0.65 & 0.4-1.5 & 0.6-2.7 \\
 \end{table}
 
 Combining the loop coil and solenoidal coil results, we find
-0.6\%/K~$\lesssim\frac{1}{\mu}\frac{d\mu}{dT}\lesssim 2.7\%$/K to be a
-reasonable range for the possible temperature slope of $\mu$.
+0.6\%/K~$<frac{1}{\mu}\frac{d\mu}{dT}<2.7\%$/K to be a reasonable
+range for the possible temperature slope of $\mu$.
 
 As stated earlier, the simulations also provided a way to determine
 the typical $B_m$ and $H_m$ internal to the material of the witness
 cylinder.  According to the simulations, the $B_m$ amplitude was
 typically 100~$\mu$T and the $H_m$ amplitude was typically 0.004~A/m.
-These are somewhat comparable to the values normally encountered in
-nEDM experiments, when the innermost shield is used as a flux return,
-recalling from Section~\ref{sec:theory_summary}, a more appropriate
-$H_m$ for the innermost magnetic shield of an nEDM experiment is
-$H_m<0.007$~A/m.  Also, these measurements were typically conducted
-using AC fields at 1~Hz, as opposed to the DC fields normally used in
-nEDM experiments.
+These are comparable to the values normally encountered in nEDM
+experiments, recalling from Section~\ref{sec:theory_summary} that
+$H_m<0.007$~A/m for the innermost magnetic shield of an nEDM
+experiment.  A caveat is that these measurements were typically
+conducted using AC fields at 1~Hz, as opposed to the DC fields
+normally used in nEDM experiments.

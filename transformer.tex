@@ -11,7 +11,7 @@ multistranded 20-gauge copper wire.  The windings were made as tight
 as possible, but not so tight as to potentially stress the material.
 The windings were not potted in place.
 
-Each of the three witness cylinders was tested.  Data were acquired
+Three witness cylinders were tested.  Data were acquired
 using different numbers of turns on both the primary and secondary
 coils (from 6 to 48 on the primary, and from 7 to 24 on the
 secondary).
@@ -23,10 +23,10 @@ secondary).
 
 %This enabled more saturation of the material.
 
-The primary coil generated an AC magnetic field $H(t)$, while the
-secondary coil was used to measure the emf induced by the time-varying
-magnetic flux proportional to $dB(t)/dt$.  To a good
-approximation
+The primary coil generated an AC magnetic field as a function of time
+$H(t)$, while the secondary coil was used to measure the emf induced
+by the time-varying magnetic flux proportional to $dB(t)/dt$.  To a
+good approximation
 \begin{equation}
 H_m(t)=\frac{N_pI(t)}{2\pi R}
 \end{equation}
@@ -38,9 +38,8 @@ and
 \label{eqn:bdot}
 \end{equation}
 where $V(t)$ is the voltage generated in the secondary, and $t$ and
-$\ell$ are the thickness and length of the witness cylinder.
-
-For a sinusoidal drive current $I(t)$, and under the assumption that
+$\ell$ are the thickness and length of the witness cylinder.  For a
+sinusoidal drive current $I(t)$, and under the assumption that
 $B_m(t)=\mu H_m(t)$ with $\mu$ being a constant, the voltage generated
 in the secondary $V(t)$ should be sinusoidal and out of phase with the
 primary current.
@@ -84,20 +83,18 @@ larger amplitudes, the material goes into saturation.  Both
 $\dot{B}_{m,Y}$ and $\dot{B}_{m,X}$ eventually decrease as expected at
 amplitudes much greater than the coercivity.
 
-To understand the behavior in Fig.~\ref{fig:data_and_simulation}
-effects, a theoretical model of the hysteresis based on the work of
+To understand the behavior in Fig.~\ref{fig:data_and_simulation}, a
+theoretical model of the hysteresis based on the work of
 Jiles~\cite{bib:jiles} was used.  The model contains a number of
 adjustable parameters.  We adjusted the parameters based on our
 measurements of $B_m-H_m$ loops including the initial magnetization
 curve.  These measurements were performed separately from our lock-in
 amplifier measurements, using an arbitrary function generator and a
-digital oscilloscope to acquire them.
-
-The measurements were done at frequencies from 0.01 to 10~Hz.  It was
-found that the frequency dependence predicted by Ref.~\cite{bib:jiles}
-gave relatively good agreement with the measured B-H loops once the
-five original (Jiles-Atherton~\cite{bib:jiles-atherton}) parameters
-were tuned.
+digital oscilloscope to acquire them.  The measurements were done at
+frequencies from 0.01 to 10~Hz.  It was found that the frequency
+dependence predicted by Ref.~\cite{bib:jiles} gave relatively good
+agreement with the measured $B_m-H_m$ loops once the five original
+(Jiles-Atherton~\cite{bib:jiles-atherton}) parameters were tuned.
 
 For the parameters of the (static) Jiles-Atherton model, we used
 $B_s=0.45$~T, $a=3.75$~A/m, $k=2.4$~A/m, $\alpha=2\times 10^{-6}$,
@@ -106,7 +103,7 @@ classical losses, we used the parameters $\rho=5.7\times
 10^{-7}~\Omega\cdot$m, $d=1.6$~mm (the thickness of the material), and
 $\beta=6$ (geometry factor).  These parameters were not tuned, but
 taken from data.  For anomalous losses we used the parameters
-$w=0.005$~m and $H_0=0.0075$~A/m, which also were not tuned, instead
+$w=0.005$~m and $H_0=0.0075$~A/m, which we also did not tune, instead
 relying on the tuning performed in Ref.~\cite{bib:jiles}.
 
 These parameters were then used to model the measurement presented in
@@ -173,19 +170,17 @@ Based on a number of measurements with different cores and windings,
 the data showed a range of $0.1-2.1$\%/K for
 $\frac{1}{\mu}\frac{d\mu}{dT}=\frac{1}{\dot{B}_{m,Y}}\frac{d\dot{B}_{m,Y}}{dT}$,
 again naively assuming the material to be linear as discussed above.
-The sign of the slope with temperature was the same as the axial
-shielding factor technique.
+The sign of the slope of $\mu(T)$ was the same as the axial shielding
+factor technique.
 
-
-
-The dominant source of variation between results in this method arose
+A dominant source of variation between results in this method arose
 from properties inherent to each witness cylinder.  One of the
 cylinders gave temperature slopes consistently larger
 $\frac{1}{\mu}\frac{d\mu}{dT}\sim 1.2-2.1$\%/K than the other two
-$\frac{1}{\mu}\frac{d\mu}{dT}\sim 0.1-0.7$\%/K.  We expect this indicates
-some difference in the annealing process or subsequent treatment of
-this cylinder, although to our knowledge the treatment was controlled
-the same as for the other two cylinders.
+$\frac{1}{\mu}\frac{d\mu}{dT}\sim 0.1-0.7$\%/K.  We expect this
+indicates some difference in the annealing process or subsequent
+treatment of this cylinder, although to our knowledge the treatment
+was controlled the same as for the other two cylinders.
 
 Since our goal is to provide input to future EDM experiments on the
 likely scale of the temperature dependence of $\mu$ that they can
@@ -209,7 +204,7 @@ initial slopes with temperature, where the effective $\mu$ would drift
 for several hours after degaussing.  After improving the system to
 have a large number of cycles (consistent with the recommendations of
 Refs.~\cite{bib:thiel,bib:altarev2015}) the results became consistent
-with being affected by temperature changes.  The measured temperature
+with being effected by temperature changes.  The measured temperature
 slopes were found to be consistent with our previous measurements
 where no degaussing was done.
 
