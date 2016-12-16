@@ -2,9 +2,9 @@
 \subsection{Transformer Core Measurements}
 \label{sec:transformer}
 
-As an alternate method of measuring changes in $\mu$, a method similar
-to the standard method of magnetic materials characterization via
-magnetic induction was used.  In this measurement technique, the
+As an alternative method of measuring changes in $\mu$, a method
+similar to the standard method of magnetic materials characterization
+via magnetic induction was used.  In this measurement technique, the
 witness cylinder was used as the core of a transformer.  Two coils
 (primary and secondary) were wound on the witness cylinder using
 multistranded 20-gauge copper wire.  The windings were made as tight
@@ -44,14 +44,14 @@ $B_m(t)=\mu H_m(t)$ with $\mu$ being a constant, the voltage generated
 in the secondary $V(t)$ should be sinusoidal and out of phase with the
 primary current.
 
-The internal oscillator of an SRS830 lock-in amplifier was used to
+The internal oscillator of an SR830 lock-in amplifier was used to
 generate $I(t)$.  This was monitored by measuring the voltage across a
 1~$\Omega$ resistor with small temperature coefficient in the primary
 loop.  The lock-in amplifier was then used to demodulate $V(t)$ into
 its in-phase $V_X$ and out-of-phase $V_Y$ components (or equivalently
 $\dot{B}_m(t)$ being demodulated into $\dot{B}_{m,X}$ and
 $\dot{B}_{m,Y}$, as in equation~(\ref{eqn:bdot})).  The experiment was
-done at 1~Hz and as small as possible $H_m(t)$, typically 0.1~A/m in
+done at 1~Hz with $H_m(t)$ as small as possible, typically 0.1~A/m in
 amplitude, to measure the slope of the minor $B_m-H_m$ loops near the
 origin of the $B_m-H_m$ space.
 
@@ -180,33 +180,25 @@ $\frac{1}{\mu}\frac{d\mu}{dT}\sim 1.2-2.1$\%/K than the other two
 $\frac{1}{\mu}\frac{d\mu}{dT}\sim 0.1-0.7$\%/K.  We expect this
 indicates some difference in the annealing process or subsequent
 treatment of this cylinder, although to our knowledge the treatment
-was controlled the same as for the other two cylinders.
-
-Since our goal is to provide input to future EDM experiments on the
-likely scale of the temperature dependence of $\mu$ that they can
-expect, we phrase our result as a range covering all these results.
+was controlled the same as for the other two cylinders.  Since our
+goal is to provide input to future EDM experiments on the likely scale
+of the temperature dependence of $\mu$ that they can expect, we phrase
+our result as a range covering all these results.
 
 Detailed measurements of the effect of degaussing were conducted for
-this geometry.  In fact, the ability to degauss led us ultimately to
-select a larger number of primary turns (48) so that we could fully
-saturate the core using only the lock-in amplifier reference output as
-a current source.
-
-A computer program was used to control the lock-in amplifier in order
-to implement degaussing.  A sine wave with the measurement frequency
-(typically 1~Hz) was applied at the maximum lock-in output power.
-Over the course of several thousand oscillations, the amplitude was
-decreased linearly to the measurement amplitude ($\sim 0.1$~A/m).
-
-Poor degaussing (for example, degaussing with too few cycles, or
-ramping too rapidly to zero) could result significantly different
-initial slopes with temperature, where the effective $\mu$ would drift
-for several hours after degaussing.  After improving the system to
-have a large number of cycles (consistent with the recommendations of
-Refs.~\cite{bib:thiel,bib:altarev2015}) the results became consistent
-with being effected by temperature changes.  The measured temperature
-slopes were found to be consistent with our previous measurements
-where no degaussing was done.
+this geometry.  The ability to degauss led us ultimately to select a
+larger number of primary turns (48) so that we could fully saturate
+the core using only the lock-in amplifier reference output as a
+current source.  A computer program was used to control the lock-in
+amplifier in order to implement degaussing.  A sine wave with the
+measurement frequency (typically 1~Hz) was applied at the maximum
+lock-in output power.  Over the course of several thousand
+oscillations, the amplitude was decreased linearly to the measurement
+amplitude ($\sim 0.1$~A/m).  After degaussing with parameters
+consistent with the recommendations of
+Refs.~\cite{bib:thiel,bib:altarev2015}, the measured temperature
+slopes were consistent with our previous measurements where no
+degaussing was done.
 
 Other systematic errors found to contribute at the $<0.1\%$/K level
 were: motion of the primary and secondary windings, stability of the
@@ -218,5 +210,5 @@ similarly prepared cores giving different results, and due to
 variations in the measured slopes in multiple measurements on the same
 core.  The second of these is essentially the same error encountered
 in our axial shielding factor measurements.  We expect it has the same
-source; it is likely due to some property of the material the cores
-are made of, or an additional unknown systematic uncertainty.
+source; it is possibly a property of the material, or an additional
+unknown systematic uncertainty.
