@@ -54,8 +54,8 @@ axis was available on the end of a short electrical lead, separable
 from the other axes.  One ``flying lead'' was placed in the center of
 the witness cylinder, the axis of the fluxgate being aligned with that
 of the witness cylinder.  The fluxgate was held in place rigidly by a
-plastic mounting fixture, which was itself mounted to the witness
-cylinder.
+plastic mounting fixture, which was itself rigidly mounted to the
+witness cylinder.
 
 To increase the resolution of the measured signal from the fluxgate, a
 Bartington Signal Conditioning Unit (SCU) was used with a low-pass
@@ -169,9 +169,9 @@ reproducible results for temperature slopes.
 As mentioned earlier, data were acquired for both the solenoid coil
 and the loop coil.  Repeated measurements of temperature slopes using
 the loop coil fell in the range
-0.4\%/K~$<\vert\frac{1}{B}\frac{dB}{dT}\vert<$~1.5\%/K.  Similar
+0.4\%/K~$<\vert\frac{1}{B_s}\frac{dB_s}{dT}\vert<$~1.5\%/K.  Similar
 measurements for the solenoidal coil yielded
-0.3\%/K~$<\vert\frac{1}{B}\frac{dB}{dT}\vert<$~0.8\%/K.
+0.3\%/K~$<\vert\frac{1}{B_s}\frac{dB_s}{dT}\vert<$~0.8\%/K.
 
 In general, the slopes measured with the loop coil were larger than for
 the solenoidal coil.  A partial explanation of this difference is
@@ -198,7 +198,7 @@ witness cylinder with a copper cylinder of very similar dimensions.
 The apparatus was then run through its usual experimental cycle over
 several days, and this was done multiple times for different
 parameters such as coil current.  For all measurements the temperature
-dependence of the demodulated magnetic was $<0.1$\%/K, giving
+dependence of the demodulated magnetic signal was $<0.1$\%/K, giving
 confidence that unknown systematic effects contribute below this
 level.
 
@@ -247,7 +247,10 @@ Combining the measurement and the simulations, the temperature
 dependence of the effective $\mu$ (at $\mu_r=20,000$ which is
 consistent with our measurements) can be calculated by
 equation~(\ref{eqn:axial}).  The results of the simulations and
-measurements are presented in Table~\ref{tab:axialsummary}.
+measurements are presented in Table~\ref{tab:axialsummary}.  Combining
+the loop coil and solenoidal coil results, we find
+0.6\%/K~$<\frac{1}{\mu}\frac{d\mu}{dT}<2.7\%$/K to be a reasonable
+range for the possible temperature slope of $\mu$.
 
 \begin{table}
 \begin{center}
@@ -268,9 +271,6 @@ Loop Coil & 0.56-0.65 & 0.4-1.5 & 0.6-2.7 \\
 
 \end{table}
 
-Combining the loop coil and solenoidal coil results, we find
-0.6\%/K~$<\frac{1}{\mu}\frac{d\mu}{dT}<2.7\%$/K to be a reasonable
-range for the possible temperature slope of $\mu$.
 
 As stated earlier, the simulations also provided a way to determine
 the typical $B_m$ and $H_m$ internal to the material of the witness
