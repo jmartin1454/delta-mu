@@ -215,19 +215,22 @@ To relate the data on $B_s(T)$ to $\mu(T)$, the shielding factor of
 the witness cylinder as a function of $\mu$ must be known.  Finite
 element simulations in FEMM and OPERA were performed to determine this
 factor.  The simulations are also useful for determining the effective
-values of $B_m$ and $H_m$ in the material (sometimes called the
-``demagnetization factor'' in the literature), which will be useful to
+values of $B_m$ and $H_m$ in the material, %(sometimes called the``demagnetization factor'' in the literature), 
+which will be useful to
 compare to the case for typical nEDM experiments when the innermost
 shield is used as a flux return.
 
 
+For closed objects, such as a sphere~\cite{bib:bidinostimartin,bib:urankar}, the 
+shielding factor approaches infinity as $\mu \rightarrow \infty$, and 
+$|\frac{\mu}{B_s}\frac{dB_s}{d\mu}| \rightarrow 1$.  Because the witness cylinders
+are open ended, the shielding factor asymptotically approaches a constant rather than
+infinity in the high-$\mu$ limit, and as a result $|\frac{\mu}{B_s}\frac{dB_s}{d\mu}| \neq 1$ here.
+%
 From the simulations the ratio $\frac{\mu}{B_s} \frac{dB_s}{d\mu}$ was
 calculated.  A linear model of the material was used where
-$\bold{B_m}=\mu \bold{H_m}$ and $\mu$ is a constant.  The term
-$\frac{\mu}{B_s}\frac{dB_s}{d\mu}\neq 1$ because the witness cylinders
-are open ended, and hence even for very large $\mu\rightarrow\infty$
-the shielding factor asymptotically approaches a constant rather than
-infinity.
+$\bold{B_m}=\mu \bold{H_m}$ and $\mu$ is a constant.  
+
 
 The simulations differed slightly in their results, dependent on
 whether OPERA or FEMM was used, and whether the solenoidal coil or
