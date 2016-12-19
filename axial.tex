@@ -22,10 +22,10 @@ offers an advantage that considerably smaller $B_m$ and $H_m$ fields
 can be accessed.  Measuring the temperature dependence of the
 shielding factor is also considerably easier than measuring the
 temperature dependence of the reaction factor, since the sensitivity
-to changes in $\mu(T)$ is considerably larger for the shielding factor
-case where $\frac{\mu}{B_s}\frac{dB_s}{d\mu}\sim 1$ compared to the
-reaction factor case where $\frac{\mu}{B_0}\frac{dB_0}{d\mu}\sim
-0.01$.
+to changes in $\mu(T)$ is considerably larger in magnitude for the
+shielding factor case where $\frac{\mu}{B_s}\frac{dB_s}{d\mu}\sim -1$
+compared to the reaction factor case where
+$\frac{\mu}{B_0}\frac{dB_0}{d\mu}\sim 0.01$.
 
 
 \subsubsection{Experimental Apparatus for Axial Shielding Factor Measurements}
@@ -215,36 +215,36 @@ To relate the data on $B_s(T)$ to $\mu(T)$, the shielding factor of
 the witness cylinder as a function of $\mu$ must be known.  Finite
 element simulations in FEMM and OPERA were performed to determine this
 factor.  The simulations are also useful for determining the effective
-values of $B_m$ and $H_m$ in the material, %(sometimes called the``demagnetization factor'' in the literature), 
-which will be useful to
+values of $B_m$ and $H_m$ in the material, which will be useful to
 compare to the case for typical nEDM experiments when the innermost
 shield is used as a flux return.
 
-
-For closed objects, such as a sphere~\cite{bib:bidinostimartin,bib:urankar}, the 
-shielding factor approaches infinity as $\mu \rightarrow \infty$, and 
-$|\frac{\mu}{B_s}\frac{dB_s}{d\mu}| \rightarrow 1$.  Because the witness cylinders
-are open ended, the shielding factor asymptotically approaches a constant rather than
-infinity in the high-$\mu$ limit, and as a result $|\frac{\mu}{B_s}\frac{dB_s}{d\mu}| \neq 1$ here.
-%
-From the simulations the ratio $\frac{\mu}{B_s} \frac{dB_s}{d\mu}$ was
-calculated.  A linear model of the material was used where
-$\bold{B_m}=\mu \bold{H_m}$ and $\mu$ is a constant.  
+For closed objects, such as spherical
+shells~\cite{bib:bidinostimartin,bib:urankar}, the shielding factor
+approaches infinity as $\mu \rightarrow \infty$, and
+$\vert\frac{\mu}{B_s}\frac{dB_s}{d\mu}\vert\rightarrow 1$.  Because
+the witness cylinders are open ended, the shielding factor
+asymptotically approaches a constant rather than infinity in the
+high-$\mu$ limit, and as a result
+$|\frac{\mu}{B_s}\frac{dB_s}{d\mu}|<1$ here.  From the simulations the
+ratio $\frac{\mu}{B_s}\frac{dB_s}{d\mu}$ was calculated.  A linear
+model of the material was used where $\bold{B_m}=\mu\bold{H_m}$ with
+$\mu$ constant.
 
 
 The simulations differed slightly in their results, dependent on
 whether OPERA or FEMM was used, and whether the solenoidal coil or
 loop coil were used.  Based on the simulations, the result is
-$\frac{\mu}{B_s}\frac{dB_s}{d\mu}=0.42-0.50$ for the solenoidal coil,
-with the lower value being given by FEMM and the upper value being
-given by a 3D OPERA simulation, for identical geometries.  This is
-somewhat lower than the value suggested by
+$\vert\frac{\mu}{B_s}\frac{dB_s}{d\mu}\vert=0.42-0.50$ for the
+solenoidal coil, with the lower value being given by FEMM and the
+upper value being given by a 3D OPERA simulation, for identical
+geometries.  This is somewhat lower than the value suggested by
 Ref.~\cite{bib:paperno-open-ended} with fits to simulations performed
 in OPERA, which we estimate to be 0.6.  We adopt our value since it is
 difficult to determine precisely from
 Ref.~\cite{bib:paperno-open-ended}.  For the loop coil, we determine
-$\frac{\mu}{B_s}\frac{dB_s}{d\mu}=0.56-0.65$, the range being given
-again by a difference between FEMM and OPERA.
+$\vert\frac{\mu}{B_s}\frac{dB_s}{d\mu}\vert=0.56-0.65$, the range
+being given again by a difference between FEMM and OPERA.
 
 Combining the measurement and the simulations, the temperature
 dependence of the effective $\mu$ (at $\mu_r=20,000$ which is
