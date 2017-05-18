@@ -5,9 +5,10 @@
 In these measurements, a witness cylinder was used as a magnetic
 shield.  The shield was subjected to an AC magnetic field.  The
 amplitude of the shielded magnetic field $B_s$ was measured at the
-center of the witness cylinder.  Changes in $B_s$ with temperature
-signify a dependence of the permeability $\mu$ on temperature.  The
-relative slope of $\mu(T)$ can then be calculated using
+center of the witness cylinder using a fluxgate magnetometer.  Changes
+in $B_s$ with temperature signify a dependence of the permeability
+$\mu$ on temperature.  The relative slope of $\mu(T)$ can then be
+calculated using
 \begin{equation}
 \frac{1}{\mu}\frac{d\mu}{dT}=-\frac{\frac{1}{B_s}\frac{dB_s}{dT}}{\frac{\mu}{B_s}\frac{dB_s}{d\mu}}.
 \label{eqn:axial}
@@ -15,6 +16,14 @@ relative slope of $\mu(T)$ can then be calculated using
 The numerator was taken from the measurements described above. The
 denominator was taken from finite-element simulations of the shielding
 factor for this geometry as a function of $\mu$.
+
+This measurement technique was sufficiently robust to extract the
+temperature dependence of the shielding factor with some degree of
+certainty.  Possible drifts and temperature depends of the fluxgate
+magnetometeroffset were mitigated by using an AC magnetic field.  Any
+temperature coefficients in the rest of the instrumentation were
+controlled by performing the same measurements with a copper
+cylindrical shell in place of the mu-metal witness cylinder.
 
 This technique is quite different than the usual transformer core
 measurements conducted by other groups.  As shall be described, it
@@ -167,11 +176,27 @@ reproducible results for temperature slopes.
 \end{figure} 
 
 As mentioned earlier, data were acquired for both the solenoid coil
-and the loop coil.  Repeated measurements of temperature slopes using
-the loop coil fell in the range
+and the loop coil.  A summary of the data is provided in
+Table~\ref{tab:axial}.  Repeated measurements of temperature slopes
+using the loop coil fell in the range
 0.4\%/K~$<\vert\frac{1}{B_s}\frac{dB_s}{dT}\vert<$~1.5\%/K.  Similar
 measurements for the solenoidal coil yielded
 0.3\%/K~$<\vert\frac{1}{B_s}\frac{dB_s}{dT}\vert<$~0.8\%/K.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{cccc}
+Meast.\ & $\frac{1}{B_s}\frac{dB_s}{dT}$ & coil \\
+\#    & (\%/K) & used \\\hline
+1 & 
+\end{tabular}
+\caption{Summary of data acquired for the AC axial shielding factor
+  measurements.  Only data with an applied field of $\sim 1-6\mu T$ and
+  a measurement frequency of 1~Hz are included in the table, although
+  other data were acquired for systematic studies.\label{tab:axial}}
+\end{center}
+\end{table}
+
 
 In general, the slopes measured with the loop coil were larger than for
 the solenoidal coil.  A partial explanation of this difference is
@@ -181,7 +206,7 @@ Section~\ref{sec:axialsims}.
 
 The other difference between the loop coil and the solenoidal coil was
 that the loop coil was rigidly mounted to the witness cylinder,
-reducing the possibility of artefacts from relative motion.  Given
+reducing the possibility of artifacts from relative motion.  Given
 that this did not reduce the range of the measured temperature slopes
 we conlude that relative motion was well controlled in both cases.
 
