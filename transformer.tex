@@ -9,12 +9,33 @@ witness cylinder was used as the core of a transformer.  Two coils
 (primary and secondary) were wound on the witness cylinder using
 multistranded 20-gauge copper wire.  The windings were made as tight
 as possible, but not so tight as to potentially stress the material.
-The windings were not potted in place.
+The windings were not potted in place.  Three witness cylinders were
+tested.  Data were acquired using different numbers of turns on both
+the primary and secondary coils (from 6 to 48 on the primary, and from
+7 to 24 on the secondary).
 
-Three witness cylinders were tested.  Data were acquired
-using different numbers of turns on both the primary and secondary
-coils (from 6 to 48 on the primary, and from 7 to 24 on the
-secondary).
+Fig.~\ref{fig:transformer} shows a picture of one of the witness
+cylinders, wound as described.  It also shows a schematic diagram of
+the measurement setup, which we now use to describe the measurement
+principle.
+
+\begin{figure}[h!]
+  \begin{center}
+    \includegraphics[height=3cm]{picture.pdf}\hskip1cm
+    \includegraphics[height=3cm]{figure4-crop.pdf}
+    \caption{Phototgraph of a witness cylinder showing transformer
+      windings (left); schematic of the transformer measurement
+      (right) with position of the transformer indicated as ``C''.
+      The primary coil was driven by the sine-out of an SR830 lock-in
+      amplifier, which was also used to demodulate induced voltage
+      $V(t)$ in the secondary coil.  The driving current $I(t)$ was
+      measured by measuring the voltage across a stable 1~$\Omega$
+      resistor.}
+    \label{fig:transformer}
+  \end{center}
+\end{figure}
+
+
 % Table 9 on page 65 of Taraneh's report shows the different windings.
 % Can guess which core is which.
 
@@ -34,15 +55,15 @@ where $N_p$ is the number of turns in the primary, $I(t)$ is the
 current in the primary, and $R$ is the radius of the witness cylinder,
 and
 \begin{equation}
-\frac{dB_m(t)}{dt}=\dot{B}_m(t)=\frac{V(t)}{t\ell}
+\frac{dB_m(t)}{dt}=\dot{B}_m(t)=\frac{V(t)}{b\ell}
 \label{eqn:bdot}
 \end{equation}
-where $V(t)$ is the voltage generated in the secondary, and $t$ and
-$\ell$ are the thickness and length of the witness cylinder.  For a
-sinusoidal drive current $I(t)$, and under the assumption that
-$B_m(t)=\mu H_m(t)$ with $\mu$ being a constant, the voltage generated
-in the secondary $V(t)$ should be sinusoidal and out of phase with the
-primary current.
+where $V(t)$ is the voltage generated in the secondary, and $b$ and
+$\ell$ are the thickness and length of the witness cylinder
+respectively.  For a sinusoidal drive current $I(t)$, and under the
+assumption that $B_m(t)=\mu H_m(t)$ with $\mu$ being a constant, the
+voltage generated in the secondary $V(t)$ should be sinusoidal and out
+of phase with the primary current.
 
 The internal oscillator of an SR830 lock-in amplifier was used to
 generate $I(t)$.  This was monitored by measuring the voltage across a
