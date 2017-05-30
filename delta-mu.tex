@@ -15,7 +15,7 @@
 \begin{frontmatter}
 
 \title{Sensitivity of Fields Generated within Magnetically Shielded
-  Volumes to Changes in Permeability}
+  Volumes to Changes in Magnetic Permeability}
 
 \author[manitoba]{T.~Andalib}
 \author[winnipeg,manitoba]{J.W.~Martin\corref{mycorrespondingauthor}}
@@ -45,14 +45,14 @@ field on the magnetic permeability $\mu$ of the shield material.  We
 provide measurements of the temperature-dependence of the permeability
 of the material used in a set of prototype magnetic shields, using
 experimental parameters nearer to those of nEDM experiments than
-previously reported in the literature.  Our measurement implies
-0.1\%/K~$<\frac{1}{\mu}\frac{d\mu}{dT}<2.7$\%/K. Assuming typical nEDM
-experiment coil and shield parameters gives
-$\frac{\mu}{B_0}\frac{dB_0}{d\mu}\sim 0.01$ resulting in a temperature
+previously reported in the literature.  Our measurements imply a range
+of $\frac{1}{\mu}\frac{d\mu}{dT}$ from 0-2.7\%/K. Assuming typical
+nEDM experiment coil and shield parameters gives
+$\frac{\mu}{B_0}\frac{dB_0}{d\mu}=0.01$, resulting in a temperature
 dependence of the magnetic field in a typical nEDM experiment of
-$\frac{dB_0}{dT}=10-270$~pT/K for $B_0=1~\mu$T.  The results are
-useful for estimating the necessary level of temperature control in
-nEDM experiments.
+$\frac{dB_0}{dT}=0-270$~pT/K for $B_0=1~\mu$T.  The results are useful
+for estimating the necessary level of temperature control in nEDM
+experiments.
 \end{abstract}
 
 \begin{keyword}
@@ -92,7 +92,7 @@ h\nu_\pm=2\mu_nB_0\pm 2d_nE
 where $\mu_n$ is the magnetic moment of the neutron.
 
 A problem in these experiments is that if the magnetic field $B_0$
-drifts over the course of the measurement period, it worsens the
+drifts over the course of the measurement period, it degrades the
 statistical precision with which $d_n$ can be determined.  If the
 magnetic field over one measurement cycle is determined to $\delta
 B_0=10$~fT, it implies an additional statistical error of $\delta
@@ -143,15 +143,15 @@ estimate this effect and characterize one possible source of
 instability: changes of the magnetic permeability $\mu$ of the
 material with temperature.
 
-While the senstivity of magnetic alloys to temperature variations has
+While the sensitivity of magnetic alloys to temperature variations has
 been characterized in the past~\cite{bib:couderchon,bib:kruppvdm}, we
 sought to make these measurements in regimes closer to the operating
 parameters relevant to nEDM experiments.  For these alloys, it is also
 known that the magnetic properties are set during the final annealing
 process~\cite{bib:gupta,bib:bozorth,bib:kruppvdm}.  In this spirit we
 performed our measurements on ``witness'' cylinders, which are small
-scale shields that were annealed following the typical procedure at
-the same time as other larger shields are being annealed.
+open-ended cylinders made of the same material and annealed at the
+same time as other larger shields are being annealed.
 
 The paper proceeds in the following fashion:
 \begin{itemize}
@@ -164,7 +164,7 @@ The paper proceeds in the following fashion:
   in order to study a variety of systematic effects that were
   encountered.
 \item Finally, the results of the calculations and measurements are
-  combined to provide a range of temperature sensitivies that takes
+  combined to provide a range of temperature sensitivities that takes
   into account sample-to-sample and measurement-to-measurement
   variations.
 \end{itemize}
@@ -227,7 +227,7 @@ $H_c=0.4$~A/m~\cite{bib:kruppvdm}.  The frequency dependence of the
 measurements could also be an issue.  Typically, nEDM experiments are
 concerned with slow drifts at $<0.01$~Hz timescales whereas the
 previously reported $\mu(T)$ measurements are performed in an AC mode
-at 50~Hz frequencies.
+at 50-60~Hz.
 
 
 The goal of our experiments was to develop techniques to characterize
@@ -242,7 +242,7 @@ four-layer mu-metal shield formed from nested right-circular
 cylindrical shells with endcaps.  The inner radius of the innermost
 shield is 18.44~cm, equal to its half-length. The radii and
 half-lengths of the progressively larger outer shields increase
-geometrically by a factor of 1.27.  Each cylinder has two end-caps
+geometrically by a factor of 1.27.  Each cylinder has two endcaps
 which possess a 7.5~cm diameter central hole.  A stove-pipe of length
 5.5~cm is placed on each hole was designed to minimize leakage of
 external fields into the progressively shielded inner volumes.  The
@@ -257,19 +257,16 @@ measured and found to be consistent with $\mu_r\sim 20,000$.
 
 In our studies of the material properties of these magnetic shields,
 two different approaches to measure $\mu(T)$ were pursued.  Both
-approaches involved experiments done using witness cylinders, which
-are smaller open-ended cylinders (see Fig.~\ref{fig:geometry}) made of
+approaches involved experiments done using witness cylinders made of
 the same material and annealed at the same time as the prototype
 magnetic shields.  We therefore expect they have the same magnetic
 properties as the larger prototype shields, and they have the
 advantage of being smaller and easier to perform measurements with.
 
-
-
-The two techniques used were
+The two techniques employed to determine $\mu(T)$ were the following:
 \begin{enumerate}
-\item measuring the AC axial shielding factor of the witness cylinder
-  as a function of temperature, and
+\item measuring the low-frequency AC axial magnetic shielding factor
+  of the witness cylinder as a function of temperature, and
 \item measuring the temperature-dependence of the slope of a minor B-H
   loop, using the witness cylinder as a transformer core, similar to
   previous measurements of the temperature dependence of $\mu$, but
@@ -285,21 +282,21 @@ We now discuss the details and results of each technique.
 
 \input{transformer.tex}
 
-\section{Relationship to nEDM experiments}
+\section{Relationship to nEDM experiments\label{sec:relationship}}
 %\subsection{Summary of $\mu(T)$}
 
 Neutron EDM experiments are typically designed with the DC coil being
 magnetically coupled to the innermost magnetic shield.  As discussed
 in Section~\ref{sec:calculation}, if the magnetic permeability of the
 shield changes, this results in a change in the field in the
-measurement region by an amount $\frac{\mu}{B_0}\frac{dB_0}{d\mu}\sim
-0.01$.
+measurement region by an amount
+$\frac{\mu}{B_0}\frac{dB_0}{d\mu}=0.01$.
 
 The temperature dependence of $\mu$ has been constrained by two
 different techniques using open-ended mu-metal witness cylinders
-annealed at the same time as our prototype mangetic shields.  We
+annealed at the same time as our prototype magnetic shields.  We
 summarize the overall result as
-0.1\%/K~$<\frac{1}{\mu}\frac{d\mu}{dT}<$~2.7\%/K, where the range is
+0.0\%/K~$<\frac{1}{\mu}\frac{d\mu}{dT}<$~2.7\%/K, where the range is
 driven in part by material properties of the different mu-metal
 cylinders, and in part by day-to-day fluctuations in the temperature
 slopes.
@@ -325,18 +322,15 @@ experiments:
 \end{itemize}
 
 Assuming our measurement of
-0.1\%/K~$<\frac{1}{\mu}\frac{d\mu}{dT}<2.7$\%/K and the generic EDM
-experiment sensitivity of $\frac{\mu}{B_0}\frac{dB_0}{d\mu}\sim 0.01$
+0.0\%/K~$<\frac{1}{\mu}\frac{d\mu}{dT}<2.7$\%/K and the generic EDM
+experiment sensitivity of $\frac{\mu}{B_0}\frac{dB_0}{d\mu}=0.01$
 results in a temperature dependence of the magnetic field in a typical
-nEDM experiment of $\frac{dB_0}{dT}=10-270$~pT/K.  To achieve a goal
-of $\sim 1$~pT stability in the internal field for nEDM experiments,
-the temperature of the innermost magnetic shield in the nEDM
-experiment should then be controlled to the $0.1-0.004$~K level.  This
-represents a potentially challenging design constraint for future nEDM
-experiments.
-
-
-
+nEDM experiment of $\frac{dB_0}{dT}=0-270$~pT/K.  To achieve a goal of
+$\sim 1$~pT stability in the internal field for nEDM experiments, the
+temperature of the innermost magnetic shield in the nEDM experiment
+should then be controlled to the $<0.004$~K level if the worst-case
+dependence is to be taken into account.  This represents a potentially
+challenging design constraint for future nEDM experiments.
 
 As noted by others~\cite{bib:cpviolwithoutstrangeness}, the use of
 self-shielded coils to reduce the coupling of the $B_0$ coil to the
@@ -369,7 +363,7 @@ In the axial shielding factor measurement, we found
 0.6\%/K~$<\frac{1}{\mu}\frac{d\mu}{dT}<2.7\%$/K, with the measurement
 being conducted with a typical $H_m$-amplitude of 0.004~A/m and at a
 frequency of 1~Hz.  In the transformer core case, we found
-0.1\%/K~$<\frac{1}{\mu}\frac{d\mu}{dT}<2.1\%$/K, with the measurement
+0.0\%/K~$<\frac{1}{\mu}\frac{d\mu}{dT}<2.2\%$/K, with the measurement
 being conducted with a typical $H_m$-amplitude of 0.1~A/m and at a
 frequency of 1~Hz.
 

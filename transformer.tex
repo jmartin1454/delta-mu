@@ -2,17 +2,17 @@
 \subsection{Transformer Core Measurements}
 \label{sec:transformer}
 
-As an alternative method of measuring changes in $\mu$, a method
-similar to the standard method of magnetic materials characterization
-via magnetic induction was used.  In this measurement technique, the
-witness cylinder was used as the core of a transformer.  Two coils
-(primary and secondary) were wound on the witness cylinder using
-multistranded 20-gauge copper wire.  The windings were made as tight
-as possible, but not so tight as to potentially stress the material.
-The windings were not potted in place.  Three witness cylinders were
-tested.  Data were acquired using different numbers of turns on both
-the primary and secondary coils (from 6 to 48 on the primary, and from
-7 to 24 on the secondary).
+An alternative technique similar to the standard method of magnetic
+materials characterization via magnetic induction was also used to
+measure changes in $\mu$.  In this measurement technique, the witness
+cylinder was used as the core of a transformer.  Two coils (primary
+and secondary) were wound on the witness cylinder using multistranded
+20-gauge copper wire.  The windings were made as tight as possible,
+but not so tight as to potentially stress the material.  The windings
+were not potted in place.  Three witness cylinders were tested.  Data
+were acquired using different numbers of turns on both the primary and
+secondary coils (from 6 to 48 on the primary, and from 7 to 24 on the
+secondary).
 
 Fig.~\ref{fig:transformer} shows a picture of one of the witness
 cylinders, wound as described.  It also shows a schematic diagram of
@@ -21,16 +21,15 @@ principle.
 
 \begin{figure}[h!]
   \begin{center}
-    \includegraphics[height=3cm]{picture.pdf}\hskip1cm
+    \includegraphics[height=3cm]{picture.png}\hskip1cm
     \includegraphics[height=3cm]{figure4-crop.pdf}
-    \caption{Phototgraph of a witness cylinder showing transformer
-      windings (left); schematic of the transformer measurement
-      (right) with position of the transformer indicated as ``C''.
-      The primary coil was driven by the sine-out of an SR830 lock-in
-      amplifier, which was also used to demodulate induced voltage
-      $V(t)$ in the secondary coil.  The driving current $I(t)$ was
-      measured by measuring the voltage across a stable 1~$\Omega$
-      resistor.}
+    \caption{Photograph of a witness cylinder showing transformer
+      windings (left) and schematic of the transformer measurement
+      (right).  The primary coil was driven by the sine-out of an
+      SR830 lock-in amplifier, which was also used to demodulate
+      induced voltage $V(t)$ in the secondary coil.  The driving
+      current $I(t)$ was sensed by measuring the voltage across a
+      stable 1~$\Omega$ resistor.}
     \label{fig:transformer}
   \end{center}
 \end{figure}
@@ -148,11 +147,11 @@ even better agreement could be achieved.
   \end{center}
 \end{figure} 
 
-Jiles' model makes no prediction of the temperature dependence of the
-parameters.  Ideally, the temperature dependence of $\dot{B}_{m,Y}$
-and $\dot{B}_{m,X}$ under various conditions could be used to map out
-the temperature dependence of the parameters.  However, this is beyond
-the scope of the present work.
+The model of Ref.~\cite{bib:jiles} makes no prediction of the
+temperature dependence of the parameters.  Ideally, the temperature
+dependence of $\dot{B}_{m,Y}$ and $\dot{B}_{m,X}$ under various
+conditions could be used to map out the temperature dependence of the
+parameters.  However, this is beyond the scope of the present work.
 
 We make the simplifying assumption that temperature dependence of
 $\dot{B}_{m,Y}$ may be approximately interpreted as the temperature
@@ -188,8 +187,43 @@ variety of factors, most notably a dependence on which of the three
 witness cylinders was used for the measurement, and on differences
 between subsequent measurements using the same cylinder.
 
-Based on a number of measurements with different cores and windings,
-the data showed a range of $0.1-2.1$\%/K for
+\begin{table}
+\begin{center}
+\begin{tabular}{cccc}\hline
+Trial & $\frac{1}{\dot{B}_{m,Y}}\frac{d\dot{B}_{m,Y}}{dT}$ & core \\
+\#    & (\%/K) & used \\\hline
+ 1 & 0.15 & $\alpha$ \\
+ 2 & 0.03 & $\alpha$ \\
+ 3 & 0.04 & $\alpha$ \\
+ 4 & 0.06 & $\alpha$ \\
+ 5 & 1.07 & $\beta$  \\
+ 6 & 0.93 & $\beta$  \\
+ 7 & 0.88 & $\beta$  \\
+ 8 & 0.88 & $\beta$  \\
+ 9 & 0.09 & $\alpha$ \\
+10 & 1.23 & $\beta$  \\
+11 & 2.15 & $\beta$  \\
+12 & 1.85 & $\beta$  \\
+13 & 1.20 & $\beta$  \\
+14 & 0.77 & $\gamma$ \\\hline
+\end{tabular}
+\caption{Summary of data acquired for the transformer core
+  measurements.  Three different witness cylinders, arbitrarily
+  labeled $\alpha$, $\beta$, and $\gamma$, were used for the
+  measurements.  A 1~Hz excitation frequency was used with amplitudes
+  for $H_m$ ranging from 0.1 to 0.3~A/m.  Fluctuations in the
+  temperature ranged from 21-24$^\circ$C and measurement times over a
+  10-80 hour period are included.  Other data acquired for systematic
+  studies are not included in the table.\label{tab:transformer}}
+\end{center}
+\end{table}
+
+
+
+Table~\ref{tab:transformer} summarizes our measurements of the
+relative slope $\frac{1}{\dot{B}_{m,Y}}\frac{d\dot{B}_{m,Y}}{dT}$ for
+a variety of trials, witness cylinders, and numbers of windings.  The
+data show a full range of $0.03-2.15$\%/K for
 $\frac{1}{\mu}\frac{d\mu}{dT}=\frac{1}{\dot{B}_{m,Y}}\frac{d\dot{B}_{m,Y}}{dT}$,
 again naively assuming the material to be linear as discussed above.
 The sign of the slope of $\mu(T)$ was the same as the axial shielding
@@ -197,15 +231,18 @@ factor technique.
 
 A dominant source of variation between results in this method arose
 from properties inherent to each witness cylinder.  One of the
-cylinders gave temperature slopes consistently larger
-$\frac{1}{\mu}\frac{d\mu}{dT}\sim 1.2-2.1$\%/K than the other two
-$\frac{1}{\mu}\frac{d\mu}{dT}\sim 0.1-0.7$\%/K.  We expect this
-indicates some difference in the annealing process or subsequent
-treatment of this cylinder, although to our knowledge the treatment
-was controlled the same as for the other two cylinders.  Since our
-goal is to provide input to future EDM experiments on the likely scale
-of the temperature dependence of $\mu$ that they can expect, we phrase
-our result as a range covering all these results.
+cylinders (referred to as $\beta$ in Table~\ref{tab:transformer}) gave
+temperature slopes consistently larger
+$\frac{1}{\mu}\frac{d\mu}{dT}\sim 0.88-2.15$\%/K than the other two
+$\frac{1}{\mu}\frac{d\mu}{dT}\sim 0.03-0.77$\%/K (referred to as
+$\alpha$ and $\gamma$, with some evidence that $\gamma$ had a larger
+slope than $\alpha$).  We expect this indicates some difference in the
+annealing process or subsequent treatment of the cylinders, although
+to our knowledge the treatment was controlled the same as for all
+three cylinders.  Since our goal is to provide input to future EDM
+experiments on the likely scale of the temperature dependence of $\mu$
+that they can expect, we phrase our result as a range covering all
+these results.
 
 Detailed measurements of the effect of degaussing were conducted for
 this geometry.  The ability to degauss led us ultimately to select a

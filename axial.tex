@@ -3,12 +3,12 @@
 
 
 In these measurements, a witness cylinder was used as a magnetic
-shield.  The shield was subjected to an AC magnetic field.  The
-amplitude of the shielded magnetic field $B_s$ was measured at the
-center of the witness cylinder using a fluxgate magnetometer.  Changes
-in $B_s$ with temperature signify a dependence of the permeability
-$\mu$ on temperature.  The relative slope of $\mu(T)$ can then be
-calculated using
+shield.  The shield was subjected to a low-frequency AC magnetic field
+of $\sim 1$~Hz.  The amplitude of the shielded magnetic field $B_s$
+was measured at the center of the witness cylinder using a fluxgate
+magnetometer.  Changes in $B_s$ with temperature signify a dependence
+of the permeability $\mu$ on temperature.  The relative slope of
+$\mu(T)$ can then be calculated using
 \begin{equation}
 \frac{1}{\mu}\frac{d\mu}{dT}=-\frac{\frac{1}{B_s}\frac{dB_s}{dT}}{\frac{\mu}{B_s}\frac{dB_s}{d\mu}}.
 \label{eqn:axial}
@@ -20,7 +20,7 @@ factor for this geometry as a function of $\mu$.
 This measurement technique was sufficiently robust to extract the
 temperature dependence of the shielding factor with some degree of
 certainty.  Possible drifts and temperature depends of the fluxgate
-magnetometeroffset were mitigated by using an AC magnetic field.  Any
+magnetometer offset were mitigated by using an AC magnetic field.  Any
 temperature coefficients in the rest of the instrumentation were
 controlled by performing the same measurements with a copper
 cylindrical shell in place of the mu-metal witness cylinder.
@@ -60,9 +60,9 @@ A Bartington fluxgate magnetometer Mag-03IEL70~\cite{bib:bartman} (low
 noise) measured the axial magnetic field at the center of the witness
 cylinder.  The fluxgate was a ``flying lead'' model, meaning that each
 axis was available on the end of a short electrical lead, separable
-from the other axes.  One ``flying lead'' was placed in the center of
-the witness cylinder, the axis of the fluxgate being aligned with that
-of the witness cylinder.  The fluxgate was held in place rigidly by a
+from the other axes.  One flying lead was placed in the center of the
+witness cylinder, the axis of the fluxgate being aligned with that of
+the witness cylinder.  The fluxgate was held in place rigidly by a
 plastic mounting fixture, which was itself rigidly mounted to the
 witness cylinder.
 
@@ -78,7 +78,7 @@ lock-in was typically set to 3 seconds with 12~dB/oct rolloff.
 
 \begin{figure}
   \begin{center}
-    \includegraphics[width=0.8\textwidth]{to_jeff_new4.pdf}
+    \includegraphics[width=0.7\textwidth]{to_jeff_new4.pdf}
     \caption{(color online) Axial shielding factor measurement
       setup. The witness cylinder with an inner diameter of 5.2~cm and
       a length of 15.2~cm is placed inside a solenoid (shown in red)
@@ -92,7 +92,7 @@ lock-in was typically set to 3 seconds with 12~dB/oct rolloff.
 
 As shall be described in Section~\ref{sec:axialsyst}, a concern in the
 measurement was changes in the field measured by the fluxgate that
-could arise due from motion of the system components, or other
+could arise due to motion of the system components, or other
 temperature dependences.  This could generate a false slope with
 temperature that might incorrectly be interpreted as a change in the
 magnetic properties of the witness cylinder.
@@ -125,7 +125,7 @@ of 0.2~Hz.
 
 Temperature variations in the experiment were driven by ambient
 temperature changes in the room, although forced air and other
-techiques were also tested.  These are described further in
+techniques were also tested.  These are described further in
 Section~\ref{sec:axialsyst}.
 
 
@@ -142,14 +142,48 @@ anti-correlated with the temperature trend as shown in
 Fig.~\ref{fig:B_vs_Temp}(b).  Here, $B_s$ is the sum in quadrature of
 the amplitudes of the in-phase and out-of-phase components (most of
 the signal is in phase).  The magnetic field is interpreted to depend
-on temperature, and they are graphed as a function of one another in
-Fig.~\ref{fig:B_vs_Temp}(c).  The slope in Fig.~\ref{fig:B_vs_Temp}(c)
-has been calculated using a linear fit to the data.  The relative
-slope at 23$^\circ$C was found to be
+on temperature, and the two quantities are graphed as a function of
+one another in Fig.~\ref{fig:B_vs_Temp}(c).  The slope in
+Fig.~\ref{fig:B_vs_Temp}(c) has been calculated using a linear fit to
+the data.  The relative slope at 23$^\circ$C was found to be
 $\frac{1}{B_s}\frac{dB_s}{dT}=-0.75\%$/K.
 
-Some deviations from the linear straight-line dependence can be seen
-in the data.  For example, when the temperature changes rapidly, the
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=\textwidth]{fig3.png}
+    \caption{Ambient temperature and shielded magnetic field
+      amplitude, measured over a 70 hour period. (a) temperature of
+      the witness cylinder as a function of time.  (b) magnetic field
+      amplitude measured by fluxgate at center of witness cylinder
+      vs.~time.  (c) magnetic field vs.~temperature with linear fit to
+      data giving $\frac{1}{B_s}\frac{dB_s}{dT}=-0.75\%$/K (evaluated
+      at 23$^\circ$C).  In panels (d), (e), and (f), the same
+      quantities are shown for a 20-hour run with a copper cylinder in
+      place of the witness cylinder with the linear fit giving
+      $\frac{1}{B_s}\frac{dB_s}{dT}=-0.03\%$/K.}
+    \label{fig:B_vs_Temp}
+  \end{center}
+\end{figure} 
+
+Figs.~\ref{fig:B_vs_Temp}(d), (e), and (f) show the same measurement
+with essentially the same settings, when the mu-metal witness cylinder
+is replaced by a copper cylinder.  A similar relative vertical scale
+has been used in Figs.~\ref{fig:B_vs_Temp}(e) and (f) as
+Figs.~\ref{fig:B_vs_Temp}(b) and (c).  This helps to emphasize the
+considerably smaller relative slope derived from panel (f) compared to
+panel (c).  A variety of measurements of this sort were carried out
+multiple times for different parameters such as coil current.  Running
+the coil at the same current tests for effects due to heating of the
+coil, whereas running the coil at a current which equalizes the
+fluxgate signal to its value when the mu-metal witness cylinder is
+present tests for possible effects related to the fluxgate.  For all
+measurements the temperature dependence of the demodulated magnetic
+signal was $<0.1$\%/K, giving confidence that unknown systematic
+effects contribute below this level.
+
+Some deviations from the linear variation of $B_s$ with $T$ can be
+seen in the data, particularly in Figs.~\ref{fig:B_vs_Temp}(a), (b),
+and (c).  For example, when the temperature changes rapidly, the
 magnetic field takes some time to respond, resulting in a slope in
 $B_s-T$ space that is temporarily different than when the temperature
 is slowly varying.  This is typical of the data that we acquired, that
@@ -158,22 +192,9 @@ followed a slow and smooth dependence with time, but the data would
 not be linear if the temperature varied rapidly or non-monotonically
 with time.  We also tried other methods of temperature control, such
 as forced air, liquid flowing through tubing, and thermo-electric
-coolers.  The diurnal cycle followed by the building's air
-conditioning was found to be the most stable and gave the most
+coolers.  The diurnal cycle driven by the building's air conditioning
+system gave the most stable method of control and the most
 reproducible results for temperature slopes.
-
-\begin{figure}
-  \begin{center}
-    \includegraphics[width=0.8\textwidth]{Axial_graph-crop.pdf}
-    \caption{Ambient temperature and shielded magnetic field
-      amplitude, measured over a 70 hour period. (a) temperature of
-      the witness cylinder as a function of time.  (b) magnetic field
-      amplitude measured by fluxgate at center of witness cylinder
-      vs.~time.  (c) magnetic field vs.~temperature with linear fit to
-      data. At 23$^\circ$C, $\frac{1}{B_s}\frac{dB_s}{dT}=-0.75\%$/K.}
-    \label{fig:B_vs_Temp}
-  \end{center}
-\end{figure} 
 
 As mentioned earlier, data were acquired for both the solenoid coil
 and the loop coil.  A summary of the data is provided in
@@ -185,9 +206,9 @@ measurements for the solenoidal coil yielded
 
 \begin{table}
 \begin{center}
-\begin{tabular}{cccc}
-Meast.\ & $\frac{1}{B_s}\frac{dB_s}{dT}$ & coil \\
-\#    & (\%/K) & used \\\hline
+\begin{tabular}{cccc}\hline
+Trial & $\frac{1}{B_s}\frac{dB_s}{dT}$ & Coil \\
+\#    & (\%/K) & type \\\hline
  1 & -0.32 & solenoid \\
  2 & -0.30 & solenoid \\
  3 & -0.33 & solenoid \\
@@ -199,14 +220,15 @@ Meast.\ & $\frac{1}{B_s}\frac{dB_s}{dT}$ & coil \\
  9 & -0.73 & solenoid \\
 10 & -1.23 & loop \\
 11 & -0.75 & solenoid \\
-12 & -1.12 & loop \\
+12 & -1.12 & loop \\\hline
 \end{tabular}
 \caption{Summary of data acquired for the AC axial shielding factor
-  measurements.  Data with an applied field of $\sim 1-6\mu T$ and a
-  measurement frequency of 1~Hz are included.  Data which used daily
-  fluctuations of the temperature from 21-24$^\circ$C over a 10-80
-  hour period are included.  Other data acquired for systematic
-  studies are not included in the table.\label{tab:axial}}
+  measurements, in chronological order.  Data with an applied field of
+  $\sim 1-6\mu T$ and a measurement frequency of 1~Hz are included.
+  Data which used daily fluctuations of the temperature from
+  21-24$^\circ$C over a 10-80 hour period are included.  Other data
+  acquired for systematic studies are not included in the
+  table.\label{tab:axial}}
 \end{center}
 \end{table}
 
@@ -224,7 +246,7 @@ The other difference between the loop coil and the solenoidal coil was
 that the loop coil was rigidly mounted to the witness cylinder,
 reducing the possibility of artifacts from relative motion.  Given
 that this did not reduce the range of the measured temperature slopes
-we conlude that relative motion was well controlled in both cases.
+we conclude that relative motion was well controlled in both cases.
 
 Several other possible systematic effects were considered, all of
 which were found to give uncertainties on the measured slopes
@@ -234,20 +256,19 @@ shielding system within which the experiments were conducted,
 degaussing of the witness cylinder, and temperature slopes of various
 components e.g. the fluxgate magnetometer and the lock-in amplifier.
 
-The stability of the system was also tested by replacing the mu-metal
-witness cylinder with a copper cylinder of very similar dimensions.
-The apparatus was then run through its usual experimental cycle over
-several days, and this was done multiple times for different
-parameters such as coil current.  For all measurements the temperature
-dependence of the demodulated magnetic signal was $<0.1$\%/K, giving
-confidence that unknown systematic effects contribute below this
-level.
+%%% null meast
+As mentioned earlier in reference to Fig.~\ref{fig:B_vs_Temp}(d), (e),
+and (f), the stability of the system was also tested by replacing the
+mu-metal witness cylinder with a copper cylinder and in all cases
+temperature slopes $<0.1$\%/K were measured, giving confidence that
+other unknown systematic effects contribute below this level.
 
 Based on the systematic effects that we studied, we conclude that they
 do not explain the ranges of values measured for
 $\frac{1}{B_s}\frac{dB_s}{dT}$.  We suspect that the range measured is
 either some yet uncharacterized systematic effect, or a complicated
-property of the material.
+property of the material.  We use this range to set a limit on the
+slope of $\mu(T)$
 
 
 \subsubsection{Geometry correction and determination of $\mu(T)$\label{sec:axialsims}}
@@ -293,8 +314,9 @@ consistent with our measurements) can be calculated by
 equation~(\ref{eqn:axial}).  The results of the simulations and
 measurements are presented in Table~\ref{tab:axialsummary}.  Combining
 the loop coil and solenoidal coil results, we find
-0.6\%/K~$<\frac{1}{\mu}\frac{d\mu}{dT}<2.7\%$/K to be a reasonable
-range for the possible temperature slope of $\mu$.
+0.6\%/K~$<\frac{1}{\mu}\frac{d\mu}{dT}<2.7\%$/K to represent the full
+range for the possible temperature slope of $\mu$ that observed in
+these measurements.
 
 \begin{table}
 \begin{center}
